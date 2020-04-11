@@ -1,1 +1,55 @@
 /* CSS here :) */
+
+body, html {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+html {
+    background-color: mistyrose;
+}
+
+
+.nav-container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    /* border: 5px solid goldenrod; */
+    background-color: #3a3633;
+    max-height: 50px;
+    
+}
+
+.nav-logo {
+    padding-left: 10px;
+    max-width: 10%;
+}
+
+.nav-list {
+    /* border: 1px dashed goldenrod; */
+    display: flex;
+    justify-content: flex-end;
+    max-height: 100%;
+    flex: 1;
+    
+}
+
+.nav-item {
+    display: flex;
+    padding: 0;
+}
+
+.nav-item > li {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+.main {
+    padding-top: 80px;
+    display: flex;
+    min-height: 150vh;
+}
