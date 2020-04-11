@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    background: mistyrose;
+} */
+
+
+.main {
+    margin-top: 65px;
+    min-height: 150vh;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid goldenrod; */
+    min-height: 115vh;
+    background-image: url('imgs/bg.jpg'); /* you need to specify the path to the file */
+    background-size: cover; /* Use this to have the image cover the full space */
+    background-position: center; /* Use this to center the background image */
+}
+
+.hero-card {
+    margin: 0 50px;
+    display: flex;
+    border: 10px solid white;
+    width: 1400px;
+    height: 450px;
+}
+
+.hero-card-header {
+    color: #fff;
+    padding: 10px;
+    font-size: 2rem;
+    flex: 1
+}
+
+.hero-card-description {
+    background-color: rgba(0,0,0,0.2);
+    flex: 2
+}
