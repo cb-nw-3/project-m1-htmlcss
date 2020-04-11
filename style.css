@@ -5,40 +5,55 @@ body, html {
     font-family: "Poppins";
 }
 
-html {
+/* html {
     background-color: mistyrose;
-}
-
+} */
 
 .nav-container {
     display: flex;
     position: fixed;
+    width: 100%;
     align-items: center;
     top: 0;
     left: 0;
     /* border: 5px solid goldenrod; */
     background-color: #3a3633;
-    max-height: 50px;
-    
+    max-height: 75px;    
 }
 
 .nav-logo {
-    padding-left: 10px;
+    padding-left: 20px;
     max-width: 10%;
 }
 
-.nav-list {
+.logo {
+    padding-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.nav-list, .nav-list-logo {
     /* border: 1px dashed goldenrod; */
     display: flex;
     justify-content: flex-end;
-    max-height: 100%;
+    align-items: center;
+    /* max-height: 100%; */
     flex: 1;
-    
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 .nav-item {
     display: flex;
     padding: 0;
+    margin: 0;
+    justify-content:flex-end;
 }
 
 .nav-item > li {
@@ -48,8 +63,30 @@ html {
     color: #fff;
 }
 
+.nav-menu {
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+}
+
+.nav-menu-item {
+    height: 30px;
+    width: 30px;
+}
+
 .main {
-    padding-top: 80px;
-    display: flex;
+    margin-top: 100px;
     min-height: 150vh;
+}
+
+@media (min-width: 800px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+    .nav-item {
+        display: none;
+    }
 }
