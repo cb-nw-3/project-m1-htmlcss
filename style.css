@@ -26,19 +26,63 @@ html {
 .hero-card {
     margin: 0 50px;
     display: flex;
+    /* flex-direction: column; */
     border: 10px solid white;
-    width: 1400px;
-    height: 450px;
+    max-width: 80%;
+    min-height: 30%;
 }
 
 .hero-card-header {
+    display: flex;
+    align-items: center;
     color: #fff;
-    padding: 10px;
-    font-size: 2rem;
+    margin: 20px;
+    /* padding: 10px; */
+    font-size: 3rem;
     flex: 1
 }
 
-.hero-card-description {
+.hero-card-description-title {
     background-color: rgba(0,0,0,0.2);
-    flex: 2
+    flex: 2;
+    padding: 0 20px;
+}
+
+.hero-card-description-title > h1 {
+    min-width: 80%;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.hero-card-description {
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    padding: 40px 20px;
+    border-top: 1px dashed #fff;
+}
+
+.hero-card-description > p{
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {
+    .hero-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-card {
+        border-style: none;
+        border-width: 0;
+    }
+    .hero-card-header {
+        font-size: 2rem;
+    }
+
+    .hero-card-description-title > h1 {
+        font-size: 2rem;
+    }
 }
