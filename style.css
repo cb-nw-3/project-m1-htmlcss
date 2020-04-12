@@ -69,36 +69,7 @@ html {
     margin: 10px;
 }
 
-/* ************************************************************************************* */
-/* ******************************** @MEDIA ********************************************* */
-/* ************************************************************************************* */
 
-/* */
-@media (max-width: 1200px) {
-    .hero-card {
-        flex-direction: column;
-    }
-    .cards-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 800px) {
-    .hero-card {
-        border-style: none;
-        border-width: 0;
-    }
-    .hero-card-header {
-        font-size: 2rem;
-    }
-
-    .hero-card-description-title {
-        margin-bottom: 30px;
-    }
-    .hero-card-description-title > h1 {
-        font-size: 2rem;
-    }
-}
 /* ************************************************************************************* */
 /* ******************************** CARDS ********************************************** */
 /* ************************************************************************************* */
@@ -215,3 +186,172 @@ html {
 /* ************************************************************************************* */
 /* **************************** ROTATING BOX ******************************************* */
 /* ************************************************************************************* */
+
+.rotate-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    max-width: 35vh;
+    border: 10px solid white;
+    background-color: #3a3633;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 50;
+    flex: 1;
+    transform: translateY(13vh);
+    padding: 20px;
+    transition: all 2s ease-in-out;
+}
+
+.rotate-box > * {
+    flex-basis: auto;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.rotate-box > h2 {
+    color: crimson;
+}
+
+.rotate-box > p {
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* added translate and rotate on hover */
+
+/* .rotate-box:hover{
+    background-color: mistyrose;
+} */
+
+.rotate-box:hover{
+    /* transform-origin: 13vh 13vh; */
+    /* remember to adjust for original translateY */
+    transform: translate(30vw,13vh) rotate(180deg) scale(1.2);
+}
+
+/* ************************************************************************************* */
+/* ******************************** GALLERY ******************************************** */
+/* ************************************************************************************* */
+
+
+/* Grid Method */
+.gallery-pic {
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    grid-template-rows: repeat(2, 50vh);
+    /* grid-gap: 15px; */
+    /* border: 5px solid red; */
+    transition: all 2s ease;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    transition: all 1.3s ease-in-out;
+}
+
+.gallery-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: 2px dashed red; */
+    transition: all 2s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.2);
+    /* object-fit: none; */
+}
+
+@keyframes picZoom {
+    from {
+        object-fit: cover;
+    }
+    to {
+        object-fit: none;
+    }
+}
+
+
+
+/* ************************************************************************************* */
+/* ******************************** @MEDIA ********************************************* */
+/* ************************************************************************************* */
+
+/* Mobile Mode */
+@media (max-width: 1200px) {
+    .hero-card {
+        flex-direction: column;
+    }
+    .cards-container {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    /* Cool container */
+    .cool-container > h1 {
+        font-size: 2rem;
+    }
+
+    /* For some reason, this selector wont work */
+    .cool-text {
+        font-size: 1rem;
+    }
+
+    /* rotate box */
+
+    .rotate-box {
+        transform: translateY(13vh);
+        padding: 20px;
+        transition: all 2s ease-in-out;
+    }
+
+    .rotate-box:hover {
+        transform: translate(5vw,13vh) rotate(360deg) scale(1);
+    }
+
+    /* Slick container */
+    .slick-container {
+        justify-content: center;
+    }
+
+    .slick-container > h1 {
+        font-size: 2rem;
+    }
+
+
+    .slick-container > p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-card {
+        border-style: none;
+        border-width: 0;
+    }
+    .hero-card-header {
+        font-size: 2rem;
+    }
+
+    /* needs some work */
+    .hero-container {
+        /* margin: 0;
+        padding: 0; */
+        /* justify-content: stretch; */
+        align-items: stretch;
+        flex: 1;
+    }
+
+    .hero-card {
+        margin: 0;
+        flex:1;
+    }
+
+    .hero-card-description-title {
+        margin-bottom: 30px;
+    }
+    .hero-card-description-title > h1 {
+        font-size: 2rem;
+    }
+}
