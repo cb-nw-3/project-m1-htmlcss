@@ -256,22 +256,10 @@ html {
     height: 100%;
     object-fit: cover;
     /* border: 2px dashed red; */
-    transition: all 2s ease;
+    transition: all 1s ease;
     z-index: 100;
 }
 
-.overlay-container {
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: #363636;
-    transition: 0.5s ease; */
-}
 
 .overlay-text {
     position: absolute;
@@ -287,24 +275,121 @@ html {
     transition: all 0.5s ease-in-out;
 }
 
-/* image zooms in */
+/* image zooms in and darkens */
 .img-wrapper img:hover{
     filter: brightness(70%);
     transform: scale(1.2);
 }
-
-/* faded background appears */
-/* .img-wrapper:hover .overlay-container {
-    opacity: 0.5;
-} */
-
 /* text appears */
 .img-wrapper:hover .overlay-text {
     opacity: 1;
 }
 
+/* ************************************************************************************* */
+/* ***************************** FOOTER EMAIL ****************************************** */
+/* ************************************************************************************* */
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+}
 
+.email-container {
+    display: block;
+    padding: 30px;
+    margin: 30px 0;
+    /* min-height: 10vh;
+    min-width: 40vh; */
+    /* border: 5px solid salmon; */
+}
+
+.email-container > * {
+    margin: 5px auto;
+    color: gray;
+}
+
+.email-header {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.email-input-container {
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.email-field {
+    font-size: 1.3rem;
+    margin:0 ;
+    min-height: 20px;
+    width: 270px;
+    /* border: 2px solid lightgray; */
+    /* border-radius: 5px; */
+}
+
+.email-btn{
+    min-height: 25px;
+    width: 70px;
+    margin: 0;
+    background: gray;;
+    border: none;
+    border-radius: 0 2px;
+    font-size: 2rem;
+} 
+
+.email-btn > img {
+    margin-top: 6px;
+}
+
+.email-btn:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+/* To be done later.. */
+.checkbox-label {
+    -webkit-appearance: none;
+}
+
+/* ************************************************************************************* */
+/* ***************************** FOOTER LINKS ****************************************** */
+/* ************************************************************************************* */
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    min-height: 20vh;
+    padding: 40px 0;
+    margin-top: 20px;
+    /* min-height: 50vh;
+    min-width: 100vw; */
+    /* border: 10px solid salmon; */
+    border-top: 1px solid #ddd;
+}
+
+.links-container > ul {
+    list-style-type: none;
+}
+
+.links-container li {
+    padding: 10px;
+    
+}
+
+.links-container a {
+    text-decoration: none;
+    color: gray;
+}
+
+.links-container a:hover {
+    color: #333333;
+}
 
 /* ************************************************************************************* */
 /* ******************************** @MEDIA ********************************************* */
@@ -357,6 +442,7 @@ html {
     }
 }
 
+/* Mobile Mode */
 @media (max-width: 800px) {
     .hero-card {
         border-style: none;
@@ -385,5 +471,14 @@ html {
     }
     .hero-card-description-title > h1 {
         font-size: 2rem;
+    }
+
+    /* FOOTER */
+    .links-container {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .links-container > ul {
+       flex: 1;
     }
 }
