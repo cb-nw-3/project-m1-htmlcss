@@ -1,1 +1,77 @@
-/* CSS here :) */
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+.return-home {
+  background-color: rgba(58, 54, 51, 0);
+  border: 0px none #3a3633;
+}
+.return-home img {
+  width: 2rem;
+}
+.mobile-nav-button {
+  background-color: rgba(58, 54, 51, 0);
+  border: 0px none #3a3633;
+}
+.mobile-nav-button img {
+  width: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3633;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  color: white;
+}
+
+.desktop-nav ul li {
+  margin: 0 20px;
+  padding: 0 30px;
+}
+
+.desktop-nav ul li:last-of-type {
+  margin-right: 0;
+}
+
+.intro-text {
+}
+
+.introduction {
+  min-height: 100vh;
+  background-image: url(imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.left-content {
+  border: 5px solid white;
+}
+.right-content {
+  border: 5px solid white;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+}
