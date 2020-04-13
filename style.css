@@ -1,1 +1,135 @@
 /* CSS here :) */
+
+body
+{
+    margin: 0px;
+}
+
+.nav 
+{
+        background-color:  #3a3633;
+        display: flex;
+        align-items: center;
+}
+
+.nav > .img-col
+{
+    display: flex;
+
+}
+
+.nav > .links-col
+{
+    display: flex;
+    margin-left: auto;
+}
+
+.logo
+{
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+.links-col > a
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', normal;
+    font-size: 10px;
+    justify-content: flex-end;
+
+}
+
+.links-col:last-child
+{
+    padding-right: 25px;
+}
+
+
+
+.links-col > a:hover
+{
+    transition: all 0.2s;
+    opacity: 0.5;
+
+}
+
+
+.top-hero
+{
+    min-height: 600px;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+
+.outer-flex
+{
+    margin: 140px 100px 180px 100px;
+    display: flex;
+    width: 80%;
+    font-family: 'Poppins', normal;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+.title-col
+{
+    align-items: flex-start;
+}
+
+
+.title-col > p 
+{
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+}
+.title-col2
+{
+    background-color: hsla(0, 0%, 37%, 0.4);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subtitle-row
+{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.detail-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-col
+{
+    font-size: 10px;
+    color: white;
+    padding-right: 10px;
+    
+}
+
+.subtitle-row::after
+{
+    content: " ";
+    display: block;
+    border: 0.8px dotted whitesmoke;
+    opacity: 0.5;
+    font-size: 5px;
+}  
