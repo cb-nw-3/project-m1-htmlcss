@@ -1,1 +1,70 @@
-/* CSS here :) */
+:root{
+    --bg-color:#3a3633;
+    font-size:15px;
+}
+
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+}
+/* Nav bar and menus  */
+header{
+    background-color: var(--bg-color);
+    display:flex;
+    padding:5px 10px;
+    justify-content:space-between;
+}
+
+.logo{
+    width:24px;
+    height:24px;
+}
+
+/* Main content with the Rocket */
+.main{
+    background-image: url(imgs/bg.jpg);
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: ;
+    /* flex-dircetion need to be changed for tablet/desktop */
+    flex-direction: column;
+    color:white;
+}
+
+.title{
+    padding-left:15px;
+}
+
+.title > h1{
+    font-size:2rem;
+    font-weight:normal;
+}
+
+.subtitle{
+    background-color:rgba(58, 54, 51, 0.6);
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:20px;
+}
+
+.subtitle > h2{
+    font-size: 2rem;
+    font-weight:normal;
+}
+
+@media (min-width:768px){
+    .tablet-pc-border{
+        border:5px white solid;
+    }
+}
+
+@media (min-width:1200px){
+    body{
+        background-color:green;
+    }
+}
