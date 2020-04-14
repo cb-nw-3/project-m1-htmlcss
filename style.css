@@ -1,18 +1,41 @@
 body {
     margin: 0;
-
+    font-family: 'Poppins', sans-serif;
 }
 
-nav {
+.section1 {
     background-color: #3a3633;
+    
+    
+    
 }
 
-.svg {
-    background: blue;
+.navigation-container {
+    display: flex;
+   
+    
+    
 }
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex: 1;
+}
+
+li {
+    display: flex;
+    flex: 1;
+}
+
+
+
 
 @media (min-width: 768px) {
-
+    #menu {
+        /display: none;/
+    }
 }
 
 @media (min-width: 1200px) {
