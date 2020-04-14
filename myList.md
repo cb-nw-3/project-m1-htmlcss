@@ -31,17 +31,22 @@ The nav bar will need the following elements:
 - [x] list of pages on the right
 - [x] sticky menu
 - [x] hidden hamburger menu @media size < 800px
-- [ ] Nav link is underlined when hovered
-- [ ] dropdown for products
-    - [ ] List: Falcon 9 (link to spaceX), Model S, iPhone
+- [x] Nav link is underlined when hovered
+- [x] Nav linked to the rest of the page sections (features card, advantages cool text, gallery)
+- [x] dropdown for products
+    - [x] List: Falcon 9 (link to spaceX), Model S, iPhone
 - [ ] dropdown for hamburger menu (does not include Products)
+- [ ] custom scroll bar
 
 Notes: 
-- Nav bar looks good, just no dropdowns yet
+- added the underline animation when hovering on nav bar items
+- added dropdown for products (with external links in a new tab) and added page links to the nav links. 
+- added custom scroll bar as another task
 
 ---
 
-## Hero Image and Card
+## Hero Image and Card ~COMPLETE~
+
 
 This is the hero image background and the card
 
@@ -49,11 +54,12 @@ This is the hero image background and the card
 - [x] create hero card container
 - [x] create hero card title and description boxes
 - [x] adjust card based on media
-- [ ] Description content takes full width available
-- [ ] adjust width/heights once other content is added
+- [x] Description content takes full width available
+- [x] adjust width/heights once other content is added
 
 Notes:
 - The layout and the resizing works
+- borders disapear when media size is mobile and takes all available space.
 
 ---
 
@@ -78,14 +84,14 @@ Notes:
 
 ---
 
-## Cool Text + Rotate
+## Cool Text + Rotate ~COMPLETE~
 
 The cool text section is simple to add.
 
 - [x] Create container for this section
 - [x] Add h1 and p tags
 - [x] Format elements using > selector
-- [ ] Smaller size for media-wrap
+- [x] Smaller size for media-wrap
 
 The rotating box, may need to use position: fixed or alternative method to allow it to overlap on this and the next section.
 
@@ -94,7 +100,7 @@ The rotating box, may need to use position: fixed or alternative method to allow
 - [x] Create container for this sub section
 - [x] Add content and adjust padding, format.
 - [x] add translate and rotate transformations
-- [ ] Adjust for media-wrap, smaller box and rotates on spot
+- [x] Adjust for media-wrap, smaller box and rotates on spot
 
 Notes:
 - Unable to select "cool-text" class to resize the P tag, using + or > targets all P tags under that div and not the direct descendant
@@ -102,7 +108,7 @@ Notes:
 
 ---
 
-## Slick Gradient
+## Slick Gradient ~COMPLETE~
 
 Also another straightforward flexbox, column direction, and items are aligned to flex-end
 
