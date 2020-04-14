@@ -17,10 +17,20 @@
         </div>
         <div class="nav-list justify-end">
             <ul class="nav-item">
-                <li><a href="#Features" >Features</a></li>
-                <li><a href="#Advantages" >Advantages</a></li>
-                <li><a href="#Gallery" >Gallery</a></li>
-                <li><a href="#Products" >Products</a></li>
+                <li><a class="nav-link" href="#features" >Features</a></li>
+                <li><a class="nav-link" href="#advantages" >Advantages</a></li>
+                <li><a class="nav-link" href="#gallery" >Gallery</a></li>
+                <li class="dropdown">
+                    <a class="nav-link" href="#Products" >Products</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="https://www.spacex.com/falcon9" target="_blank">Falcon 9</a></li>
+                            <li><a href="https://www.tesla.com/en_ca/models" target="_blank">Model S</a></li>
+                            <li><a href="https://www.apple.com/ca/iphone/" target="_blank">iPhone</a></li>
+                            <li><a href="https://www.apple.com/ca/imac/" target="_blank">iMac</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
             <!-- Mobile Nav -->
             <div class="nav-menu">
@@ -54,7 +64,7 @@
             </div>
         </div>
         <!-- 3 Cards -->
-        <div class="cards-container">
+        <div id="features" class="cards-container">
             <div class="cards card1">
                 <img class="card-icon" src="imgs/icon1.svg"/>
                 <h2>Amazing Feature 1</h2>
@@ -75,7 +85,7 @@
             </div>
         </div>
         <!-- Cool Text -->
-        <div class="cool-container">
+        <div id="advantages" class="cool-container">
             <h1>Some Cool Text</h1>
             <p class="cool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <div class="rotate-box">
@@ -88,7 +98,7 @@
             <h1>Slick Gradient</h1>
             <p>Lorem ipsum?</p>
         </div>
-        <div class="gallery-container">
+        <div id="gallery" class="gallery-container">
             <div class="gallery-pic">
                 <div class="img-wrapper"> 
                     <img src="imgs/tesla.jpg" alt="Tesla Model S">
@@ -158,5 +168,4 @@
         </footer>
     </div>
 </body>
-
 </html>

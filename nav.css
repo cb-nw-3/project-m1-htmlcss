@@ -60,8 +60,13 @@ body, html {
 .nav-item > li {
     display: flex;
     list-style-type: none;
-    padding: 10px 40px;
-
+    padding-top: 22px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom:10px;
+    /* margin: 0 30px; */
+    border-bottom: 10px solid transparent;
+    transition: all 300ms ease-in-out;
 }
 
 .nav-item > li a {
@@ -69,9 +74,60 @@ body, html {
     color: #fff;
 }
 
-.nav-item > li a:hover {
-    color: #ddd;
+
+.nav-item > li:hover {
+    position: relative;
+    opacity: 1;
+    border-bottom: 10px solid #fff;
 }
+
+/* Dropdown stuff */
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    bottom: -185px;
+    right:0;
+    background-color: #636262;
+    min-width: 150px;
+    min-height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* padding: 12px 16px; */
+    z-index: 100;
+    transition: all 5s ease;
+}
+
+.dropdown-content > ul {
+    padding: 0;
+    list-style-type: none;
+    color: #fff;
+}
+
+.dropdown-content > ul li  {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 5s ease;
+}
+
+.dropdown-content > ul li:hover {
+    background-color: lightgray;
+    color: #333333;
+}
+
+/* Mobile stuff */
 
 .nav-menu {
     padding-left: 20px;
@@ -92,7 +148,6 @@ body, html {
     right: 0;
     z-index: 100;
 }
-
 
 .nav-mobile {
     display: none;
