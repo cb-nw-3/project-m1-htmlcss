@@ -21,6 +21,8 @@ Prep some questions for TCs about the below content:
 
 4. In the cool text section, i am unable to use the `>` or `+` selector correctly to select the direct descendant <p> tags.
 
+5. How do i reset browser cache? When i select a section from the nav menu and refresh my page doesnt reset the view to the first section, but stays in the last selected link.
+
 ---
 ## Nav Bar
 
@@ -35,13 +37,14 @@ The nav bar will need the following elements:
 - [x] Nav linked to the rest of the page sections (features card, advantages cool text, gallery)
 - [x] dropdown for products
     - [x] List: Falcon 9 (link to spaceX), Model S, iPhone
-- [ ] dropdown for hamburger menu (does not include Products)
+- [x] dropdown for hamburger menu (does not include Products)
 - [ ] custom scroll bar
 
 Notes: 
 - added the underline animation when hovering on nav bar items
 - added dropdown for products (with external links in a new tab) and added page links to the nav links. 
 - added custom scroll bar as another task
+- added burger dropdown, although it works well on desktop when hovered, no clue how its supposed to work on mobile.
 
 ---
 
