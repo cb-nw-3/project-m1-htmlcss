@@ -5,16 +5,15 @@ body {
 
 .section1 {
     background-color: #3a3633;
-    
-    
-    
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 .navigation-container {
     display: flex;
-   
-    
-    
+    align-items: center;
+    height: 60px;
 }
 
 ul {
@@ -29,15 +28,74 @@ li {
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.section2 {
+    background-image: url("imgs/bg.jpg");
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    margin-bottom: 200px;
+    color: white;
+    
+}
+
+.main2 {
+    border: 5px solid white;
+    height: 500px;
+    margin: 100px 100px;
+    display: flex;
+    
+}
+
+.element1 {
+    display: flex;
+    
+    font-size: 5rem;
+    padding: 100px 15px 200px 15px;
+    
+}
+
+.element2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 10px;
+    
+    
+}
+
+.dreams {
+    font-size: 3rem;
+    border-bottom: 1px dotted white;
+    padding-bottom: 15px;
+    }
+
+.lorem2{
+    word-break: break-all;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-top: 20px;
+}
 
 
 
-@media (min-width: 768px) {
+
+
+
+
+
+
+
+
+/@media (min-width: 768px) {
     #menu {
         /display: none;/
     }
-}
+}/
 
-@media (min-width: 1200px) {
+/@media (min-width: 1200px) {
 
-}
+}/
