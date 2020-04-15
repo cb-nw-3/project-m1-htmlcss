@@ -100,6 +100,15 @@ h6 {
   padding: 5% 3%;
 }
 
+.panel3 {
+  display: block;
+  height: 40vh;
+  background-image: linear-gradient(to right, white, dodgerblue);
+  color: white;
+  padding: 5% 3%;
+  text-align: right;
+}
+
 .panel2 > h6 {
   position: absolute;
   font-size: 4rem;
@@ -110,4 +119,72 @@ h6 {
   position: relative;
   top: 50%;
   font-size: 1.7rem;
+}
+
+.panel3 > h6 {
+  font-size: 4rem;
+}
+
+.panel3 > p {
+  font-size: 1.7rem;
+}
+
+.panel4 {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vw;
+  min-height: auto;
+}
+
+.panel4 > div {
+  width: calc(100vw / 3);
+  height: calc(80vh / 2);
+}
+
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url('imgs/tesla.jpg');
+}
+
+.image2 {
+  background-image: url('imgs/procat.jpg');
+}
+
+.image3 {
+  background-image: url('imgs/hyperloop.jpg');
+}
+
+.image4 {
+  background-image: url('imgs/sneakycat.jpg');
+}
+
+.image5 {
+  background-image: url('imgs/bfr.jpeg');
+}
+
+.image6 {
+  background-image: url('imgs/funnycat.jpg');
+}
+
+.panel5 {
+  min-width: 100vw;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer {
+  margin: 0 16px;
+  border-top: 2px solid lightgray;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
 }
