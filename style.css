@@ -197,20 +197,78 @@ header {
   z-index: 1;
 }
 
-.tesla,
-.procat,
-.hyperloop,
-.sneakycat,
-.bfr,
-.funnycat {
+#tesla,
+#procat,
+#hyperloop,
+#sneakycat,
+#bfr,
+#funnycat {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 300px;
-  object-fit: cover;
 }
-.text {
-  color: white;
-  position: relative;
-  transform-origin: center;
+#tesla:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+#procat:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+#hyperloop:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+#sneakycat:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+#bfr:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+#funnycat:hover {
+  transform: scale(1.15);
+  opacity: 0.75;
+  overflow: hidden hidden;
+}
+
+.send-email {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.enter-email {
+  display: flex;
+  height: auto;
+}
+.send {
+  background-color: #3a3633;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transform: translate(-2px, 0px);
+}
+.send-button {
+  background-color: #3a3633;
+}
+
+input {
+  margin: 1px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #888888;
+  flex: 1;
+}
+.bunch {
+  flex: 50%;
 }
