@@ -271,21 +271,128 @@ h3
     
 }
 
+  
+  
+  
+
 
 .image-row
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding: 0px;
+  overflow: hidden;
+  z-index: 0;
+
+
+  /* for smaller version - flex-wrap?*/
+
+
     
   
 }
+.image-column
+{
+    background-position: center;
 
-.image-row>img {
-    height: 200px;
-    width: 33%;
-    object-fit: cover;
-   }
+    flex: 33.33%;
+    flex-direction: column;
+    padding: 0 px;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+
+
+}
+
+.imagetext
+{
+    z-index: 1;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    /* position the text in t’ middle*/
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+    background-color: hsla(0, 0%, 37%, 0.4);
+/* I got the following position code from https://webdesign.tutsplus.com/tutorials/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287 */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-holder
+{
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+.image-column:hover .image-holder
+{
+    transform: scale(1.2);
+
+}
+
+
+
+.image-column:hover .imagetext
+{
+opacity: 1;
+}
+
+
+
+
+.image1
+{
+    background-image: url('imgs/tesla.jpg');
+
+
+}
+
+.image2
+{
+    background-image: url('imgs/procat.jpg');
+}
+
+
+.image3
+{
+    background-image: url('imgs/hyperloop.jpg');
+}
+
+.image4
+{
+    background-image: url('imgs/sneakycat.jpg');
+
+}
+
+
+.image5
+{
+    background-image: url('imgs/bfr.jpeg');
+}
+
+
+.image6
+{
+    background-image: url('imgs/funnycat.jpg');
+}
+
+
+
   
 
 
