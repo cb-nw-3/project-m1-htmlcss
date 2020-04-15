@@ -24,7 +24,7 @@ Prep some questions for TCs about the below content:
 5. How do i reset browser cache? When i select a section from the nav menu and refresh my page doesnt reset the view to the first section, but stays in the last selected link.
 
 ---
-## Nav Bar
+## Nav Bar ~COMPLETE~
 
 stuff thats done is checked off
 The nav bar will need the following elements:
@@ -38,7 +38,7 @@ The nav bar will need the following elements:
 - [x] dropdown for products
     - [x] List: Falcon 9 (link to spaceX), Model S, iPhone
 - [x] dropdown for hamburger menu (does not include Products)
-- [ ] custom scroll bar
+- [x] custom scroll bar
 
 Notes: 
 - added the underline animation when hovering on nav bar items
@@ -82,6 +82,7 @@ cards-container --> cards --> cards items
  
 Notes:
 - Had to use flex properties on the children of cards so that these elements can re-arrange themselves within the sub flex-item and so that the buttons can align withing a page.
+- fixed links to each button, replaced as spans.
 
 
 
@@ -159,7 +160,7 @@ Update 1: Gotta find a way to make the text element not hoverable.. maybe set it
 - [x] Add images
 - [x] Add scaling effect when hovered
 - [x] Add text when hovered
-- [ ] Adjust media-wrap when going mobile
+- [x] Adjust media-wrap when going mobile
 
 ---
 
