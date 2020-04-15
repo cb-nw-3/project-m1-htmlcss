@@ -1,0 +1,113 @@
+/* ************************************************************************************* */
+/* ******************************** @MEDIA ********************************************* */
+/* ************************************************************************************* */
+
+/* Mobile Mode */
+@media (max-width: 1200px) {
+    .hero-card {
+        flex-direction: column;
+    }
+    .cards-container {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    /* Cool container */
+    .cool-container > h1 {
+        font-size: 2rem;
+    }
+
+    /* For some reason, this selector wont work */
+    .cool-text {
+        font-size: 1rem;
+    }
+
+    /* rotate box */
+
+    .rotate-box {
+        transform: translateY(13vh);
+        padding: 20px;
+        transition: all 2s ease-in-out;
+    }
+
+    .rotate-box:hover {
+        transform: translate(30vw,13vh) rotate(360deg) scale(1);
+    }
+
+    /* Slick container */
+    .slick-container {
+        justify-content: center;
+    }
+
+    .slick-container > h1 {
+        font-size: 2rem;
+    }
+
+
+    .slick-container > p {
+        font-size: 1.5rem;
+    }
+
+    /* Gallery stuff */
+    .gallery-pic {
+        display: grid;
+        grid-template-columns: repeat(2,1fr );
+        grid-template-rows: repeat(3, 50vh);
+        transition: all 2s ease;
+    }
+}
+
+/* Mobile Mode */
+@media (max-width: 800px) {
+    .hero-card {
+        border-style: none;
+        border-width: 0;
+    }
+    .hero-card-header {
+        font-size: 2rem;
+    }
+
+    /* needs some work */
+    .hero-container {
+        /* margin: 0;
+        padding: 0; */
+        /* justify-content: stretch; */
+        align-items: stretch;
+        flex: 1;
+    }
+
+    .hero-card {
+        margin: 0;
+        flex:1;
+    }
+
+    .hero-card-description-title {
+        /* margin-bottom: 30px; */
+    }
+    .hero-card-description-title > h1 {
+        font-size: 2rem;
+    }
+
+    /* COOL TEXT SECTION */
+    
+
+    /* Gallery */
+
+    .gallery-pic {
+        display: grid;
+        grid-template-columns: repeat(1,1fr );
+        grid-template-rows: repeat(6, 50vh);
+        transition: all 2s ease;
+    }
+
+    /* FOOTER */
+    .links-container {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;;
+    }
+    .links-container > ul {
+        flex: 1;
+    }
+}
