@@ -1,6 +1,6 @@
 /* CSS here :) */
 html {
-  font-family: "Poppins", "Muli", "Arial", "helvetica neue", sans-serif;
+  font-family: 'Poppins', 'Muli', 'Arial', 'helvetica neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.9rem;
@@ -13,9 +13,11 @@ body {
 }
 
 .sticky {
+  display: block;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .panel0 {
@@ -25,6 +27,7 @@ body {
   background-color: #3a3633;
   height: 65px;
 }
+
 .wrapper {
   display: flex;
   /* flex-direction: column; */
@@ -63,7 +66,7 @@ ul {
 }
 
 .container {
-  background: center / cover no-repeat url("imgs/bg.jpg");
+  background: center / cover no-repeat url('imgs/bg.jpg');
   min-width: 600px;
   flex: 1;
   display: flex;
@@ -164,7 +167,7 @@ h1 {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url("imgs/icon1.svg");
+  background-image: url('imgs/icon1.svg');
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -176,7 +179,7 @@ h1 {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url("imgs/icon2.svg");
+  background-image: url('imgs/icon2.svg');
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -188,7 +191,7 @@ h1 {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url("imgs/icon3.svg");
+  background-image: url('imgs/icon3.svg');
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -253,12 +256,12 @@ h6 {
 .panel4 {
   display: flex;
   flex-wrap: wrap;
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: auto;
 }
 
 .panel4 > div {
-  width: calc(100vw / 3);
+  width: calc(100% / 3);
   height: calc(80vh / 2);
 }
 
@@ -269,31 +272,31 @@ h6 {
 }
 
 .image1 {
-  background-image: url("imgs/tesla.jpg");
+  background-image: url('imgs/tesla.jpg');
 }
 
 .image2 {
-  background-image: url("imgs/procat.jpg");
+  background-image: url('imgs/procat.jpg');
 }
 
 .image3 {
-  background-image: url("imgs/hyperloop.jpg");
+  background-image: url('imgs/hyperloop.jpg');
 }
 
 .image4 {
-  background-image: url("imgs/sneakycat.jpg");
+  background-image: url('imgs/sneakycat.jpg');
 }
 
 .image5 {
-  background-image: url("imgs/bfr.jpeg");
+  background-image: url('imgs/bfr.jpeg');
 }
 
 .image6 {
-  background-image: url("imgs/funnycat.jpg");
+  background-image: url('imgs/funnycat.jpg');
 }
 
 .panel5 {
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -337,7 +340,7 @@ h6 {
 .sent {
   height: 0;
   width: 75.5%;
-  background-image: url("imgs/send.svg");
+  background-image: url('imgs/send.svg');
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -348,7 +351,7 @@ footer {
   margin: 0 16px;
   border-top: 2px solid lightgray;
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
