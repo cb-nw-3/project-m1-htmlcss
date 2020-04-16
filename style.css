@@ -7,6 +7,11 @@ body
 
 }
 
+html {
+    scroll-behavior: smooth;
+   }
+  
+
 h1
 {
     color: white;
@@ -38,6 +43,8 @@ h3
         background-color:  #3a3633;
         display: flex;
         align-items: center;
+        position: fixed;
+        width: 100%;
 }
 
 .nav > .img-col
@@ -61,20 +68,20 @@ h3
 
 .links-col > a
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
+    padding: 10px;
+    margin-left: 30px;
     text-decoration: none;
     color: white;
     font-family: 'Poppins', normal;
     font-size: 10px;
     justify-content: flex-end;
+    position: relative;
 
 }
 
 .links-col:last-child
 {
-    padding-right: 25px;
+    margin-right: 25px;
 }
 
 
@@ -82,9 +89,34 @@ h3
 .links-col > a:hover
 {
     transition: all 0.2s;
-    opacity: 0.5;
-
+    color: gray;
 }
+
+
+.links-col > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.links-col > a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+
+/* .links-col > a:hover
+{
+border-bottom: 4px solid white;
+padding-bottom: .25em;
+} */
+
+
 
 
 .top-hero
@@ -234,7 +266,9 @@ h3
     margin-left: 30px;
     z-index: 1;
     position: relative;
-    top: -400px;
+    top: -250px;
+    /* question - can tell this floating box to refer to the top
+    position of the gradient box? */
     border: solid white 5px;
     background-color:  #3a3633;  
     max-width: 200px;
@@ -298,7 +332,7 @@ h3
     flex-direction: column;
     padding: 0 px;
     width: 200px;
-    height: 250px;
+    height: 180px;
     overflow: hidden;
     z-index: 0;
     position: relative;
@@ -332,11 +366,8 @@ h3
     width: 100%;
     height: 100%;
     background-position: center;
-
     background-size: cover;
     overflow: hidden;
-
-
 }
 
 .image-column:hover .image-holder
@@ -358,8 +389,6 @@ opacity: 1;
 .image1
 {
     background-image: url('imgs/tesla.jpg');
-
-
 }
 
 .image2
@@ -393,8 +422,99 @@ opacity: 1;
 
 
 
+
+.Register-large
+{
+    max-width: 250px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.Register-flex > p
+{
+    margin: 5px;
+}
+
+.Register-flex
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    color: rgb(107, 107, 107);
+}
+
+.Register-flex:
+{
+    padding-top:20px;
+}
+
+.form-wrapper
+{
+    display: flex;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 4px;
+
+}
+
+.form-wrapper > input
+{
+    flex-grow:2;
+    border: none;
+    font-size: 20px;
+}
+
+.cat-checkbox-div
+{
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper > input:focus
+{
+    outline: none;
+   
+}
+
+
+.form-wrapper > button
+{
+    background-color: rgb(182, 182, 182);;
+    border: 1px solid rgb(182, 182, 182);;
+    
+}
+
+.sumbit-btn-img
+{
+    width:100%
+}
+
+.cat-checkbox-div :checked {
+    border: 1px solid blue;
+  }
+
+.cat-checkbox-div > .send-text
+{
+    margin-left: 10px;
+}
   
 
 
+.example
+{
+    margin:auto;
+    max-width:300px
+}
 
+.bottom-menu
+{
+    border-top: solid 1px rgb(173, 173, 173);
+}
+  
+.bottom-row
+{
+    display: flex;
+    justify-content: space-evenly;
+}
 
