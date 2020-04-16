@@ -6,6 +6,11 @@ html {
 body {
   margin: 0;
 }
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .return-home {
   background-color: rgba(58, 54, 51, 0);
   border: 0px none #3a3633;
@@ -15,6 +20,9 @@ body {
 }
 .desktop-nav {
   display: none;
+}
+.products-menu{
+  display:none;
 }
 .mobile-nav-button:active > .desktop-nav {
   display: block;
@@ -35,8 +43,9 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
+  height:50px;
 }
-.desktop-nav ul {
+.desktop-nav li {
   list-style: none;
   display: flex;
   color: white;
@@ -54,7 +63,7 @@ header {
 .intro-text {
 }
 
-.introduction {
+#introduction {
   min-height: 150vh;
   background-image: url(imgs/bg.jpg);
   background-size: cover;
@@ -89,9 +98,8 @@ header {
   padding-bottom: 40px;
 }
 #features {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
+display: block;
+margin: 0 40px;
 }
 .feature-span {
   color: #888888;
@@ -271,4 +279,91 @@ input {
 }
 .bunch {
   flex: 50%;
+}
+.bunch>ul{
+  list-style-type:none;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-button{
+    display: none;
+  }
+  .desktop-nav{
+    display:flex;
+  }
+  .desktop-nav li{
+    list-style: none;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .left-content{
+    border:5px solid white;
+    border-bottom: 0px;
+    padding-top: 30px;
+  }
+  .right-content{
+    border: 5px solid white;
+    border-top:0px;
+  }
+  .right-top{
+    border-bottom: 2px dashed white;
+    font-size: 2rem;
+    padding-bottom:30px;
+  }
+  .right-bottom{
+    display:flex;
+    flex-direction: row;
+  }
+  #features{
+    display: flex;
+    flex-wrap:wrap;
+  }
+  #features>div{
+    width: 300px;
+    margin: 20px auto;
+  }
+  .feature1,.feature2,.feature3{
+    margin: 40px auto;
+  }
+.cool-text{
+  padding: 40px;
+}
+  .cool-text>h2{
+    font-size: 3rem;
+  }
+  .cool-text>span{
+    font-size: 2rem;
+  }
+.spin-box{
+  margin-top: -80px;
+    margin-left: 40px;
+}
+  .gradient{
+    padding: 40px;
+  }
+  .slick>h2{
+    font-size: 3rem;
+  }
+  .slick>span{
+    font-size: 2rem;
+  }
+
+  #gallery{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  #gallery>div{
+    width:50%;
+  }
+  .footer{
+    flex-wrap:nowrap;
+  }
+  .bunch {
+    flex:50%;
+  }
+  .bunch>ul>li{
+    padding: 4px;
+  }
+@media (min-width: 1200px) {
 }

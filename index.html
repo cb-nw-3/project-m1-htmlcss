@@ -10,25 +10,26 @@
   </head>
 
   <body>
-    <section class="nav-bar">
+    <div class="nav-bar">
       <header>
-        <button class="return-home">
+        <a class="return-home" href="#introduction">
           <img src="imgs/logo.svg" class="logo" />
-        </button>
+        </a>
         <span class="mobile-nav">
-          <button class="mobile-nav-button" aria-label="Show menu">
-            <img src="imgs/menu.svg" />
-          </button>
+         
           <ul class="desktop-nav">
             <li>Features</li>
             <li>Advantages</li>
             <li>Gallery</li>
             <li>Products</li>
           </ul>
+          <a class="mobile-nav-button" >
+            <img src="imgs/menu.svg" />
+          </a>
         </span>
       </header>
-    </section>
-    <section class="introduction">
+    </div>
+    <section id="introduction">
       <div class="intro-text">
         <div class="left-content">
           Introducing Falcon 9
@@ -37,6 +38,7 @@
           <div class="right-top content">
             We make dreams come true
           </div>
+          <div class="right-bottom">
           <div class="right-bottom1 content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -47,12 +49,13 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="features">
-      <ul>
-        <li class="feature1">
+      <div>
+        <div class="feature1">
           <img src="imgs/icon1.svg" class="feature-icon" />
           <h3>Amazing Feature 1</h3>
           <span class="feature-span">
@@ -61,10 +64,10 @@
             ad minim veniam. Lorem ipsum dolor sit amet.</span
           >
           <button class="feature-button">Get it</button>
-        </li>
-      </ul>
-      <ul>
-        <li class="feature2">
+          </div>
+        </div>
+      <div>
+        <div class="feature2">
           <img src="imgs/icon2.svg" class="feature-icon" />
           <h3>Amazing Feature 2</h3>
           <span class="feature-span">
@@ -73,9 +76,9 @@
             ad minim veniam. Lorem ipsum dolor sit amet.</span
           >
           <button class="feature-button">Sell it</button>
-        </li>
-      </ul>
-      <ul>
+          </div>
+        </div>
+      <div>
         <li class="feature3">
           <img src="imgs/icon3.svg" class="feature-icon" />
           <h3>Amazing Feature 3</h3>
@@ -85,8 +88,8 @@
             ad minim veniam. Lorem ipsum dolor sit amet.</span
           >
           <button class="feature-button">Do it</button>
-        </li>
-      </ul>
+          </div>
+        </div>
     </section>
     <section class="advantages">
       <div class="cool-text">
