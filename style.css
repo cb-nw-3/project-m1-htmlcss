@@ -1,13 +1,134 @@
 /* CSS here :) */
 html {
-  font-family: 'Poppins', 'Muli', 'Arial', 'helvetica neue', sans-serif;
+  font-family: "Poppins", "Muli", "Arial", "helvetica neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
+
 body {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.panel0 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #3a3633;
+  height: 65px;
+}
+.wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  height: 91vh;
+  margin: 0;
+  padding: 0;
+}
+
+.panel0 > img {
+  padding-left: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.panel0 > ul > li {
+  margin: 0 40px;
+  font-size: large;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.panel0 > ul > li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.logo {
+  height: 65px;
+  margin-right: 12px;
+}
+
+.container {
+  background: center / cover no-repeat url("imgs/bg.jpg");
+  min-width: 600px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  margin: 0 13%;
+  height: 65vh;
+  border: 10px solid white;
+  color: whitesmoke;
+  box-shadow: 2px 2px 8px black;
+}
+
+.halfTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.45;
+  min-width: 280px;
+  padding: 0;
+  margin: 0;
+}
+
+.halfText {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 0 20px;
+  background-color: rgba(22, 22, 22, 0.4);
+}
+
+.text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+  flex: 1;
+  font-size: calc(1.9rem + 1.5vw);
+  line-height: normal;
+}
+
+.text2 {
+  display: flex;
+  border-top: 2px dotted white;
+  flex: 1;
+}
+
+.text2 > p {
+  font-size: calc(0.9rem + 0.2vw);
+  margin: 15px;
+}
+
+h1 {
+  padding: 0 30px;
+  width: fit-content;
+  height: fit-content;
+  font-size: calc(4rem + 1.15vw);
 }
 .card-container {
   display: flex;
@@ -43,7 +164,7 @@ body {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url('imgs/icon1.svg');
+  background-image: url("imgs/icon1.svg");
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -55,7 +176,7 @@ body {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url('imgs/icon2.svg');
+  background-image: url("imgs/icon2.svg");
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -67,7 +188,7 @@ body {
   position: relative;
   height: 0;
   width: 12%;
-  background-image: url('imgs/icon3.svg');
+  background-image: url("imgs/icon3.svg");
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -148,27 +269,27 @@ h6 {
 }
 
 .image1 {
-  background-image: url('imgs/tesla.jpg');
+  background-image: url("imgs/tesla.jpg");
 }
 
 .image2 {
-  background-image: url('imgs/procat.jpg');
+  background-image: url("imgs/procat.jpg");
 }
 
 .image3 {
-  background-image: url('imgs/hyperloop.jpg');
+  background-image: url("imgs/hyperloop.jpg");
 }
 
 .image4 {
-  background-image: url('imgs/sneakycat.jpg');
+  background-image: url("imgs/sneakycat.jpg");
 }
 
 .image5 {
-  background-image: url('imgs/bfr.jpeg');
+  background-image: url("imgs/bfr.jpeg");
 }
 
 .image6 {
-  background-image: url('imgs/funnycat.jpg');
+  background-image: url("imgs/funnycat.jpg");
 }
 
 .panel5 {
@@ -178,6 +299,49 @@ h6 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.form {
+  display: block;
+  margin: 30px 0;
+  color: gray;
+}
+
+.email {
+  display: flex;
+  width: 40vw;
+  height: 2.5rem;
+  margin-bottom: 15px;
+}
+.email input {
+  margin: 0;
+  padding: 0 12px;
+  flex: 1;
+  border: 1.5px solid gray;
+  border-radius: 4px 0 0 4px;
+  font-size: medium;
+  margin-right: 0;
+}
+
+.email button {
+  display: flex;
+  width: 36px;
+  height: auto;
+  border-style: none;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 6px 6px 0;
+}
+
+.sent {
+  height: 0;
+  width: 75.5%;
+  background-image: url("imgs/send.svg");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 75.5%;
 }
 
 footer {
