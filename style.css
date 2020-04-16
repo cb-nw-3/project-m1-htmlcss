@@ -250,8 +250,9 @@ html {
 
 .img-wrapper {
     position: relative;
+    /* this is important, so that images do go out of their dimensions */
     overflow: hidden;
-    transition: all 1.3s ease-in-out;
+    /* transition: all 1.3s ease-in-out; */
 }
 
 .gallery-pic img {
@@ -260,7 +261,6 @@ html {
     object-fit: cover;
     /* border: 2px dashed red; */
     transition: all 1s ease;
-    z-index: ;
 }
 
 
@@ -280,7 +280,7 @@ html {
 }
 
 /* image zooms in and darkens */
-.img-wrapper img:hover{
+.img-wrapper:hover img{
     filter: brightness(70%);
     transform: scale(1.2);
 }
