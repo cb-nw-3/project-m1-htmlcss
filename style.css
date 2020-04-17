@@ -203,20 +203,18 @@ a {
     }
 }
 
-
-
-
-
 .cool4 {
     font-size: 3rem;
     padding-bottom: 30px;
 }
+
 .cool5 {
     color: red;
     font-size: 1.5rem;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
 .section5 {
     color: white;
     height: 300px;
@@ -233,6 +231,18 @@ a {
 .lorem5 {
     font-size: 1rem;
     padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    
+    
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
 }
 
 
