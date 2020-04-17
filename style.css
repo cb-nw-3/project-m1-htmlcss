@@ -129,9 +129,9 @@ body {
   }
   
   .text2 > p {
-    font-size: calc(0.9rem + 0.2vw);
-    line-height: calc(7px + 2.2vh); 
-    margin: 15px;
+    font-size: calc(0.75rem + 0.2vw);
+    line-height: calc(7px + 2vh); 
+    margin: 1%;
   }
 
   .panel {
@@ -219,6 +219,7 @@ body {
 
   .btn-card:hover{
     cursor: pointer;
+    border: 2px solid dodgerblue;
   }
   
   .card > h6 {
