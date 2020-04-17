@@ -10,6 +10,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
 }
 .return-home {
   background-color: rgba(58, 54, 51, 0);
@@ -21,8 +22,8 @@ body {
 .desktop-nav {
   display: none;
 }
-.products-menu{
-  display:none;
+.products-menu {
+  display: none;
 }
 .mobile-nav-button:active > .desktop-nav {
   display: block;
@@ -43,7 +44,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
-  height:50px;
+  height: 50px;
 }
 .desktop-nav li {
   list-style: none;
@@ -60,9 +61,6 @@ header {
   margin-right: 0;
 }
 
-.intro-text {
-}
-
 #introduction {
   min-height: 150vh;
   background-image: url(imgs/bg.jpg);
@@ -73,7 +71,6 @@ header {
   align-items: center;
   flex-direction: row;
 }
-
 .left-content {
   padding: 0px 0px 40px 10px;
   font-size: 2rem;
@@ -98,8 +95,8 @@ header {
   padding-bottom: 40px;
 }
 #features {
-display: block;
-margin: 0 40px;
+  display: block;
+  margin: 0 40px;
 }
 .feature-span {
   color: #888888;
@@ -146,7 +143,7 @@ margin: 0 40px;
   text-align: center;
   margin: 10px auto 40px;
 }
-.advantages {
+#advantages {
   display: flex;
   flex-direction: column;
 }
@@ -203,6 +200,9 @@ margin: 0 40px;
   max-width: 100%;
   height: 350px;
   z-index: 1;
+}
+#gallery > div {
+  overflow: hidden;
 }
 
 #tesla,
@@ -280,90 +280,147 @@ input {
 .bunch {
   flex: 50%;
 }
-.bunch>ul{
-  list-style-type:none;
+.bunch > ul {
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
-  .mobile-nav-button{
+  .mobile-nav-button {
     display: none;
   }
-  .desktop-nav{
-    display:flex;
+  .desktop-nav {
+    display: flex;
   }
-  .desktop-nav li{
+  .desktop-nav li a {
     list-style: none;
     color: white;
-    padding: 0 20px;
+    padding: 0 40px;
+    text-decoration-line: none;
   }
-
-  .left-content{
-    border:5px solid white;
+  .desktop-nav > li:hover {
+    text-decoration: underline white solid;
+  }
+  .intro-text {
+    margin: 0 20px;
+  }
+  .left-content {
+    border: 5px solid white;
     border-bottom: 0px;
     padding-top: 30px;
   }
-  .right-content{
+  .right-content {
     border: 5px solid white;
-    border-top:0px;
+    border-top: 0px;
   }
-  .right-top{
+  .right-top {
     border-bottom: 2px dashed white;
     font-size: 2rem;
-    padding-bottom:30px;
+    padding-bottom: 30px;
   }
-  .right-bottom{
-    display:flex;
+  .right-bottom {
+    display: flex;
     flex-direction: row;
   }
-  #features{
+  #features {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-  #features>div{
+  #features > div {
     width: 300px;
     margin: 20px auto;
   }
-  .feature1,.feature2,.feature3{
+  .feature1,
+  .feature2,
+  .feature3 {
     margin: 40px auto;
   }
-.cool-text{
-  padding: 40px;
-}
-  .cool-text>h2{
-    font-size: 3rem;
-  }
-  .cool-text>span{
-    font-size: 2rem;
-  }
-.spin-box{
-  margin-top: -80px;
-    margin-left: 40px;
-}
-  .gradient{
+  .cool-text {
     padding: 40px;
   }
-  .slick>h2{
+  .cool-text > h2 {
     font-size: 3rem;
   }
-  .slick>span{
+  .cool-text > span {
+    font-size: 2rem;
+  }
+  .spin-box {
+    margin-top: -80px;
+    margin-left: 40px;
+  }
+  .gradient {
+    padding: 40px;
+  }
+  .slick > h2 {
+    font-size: 3rem;
+  }
+  .slick > span {
     font-size: 2rem;
   }
 
-  #gallery{
-    display:flex;
-    flex-wrap:wrap;
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
   }
-  #gallery>div{
-    width:50%;
+  #gallery > div {
+    width: 50%;
   }
-  .footer{
-    flex-wrap:nowrap;
+  .footer {
+    flex-wrap: nowrap;
   }
   .bunch {
-    flex:50%;
+    flex: 50%;
   }
-  .bunch>ul>li{
+  .bunch > ul > li {
     padding: 4px;
   }
-@media (min-width: 1200px) {
+}
+@media (min-width: 1100px) {
+  .intro-text {
+    display: flex;
+    margin: 50px;
+  }
+
+  .left-content {
+    border: 10px solid white;
+    border-right: 0px;
+    padding-top: 70px;
+    padding-right: 30px;
+    flex: 2;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .right-content {
+    border: 10px solid white;
+    border-left: 0px;
+    flex: 3;
+  }
+
+  .right-top {
+    padding-left: 20px;
+    font-size: 3.2rem;
+  }
+  .spin-box:hover {
+    animation: bounce2 4s ease-in-out;
+  }
+  @keyframes bounce2 {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    50% {
+      transform: translate(200px, 0px) rotate(180deg);
+      opacity: 0.5;
+    }
+    75% {
+      transform: translate(200px, 0px) rotate(180deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  #gallery > div {
+    width: 33.333%;
+  }
 }
