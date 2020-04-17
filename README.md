@@ -12,7 +12,7 @@ To successfully create this web page, here are a few guidelines to keep in mind:
 Take a moment to look at the different parts of the web page. Do you see anything that you would be comfortable doing?
 
 - Can you create a black bar at the top of the page?
-- What about creating a fullscreen background? This was one of the CSS exercises
+- What about creating a fullscreen background?
 - There are 2 big sections with some text and a background color. Perhaps you do not know how to do gradient backgrounds, but you may know how to set a blue background color.
 - The images have a zoom effect and a dark background with text showing up when you hover, perhaps trying to reproduce that whole behavior seems daunting. Try displaying images and creating the layout, you can **worry about the fancy stuff later**.
 - There is a styled input box and checkbox around the bottom, perhaps you're not sure how to do that. If you get stuck trying to make it look the same, **focus on doing what you can** - a simple input and checkbox - and move on. You can come back to more troublesome parts later on.
@@ -41,17 +41,14 @@ Following the first point, it's fine to struggle on a feature which you want to 
 
 You will have a PASS / FAIL on each grading rubric and a final PASS / FAIL grade for the module. The final grade is based on your project and the effort put into it. If some things are missing / don't look exactly right but I see you are going in the right direction and have made a real effort, you will be ok.
 
-### Deadline
-
-You have until the start of the next module (next Tuesday) to submit this project (push it on a new repository called **html-css-project**).
-
 # Reference
 
-Use the Poppins font. Use rem as unit for font-size (scales with device size).
+Use the Poppins font from Google Fonts.
 
 I suggest using CSS variables for things like color (`#3a3633` is the primary color in this design, used for background color, text color) or **border-radius** (`4px`) so it's consistent across different elements.
 
-The website has a navbar with links that scroll smoothly to different sections of the page. To achieve this, you will need to specify an id on the different sections of the page (e.g. `<div id="features"></div>`) and you can then use an anchor tag to go to that section (`<a href="#features"></a>`).
+The website has a navbar with links that scroll smoothly to different sections of the page. To achieve this, you will need to specify an id on the different sections of the page (e.g. `<div id="features"></div>`) and you can then use an anchor tag to go to that section (
+<a href="#features"></a>`).
 You can use this CSS to have smooth scrolling:
 
 ```css
@@ -64,64 +61,70 @@ Here are some of the CSS properties used for the project (this is not a full lis
 
 ---
 
-`background-color`  
+`background-color`
 You can use **rgba** to make transparent colors. **a** is the transparency value. e.g. `background-color: rgba(0,0,0,0.5);`
 
-`object-fit`  
+`object-fit`
 Size an <img> element like you would a background image, with properties like **cover** (automatically zoom in / out to cover the whole area), **contain**, etc.
 
-`object-position`  
+`object-position`
 Can be used like the `background-position` property
 
-`overflow`  
+`overflow`
 Specify the behavior of overflowing content (e.g. can hide overflowing content)
 
-`-webkit-appearance: none`  
+`-webkit-appearance: none`
 Some elements (e.g. checkbox input) cannot be styled. Using this CSS property, the functionality of the element is kept but the look of the element can be created from scratch. The _webkit_ prefix is to use the chrome implementation of the `appearance` CSS property.
 
-`background-image`  
+`background-image`
 For gradient backgrounds, use `linear-gradient(direction, color1, color2)`. Example: `background-image: linear-gradient(to right, #fff, blue);`
 
-`border-top-right-radius`  
+`border-top-right-radius`
 You can specify `border-radius` on specific corners (top-left, top-right, bottom-left, bottom-right)
 
-`transform`  
+`transform`
 If you want to apply multiple transform effects (e.g. translate and rotate), the syntax is: `transform: translate() rotate()`
 
-`transform-origin`  
+`transform-origin`
 Use this to specify from which point a transform should happen (e.g. scale from the left, center, or right of the element)
 
-`transition`  
+`transition`
 If you want to apply transitions on multiple properties, the syntax is: `transition: property_name duration easing_function, property_name2 duration easing_function`
 
-`keyframes`  
+`keyframes`
 Use to make animations. **from** is like `0%` and **to** is like `100%`. You can add as many keyframes as you want (e.g. `from{} 50%{} 80%{} 90%{} to{}`). You can also add keyframes in media queries, just use the same name to override the existing keyframe.
 
-`grid-auto-rows`  
+`grid-auto-rows`
 Use this to specify the height of new grid rows (vs. `grid-template-rows` where you specify an explicit amount of rows and their size)
 
 ---
 
 ## Media queries
 
-Use the following meta tag (put it first in the `<head>` section) to have the appropriate scale on all devices:  
+Use the following meta tag (put it first in the `<head>` section) to have the appropriate scale on all devices:
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-Put all your media queries at the bottom so they override your mobile CSS rules. You can use these values:  
-Tablets: `768px`  
+Put all your media queries at the bottom so they override your mobile CSS rules. You can use these values:
+Tablets: `768px`
 Desktops: `1200px`
 
-We will be doing mobile first design using **min-width** rules for the media queries.
+Please work in a "mobile-first" mindset; default styles should be for mobile devices, and you can specify overrides using **min-width** rules for the media queries.
 
 ```css
+/* Mobile styles */
+
 @media (min-width: 768px) {
-  /* CSS Rules */
+  /* Tablet styles */
+}
+
+@media (min-width: 1200px) {
+  /* Desktop styles */
 }
 ```
 
 ## Notes
 
-If your CSS rules are getting too complicated (e.g. `.myclassname > .someotherclass > div > span`) you should create new classes.  
+If your CSS rules are getting too complicated (e.g. `.myclassname > .someotherclass > div > span`) you should create new classes.
 **ID**s are useful for specific sections of the web page (e.g. _features_ section) as well as specific elements which you know there will be only one of (**ID**s need to be unique)
 
 ## Screenshot
