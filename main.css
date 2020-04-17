@@ -67,14 +67,22 @@ hr {
 }
 
 @media (min-width: 1200px) {
+  main.main-section {
+    align-items: stretch;
+  }
   .main-wrapper {
     display: flex;
     padding-top: 0;
-    margin: 0 10%;
+    margin: 10%;
+    align-items: stretch;
   }
 
   .header-main {
     font-size: 3rem;
     padding: 40px;
+  }
+
+  .sub-section {
+    padding: 15px 10px;
   }
 }
