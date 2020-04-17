@@ -1,1 +1,136 @@
-/* CSS here :) */
+:root {
+  --main-bg: #3a3633;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--main-bg);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar > div {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.navbar > div > img {
+  height: 50px;
+  padding-left: 15px;
+}
+
+.nav-menu-desktop {
+  display: none !important;
+}
+
+.nav-item-desktop {
+  margin-left: 70px;
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-desktop:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.nav-menu-btn {
+  justify-content: flex-end;
+  display: flex;
+  align-items: stretch !important;
+}
+
+.nav-menu-btn > .btn-wrapper {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-btn > .btn-wrapper:hover + div.nav-menu-mobile {
+  display: flex !important;
+}
+
+.nav-menu-mobile {
+  display: none !important;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  background-color: var(--main-bg);
+  width: 100%;
+  color: white;
+}
+
+.nav-menu-mobile:hover {
+  display: flex !important;
+}
+
+.nav-item-mobile {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-item-mobile:hover {
+  background-color: grey;
+}
+
+.sub-menu {
+  background-color: var(--main-bg);
+  display: none;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.sub-item {
+  margin-right: 23px;
+  padding: 5px;
+  width: 100%;
+}
+
+.prod:hover > div.sub-menu {
+  display: flex !important;
+}
+
+.sub-item:hover {
+  background-color: gray;
+}
+
+/* Navbar styles end */
+
+/* Navbar Media Queries */
+
+@media (min-width: 768px) {
+  .nav-menu-desktop {
+    margin-right: 20px;
+    flex: 1;
+    justify-content: flex-end;
+    color: #fff;
+    display: flex !important;
+    align-items: stretch !important;
+  }
+
+  .nav-menu-btn {
+    display: none !important;
+  }
+}
+
+/* Navbar Media Quesries end */
