@@ -1,1 +1,55 @@
-/* CSS here :) */
+nav {
+  background-color: black;
+}
+
+.dropdown {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li:hover {
+  background-color: black;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav-products:hover > .dropdown {
+  top: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  background-color: grey;
+}
+
+.nav-products {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.bg {
+}
+
+.logo {
+  width: 30px;
+}
+
+.footermenu {
+  margin: auto;
+  text-align: left;
+}
