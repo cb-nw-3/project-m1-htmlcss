@@ -17,10 +17,15 @@ nav > img {
     margin: 0 10px;
 }
 
+
 #hamburgerTime {
     display: block;
     margin-bottom: 0;
     margin-right: 15px;
+}
+
+#centerblock {
+    display: flex;
 }
 
 /* Weird. These two ought to be groupable. But if I put them together, the whole thing stops working. Ma per che?! */
