@@ -8,16 +8,16 @@
 </head>
 
 <body>
-    <section class="section1">
+    <section class="section1" id="section1">
         <div class="navigation-bar">
             <div class="navigation-container">
                 <ul>
                     <li><a class="logo" href="#"><img src="imgs\logo.svg" width="50" height="50" viewBox="0 0 50 50"></img></a></li>
                 </ul>
                     <ul>
-                    <li><a id="Features" href="#">Features</a></li>
-                    <li><a id="Features" href="#">Advantages</a></li>
-                    <li><a id="Features" href="#">Gallery</a></li>
+                    <li><a id="Features" href="#section3">Features</a></li>
+                    <li><a id="Features" href="#section4">Advantages</a></li>
+                    <li><a id="Features" href="#section6">Gallery</a></li>
                     <li><span class="Products">Products
                         <div class="dropdown-menu">
                             <ul class="menu-list">
@@ -45,7 +45,7 @@
         </div>
     </section>
 
-    <section class="section3">
+    <section class="section3" id="section3">
         <div class="Feature1">
             <div><img id="icon1" src="imgs\icon1.svg" width="50" height="50" viewBox="0 0 50 50"></img></div>
             <div class="title3">Amazing feature 1</div>
@@ -66,7 +66,7 @@
         </div>
     </section>
     
-    <section class="section4">
+    <section class="section4" id="section4">
         <div class="cool4">Some cool text</div>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quae! Corporis, ut temporibus voluptates sed asperiores hic laudantium iure consectetur? Vero voluptatem eveniet tempore dolor placeat, minima odit officia pariatur.</div>
         <div class="animation">
@@ -80,32 +80,35 @@
         <div class="Slick">Slick gradient</div>
         <div class="lorem5">Lorem ipsum?</div>
     </section>
-    
-    
-    <section class="section6">
+    <section class="section6" id="section6">
         <ul class="row">
             <li class="col">
-                <img id="tesla" src="imgs\tesla.jpg">Our flagship car: The Model S
-                <img id="procat" src="imgs\procat.jpg">Cool cat
-                <img id="hyperloop" src="imgs\hyperloop.jpg">Introducing: The Hyperloop
+                <img id="tesla" src="imgs\tesla.jpg">
+                <div class="tesla-text">Our flagship car: The Model S</div>
+                <img id="procat" src="imgs\procat.jpg">
+                <div class="procat-text">Cool cat</div>
+                <img id="hyperloop" src="imgs\hyperloop.jpg">
+                <div class="hyperloop-text">Introducing: The Hyperloop</div>
             </li>
         </ul>
         <ul class="row">
             <li class="col">
-                <img id="sneakycat" src="imgs\sneakycat.jpg">So sneaky</img>
-                <img id="bfr" src="imgs\bfr.jpeg">BFR - Big Falcon Rocket</img>
-                <img id="funnycat" src="imgs\funnycat.jpg">So much fun</img>
+                <img id="sneakycat" src="imgs\sneakycat.jpg">
+                <div class="sneakycat-text">So sneaky</div>
+                <img id="bfr" src="imgs\bfr.jpeg">
+                <div class="bfr-text">BFR - Big Falcon Rocket</div>
+                <img id="funnycat" src="imgs\funnycat.jpg">
+                <div class="funnycat-text">So much fun</div>
             </li>
         </ul>
     </section>
 
     <section class="section7">
-        <form>
-            <label for="Register">Register to our mailing list:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="image" src="imgs\send.svg" alt="Submit">
-            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-            <label for="checkbox">Send me daily cat images</label>
+        <form class="container7">
+            <label class="Register">Register to our mailing list:</label>
+            <div><input type="email" id="email" name="email" required src="imgs\send.svg"></div>
+            <div><input class="sendsvg" type="image" src="imgs\send.svg" alt="Submit" width="20" height="20"></input></div>
+            <label class="checkbox7"><input type="checkbox" id="checkbox7" name="checkbox" value="checkbox">Send me daily cat images</input></label>
         </form>
     </section>
 

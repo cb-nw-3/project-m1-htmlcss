@@ -3,11 +3,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .section1 {
     background-color: #3a3633;
     position: fixed;
     top: 0%;
     width: 100%;
+    z-index: 9999;
 }
 
 .navigation-container {
@@ -233,24 +238,117 @@ a {
     padding-right: 10px;
 }
 
+.section6 {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+}    
+
 .row {
     display: flex;
-    
-    
+    margin: 0;
+    padding: 0;
+
+}
+
+.col img {
+    display: block;
+    width: 33.33%;
+    overflow: hidden;
 }
 
 .col {
     display: flex;
-    flex-direction: row;
-    max-width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.tesla-text {
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 9%;
+    
+}
+
+.procat-text {
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 49%;
+}
+
+.hyperloop-text {
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 75%;
+}
+
+.sneakycat-text {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 13%;
+    
+}
+
+.bfr-text {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 45%;
+}
+
+.funnycat-text {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 80%;
+}
+
+.col img:hover {
+    transform: scale(1.5);
+}
+
+.section7 {
+    margin-top: 30px;
+    position: relative;
+}
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Register {
+    padding-bottom: 10px;
 }
 
 
 
+.sendsvg {
+    background: grey;
+    padding: 1px;
+    position: absolute;
+    top: 28px;
+    left: 750px;
+}
+
+#checkbox7 {
+    display: block;
+    position: absolute;
+    top: 54px;
+    left: 550px;
+    background-color: white;
+    
+}
+
 
 @media (min-width: 768px) {
     #menu {
-        display: none;
+    display: none;
     }
 }
 
