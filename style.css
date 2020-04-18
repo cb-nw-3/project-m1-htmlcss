@@ -115,6 +115,11 @@ body {
   background-color: gray;
 }
 
+.anchor {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Navbar styles end */
 
 /* Navbar Media Queries */
