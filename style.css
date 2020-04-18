@@ -1,1 +1,401 @@
-/* CSS here :) */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: #3a3633;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > img {
+    display: block;
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+#hamburgerTime {
+    display: block;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+#centerblock {
+    display: flex;
+}
+
+/* Weird. These two ought to be groupable. But if I put them together, the whole thing stops working. Ma per che?! */
+
+#hamburgerTime:hover > .menuItems {
+    display: block;
+}
+
+.menuItems:hover > .menuItems {
+    display: block;
+}
+
+.menuItems {
+    display: none;
+    top: 50px;
+    left: 0px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    background: #3a3633;
+}
+
+.menuItems > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 35px;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menuItems > a:last-of-type {
+    display: none;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    background-image: url("imgs/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+#herobox {
+    top: 200px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+#herosubbox {
+    padding: 30px;
+    background: rgb(0,0,0,0.25);
+}
+
+.card {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card > img {
+    width: 50px;
+}
+
+.card > button {
+    width: 100%;
+    background: #3a3633;
+    color: white;
+    border: 1px solid #3a3633;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#subcontainer {
+    position: relative;
+}
+
+#subhero1 {
+    background: #3a3633;
+    padding: 20px;
+    color: white;
+    height: 200px
+}
+
+/* The correct solution is probably to use some form of absolute positioning. */
+
+#subhero2 {
+    background-image: linear-gradient(to left, #3486eb, #94bbeb, white);
+    padding: 0 20px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: white;
+    text-align: right;
+    height: 200px;
+}
+
+/* Technically, setting left and right to 10% works, but it feels so very wrong. */
+
+#spinner {
+    position: absolute;
+    top: 180px;
+    left: 10%;
+    right: 10%;
+    background: #3a3633;
+    border: 6px white solid;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#spinner:hover {
+    animation: spinit 3s linear;
+}
+
+@keyframes spinit {
+    0% {
+        transform: rotateZ(0);
+    }
+    30% {
+        transform: rotateZ(45deg);
+    }
+    50% {
+        transform: rotateZ(170deg);
+    }
+    70% {
+        transform: rotateZ(300deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#spinner > h4 {
+    color: red;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gallerycontainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallerycontainer > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+    transition: transform 0.2s;
+    
+}
+
+.gallerycaption {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color:white;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0,0.25);
+
+}
+
+.gallerycontainer:hover > .gallerycaption {
+    display: flex;
+}
+
+/* this makes the top overrun the box. why. */
+
+.gallerycontainer:hover > img {
+    transform: scale(1.1);
+}
+
+#mailinglist {
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    display: flex;
+}
+
+#submitbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#submitbutton > input[type=email] {
+    border: #3a3633 1px solid;
+    border-radius: 2px;
+}
+
+#submitbutton > button {
+    padding: 0;
+    border: 0;
+    width: 30px;
+    height: 20px;
+    background: #3a3633;
+}
+
+#submitbutton > button > img {
+    padding: 0;
+    margin: 0;
+    width: 15px;
+}
+
+#footnav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.footlinks > ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footlinks > ul > li {
+    list-style-type: none;
+}
+
+.footlinks > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #3a3633;
+    padding: 10px 70px;
+    width: 40%;
+    font-size: 0.8em;
+}
+
+@media (min-width: 800px) {
+    
+    #centerblock {
+        display: none;
+    }
+
+    #hamburgerTime {
+        display: flex;
+    }
+
+    .menuItems {
+        position: relative;
+        display: inline;
+        top: 0;
+        left: 0;
+    }
+
+    .menuItems > a {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .menuItems > a:last-of-type {
+        display: inline;
+    }
+
+    #hero {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    #herobox {
+        display: flex;
+        width: 80%;
+        border: 6px white solid;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        border-bottom: 1px white dotted;
+    }
+
+    #herosubbox > p {
+        max-height: 100px;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    #spinner {
+        right: 0;
+        left: 50px;
+        width: 300px;
+        padding: 0 5px;
+    }
+
+    #spinner:hover {
+        animation: steptotheright 3s linear;
+    }
+
+    #spinner > h4, p {
+        margin: 10px;
+    }
+
+    @keyframes steptotheright {
+        0% {
+            transform: translate(0,0) rotateZ(0);
+        }
+        70% {
+            transform: translate(300px,0) rotateZ(180deg);
+        }
+        80% {
+            transform: scale(0.5) translate(300px,0) rotateZ(180deg);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1) translate(300px,0) rotateZ(180deg);
+            opacity: 0;
+        }
+    }
+
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gallerycontainer {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
+
+
+
+@media (max-width: 799px) {
+    #centerblock {
+        display: flex;
+        }
+}
