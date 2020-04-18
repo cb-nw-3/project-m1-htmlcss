@@ -155,6 +155,7 @@ a {
     height: 40px;
     margin-top: 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .section4 {
@@ -240,27 +241,21 @@ a {
 
 .section6 {
     position: relative;
-    text-align: center;
-    max-width: 100%;
 }    
 
 .row {
     display: flex;
     margin: 0;
     padding: 0;
-
 }
 
-.col img {
-    display: block;
-    width: 33.33%;
-    overflow: hidden;
+.row .col div img {
+    width: 100%;
 }
 
-.col {
+.col div {
     display: flex;
-    flex: 1;
-    overflow: hidden;
+    flex: 1;  
 }
 
 .tesla-text {
@@ -307,13 +302,10 @@ a {
     left: 80%;
 }
 
-.col img:hover {
-    transform: scale(1.5);
-}
-
 .section7 {
     margin-top: 30px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .container7 {
@@ -322,23 +314,41 @@ a {
     align-items: center;
 }
 
-
+.email7 {
+    width: 210px;
+    border-radius: 4px;
+    height: 20px;
+    margin: 10px;
+}
 
 .sendsvg {
     background: grey;
-    padding: 1px;
+    padding: 3px;
     position: absolute;
-    top: 28px;
-    left: 750px;
+    top: 35px;
+    left: 780px;
 }
 
 #checkbox7 {
-    display: block;
     position: absolute;
-    top: 54px;
-    left: 550px;
-    background-color: white;
-    
+    top: 81px;
+    left: 565px;
+}
+
+.checkbox7 {
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.section8 {
+    border-top: 1px solid lightgrey;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col8 div {
+    padding: 5px;
 }
 
 
