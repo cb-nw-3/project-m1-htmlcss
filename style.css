@@ -1,1 +1,438 @@
-/* CSS here :) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    background: mistyrose;
+} */
+
+
+.main {
+    margin-top: 65px;
+    min-height: 150vh;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid goldenrod; */
+    min-height: 115vh;
+    background-image: url('imgs/bg.jpg'); /* you need to specify the path to the file */
+    background-size: cover; /* Use this to have the image cover the full space */
+    background-position: center; /* Use this to center the background image */
+}
+
+.hero-card {
+    margin: 20px 50px;
+    display: flex;
+    /* flex-direction: column; */
+    border: 10px solid white;
+    max-width: 100%;
+    min-height: 30%;
+    /* padding: 20px 20px; */
+}
+
+.hero-card-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 20px;
+    /* padding: 10px; */
+    font-size: 3rem;
+    flex: 1
+}
+
+.hero-card-description-title {
+    background-color: rgba(0,0,0,0.2);
+    flex: 2;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-card-description-title > h1 {
+    min-width: 80%;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+.hero-card-description {
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    padding: 40px 20px;
+    border-top: 1px dashed #fff;
+}
+
+.hero-card-description > p{
+    margin: 10px;
+}
+
+
+/* ************************************************************************************* */
+/* ******************************** CARDS ********************************************** */
+/* ************************************************************************************* */
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 50vh;
+    /* border: 10px solid goldenrod; */
+    padding: 50px 100px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* min-height: 30vh; */
+    margin: 30px 30px;
+    padding: 30px 30px;
+    text-align: center;
+    /* border: 5px dashed goldenrod; */
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    
+}
+
+/* align the text and button elementsl */
+.cards > p, .card-button {
+    flex: 1 1 100%;
+}
+
+.cards > p {
+    color: gray;
+}
+
+.card-icon {
+    min-width: 50px;
+}
+
+.card-button {
+    /* padding: auto; */
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-decoration: none;
+    flex: 1;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 5px 5px;
+    text-align: center;
+    background-color: #3a3633;
+    border: 1px solid #3a3633;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.card-button:hover {
+    background-color: #1b1a1a;
+}
+
+/* ************************************************************************************* */
+/* ****************************** COOL TEXT ******************************************** */
+/* ************************************************************************************* */
+
+.cool-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    min-height: 50vh;
+    background-color: #3a3633;
+    margin: 0;
+    padding: 50px 15vw 30px 40px;
+}
+
+.cool-container > h1 {
+    font-size: 4rem;
+    color: #fff;
+    /* padding: 0 10px; */
+}
+
+.cool-container > p {
+    font-size: 2rem;
+    color: #fff;
+    /* padding: 0 10px; */
+}
+
+/* ************************************************************************************* */
+/* *************************** SLICK GRADIENT ****************************************** */
+/* ************************************************************************************* */
+
+.slick-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-end;
+    min-height: 50vh;
+    padding: 5vw;
+    background-image: linear-gradient(to right, white, dodgerblue)
+}
+
+.slick-container > h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.slick-container > p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* ************************************************************************************* */
+/* **************************** ROTATING BOX ******************************************* */
+/* ************************************************************************************* */
+
+.rotate-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    max-width: 35vh;
+    border: 10px solid white;
+    background-color: #3a3633;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 50;
+    flex: 1;
+    transform: translateY(13vh);
+    padding: 20px;
+    transition: all 2s ease-in-out;
+}
+
+.rotate-box > * {
+    flex-basis: auto;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.rotate-box > h2 {
+    color: crimson;
+}
+
+.rotate-box > p {
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* added translate and rotate on hover */
+
+/* .rotate-box:hover{
+    background-color: mistyrose;
+} */
+
+.rotate-box:hover{
+    /* transform-origin: 13vh 13vh; */
+    /* remember to adjust for original translateY */
+    transform: translate(30vw,13vh) rotate(180deg) scale(1.2);
+}
+
+/* ************************************************************************************* */
+/* ******************************** GALLERY ******************************************** */
+/* ************************************************************************************* */
+
+
+/* Grid Method */
+.gallery-pic {
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    grid-template-rows: repeat(2, 50vh);
+    /* grid-gap: 15px; */
+    /* border: 5px solid red; */
+    transition: all 2s ease;
+}
+
+.img-wrapper {
+    position: relative;
+    /* this is important, so that images do go out of their dimensions */
+    overflow: hidden;
+    /* transition: all 1.3s ease-in-out; */
+}
+
+.gallery-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: 2px dashed red; */
+    transition: all 1s ease;
+}
+
+
+.overlay-text {
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    /* text-shadow: 1px 1px gray; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+    /* z-index: -100; */
+}
+
+/* image zooms in and darkens */
+.img-wrapper:hover img{
+    filter: brightness(70%);
+    transform: scale(1.2);
+}
+/* text appears */
+.img-wrapper:hover .overlay-text {
+    opacity: 1;
+}
+
+/* ************************************************************************************* */
+/* ***************************** FOOTER EMAIL ****************************************** */
+/* ************************************************************************************* */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+.email-container {
+    display: block;
+    padding: 30px;
+    margin: 30px 0;
+    /* min-height: 10vh;
+    min-width: 40vh; */
+    /* border: 5px solid salmon; */
+}
+
+.email-container > * {
+    margin: 5px auto;
+    color: gray;
+}
+
+.email-header {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.email-input-container {
+    display: flex;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+}
+
+.email-field {
+    font-size: 1.3rem;
+    margin:0 ;
+    min-height: 20px;
+    width: 270px;
+    border: none;
+    /* border: 2px solid lightgray; */
+    /* border-radius: 5px; */
+}
+
+.email-btn{
+    min-height: 25px;
+    width: 70px;
+    margin: 0;
+    background: gray;;
+    border: none;
+    border-radius: 0 2px;
+    font-size: 2rem;
+} 
+
+.email-btn > img {
+    margin-top: 6px;
+}
+
+.email-btn:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+/* To be done later.. */
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-appearance: none;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    margin-top: 3px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: lightgray;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: gray;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    display: block;
+    background-image: url(imgs/checkbox.svg);
+}
+
+/* ************************************************************************************* */
+/* ***************************** FOOTER LINKS ****************************************** */
+/* ************************************************************************************* */
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    min-height: 20vh;
+    padding: 40px 0;
+    margin-top: 20px;
+    /* min-height: 50vh;
+    min-width: 100vw; */
+    /* border: 10px solid salmon; */
+    border-top: 1px solid #ddd;
+}
+
+.links-container > ul {
+    list-style-type: none;
+}
+
+.links-container li {
+    padding: 10px;
+    
+}
+
+.links-container a {
+    text-decoration: none;
+    color: gray;
+}
+
+.links-container a:hover {
+    color: #333333;
+}
+

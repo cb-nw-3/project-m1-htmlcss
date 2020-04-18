@@ -4,11 +4,177 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet"/>
+    <link href="media.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <!-- write some HTML! -->
+    <!-- Nav Bar -->
+    <nav class="nav-container">
+        <div class="nav-list-logo justify-start">
+            <a class="nav-logo" href="#home">
+                <img class="logo" src="imgs/logo.svg" alt="Product Logo"> 
+            </a>
+        </div>
+        <div class="nav-list justify-end">
+            <ul class="nav-item">
+                <li><a class="nav-link" href="#features" >Features</a></li>
+                <li><a class="nav-link" href="#advantages" >Advantages</a></li>
+                <li><a class="nav-link" href="#gallery" >Gallery</a></li>
+                <li class="dropdown">
+                    <a class="nav-link" href="#Products" >Products</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="https://www.spacex.com/falcon9" target="_blank">Falcon 9</a></li>
+                            <li><a href="https://www.tesla.com/en_ca/models" target="_blank">Model S</a></li>
+                            <li><a href="https://www.apple.com/ca/iphone/" target="_blank">iPhone</a></li>
+                            <li><a href="https://www.apple.com/ca/imac/" target="_blank">iMac</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- Mobile Nav -->
+            <div class="nav-menu">
+                <div class="nav-menu-dropdown">
+                    <img class="nav-menu-burger" src="imgs/menu.svg" alt="Product Logo">
+                    <ul class="nav-menu-dropdown-content">
+                        <li><a class="nav-link" href="#features" >Features</a></li>
+                        <li><a class="nav-link" href="#advantages" >Advantages</a></li>
+                        <li><a class="nav-link" href="#gallery" >Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-mobile">
+        <ul class="nav-mobile-item">
+            <li><a href="#Features" >Features</a></li>
+            <li><a href="#Advantages" >Advantages</a></li>
+            <li><a href="#Gallery" >Gallery</a></li>
+            <li><a href="#Products" >Products</a></li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Hero Image -->
+        <div id="home" class="hero-container">
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <h1>Introducting Falcon 9</h1>
+                </div>
+                <div class="hero-card-description-title">
+                    <h1>We make dreams come true</h1>
+                    <div class="hero-card-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla odio, finibus at magna bibendum, lobortis rhoncus odio. Integer a lobortis augue, convallis ornare quam. Proin finibus libero sit amet odio ornare imperdiet.</p>
+                        <p>In at orci at urna bibendum posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce vulputate, nisi ac fermentum ullamcorper, nulla lectus pretium ante, dignissim lacinia dui tortor vel lectus. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 Cards -->
+        <div id="features" class="cards-container">
+            <div class="cards card1">
+                <img class="card-icon" src="imgs/icon1.svg"/>
+                <h2>Amazing Feature 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus ipsum, semper vitae dui at, elementum porta turpis. Nulla lectus enim, egestas quis ligula et, elementum sagittis mi.</p>
+                <a class="card-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Get it</a>
+            </div>
+            <div class="cards card1">
+                <img class="card-icon" src="imgs/icon2.svg"/>
+                <h2>Amazing Feature 2</h2>
+                <p>Vivamus nec euismod nisl. Ut nisi nunc, pulvinar nec orci vel, pellentesque condimentum velit.</p>
+                <a class="card-button" href="https://youtu.be/djV11Xbc914?t=20" target="_blank">Sell it</a>
+            </div>
+            <div class="cards card1">
+                <img class="card-icon" src="imgs/icon3.svg"/>
+                <h2>Amazing Feature 3</h2>
+                <p>Suspendisse ultrices, tellus eu pellentesque fringilla, erat sem egestas orci, lobortis tincidunt tellus eros vitae nulla. </p>
+                <a class="card-button" href="https://youtu.be/HgzGwKwLmgM?t=30" target="_blank">Do it</a>
+            </div>
+        </div>
+        <!-- Cool Text -->
+        <div id="advantages" class="cool-container">
+            <h1>Some Cool Text</h1>
+            <p class="cool-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="rotate-box">
+                <h2>This looks cool</h2>
+                <p>Hover me if you like random animations</p>
+            </div>
+        </div>
+        <!-- Slick Gradient -->
+        <div class="slick-container">
+            <h1>Slick Gradient</h1>
+            <p>Lorem ipsum?</p>
+        </div>
+        <div id="gallery" class="gallery-container">
+            <div class="gallery-pic">
+                <div class="img-wrapper"> 
+                    <img src="imgs/tesla.jpg" alt="Tesla Model S">
+                    <div class="overlay-text">Drive the future.</div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="imgs/procat.jpg" alt="Procat">
+                    <div class="overlay-text">Why so grumpy?</div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="imgs/hyperloop.jpg" alt="Futuristic Train">
+                    <div class="overlay-text">Anywhere. Anytime.</div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="imgs/sneakycat.jpg" alt="Sneaky Cat">
+                    <div class="overlay-text">So Sneaky...</div>                    
+                </div>
+                <div class="img-wrapper">
+                    <img src="imgs/bfr.jpeg" alt="Rocket">
+                    <div class="overlay-text">Space is the new limit.</div>                    
+                </div>
+                <div class="img-wrapper">
+                    <img src="imgs/funnycat.jpg" alt="OMG Cat">
+                    <div class="overlay-text">Unlimited surprises.</div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <footer class="footer-container">
+            <form class="email-container">
+                <label class="email-header"> Register to our mailing list:</label>
+                <div class="email-input-container">
+                    <input type="email" required class="email-field">
+                    <button class="email-btn"><img src="imgs/send.svg"></button>
+                </div>
+                <label class="checkbox-label">
+                    Send me daily cat images
+                    <input type="checkbox" />
+                    <span class="checkmark"></span> 
+                </label>
+            </form>
+            <div class="links-container">
+                <ul>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#LegalNotes">Legal Notes</a></li>
+                    <li><a href="#Copyright">Copyright</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#LegalNotes">Legal Notes</a></li>
+                    <li><a href="#Copyright">Copyright</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#LegalNotes">Legal Notes</a></li>
+                    <li><a href="#Copyright">Copyright</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#LegalNotes">Legal Notes</a></li>
+                    <li><a href="#Copyright">Copyright</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
-
 </html>
