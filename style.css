@@ -1,5 +1,21 @@
+body {
+  margin: 0;
+  background-image: url("imgs/bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
 nav {
   background-color: black;
+  opacity: 80%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-products {
+  text-align: right;
 }
 
 .dropdown {
@@ -39,17 +55,117 @@ ul > li {
 a {
   color: white;
   text-decoration: none;
-  margin: 30px;
-}
-
-.bg {
+  margin: 10px;
 }
 
 .logo {
   width: 30px;
 }
 
+.introduction {
+  margin: 10%;
+  border: white;
+  color: white;
+  border-style: solid;
+  border-width: medium;
+  font-family: "poppins";
+}
+
+.introtext {
+  background-color: black;
+  opacity: 50%;
+  margin-left: 50%;
+  margin: 0;
+}
+
+h2 {
+  border-bottom: white;
+}
+
+.Amazingfeature {
+  display: flex;
+  margin: 10%;
+  font-family: "poppins";
+}
+
+.feature {
+  box-shadow: 1px 1px 1px 1px black;
+  width: 20%;
+  padding: 5%;
+  margin: 15px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  opacity: 80%;
+  font-family: "poppins";
+  width: 100%;
+
+  padding: 10px 10px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.cooltext {
+  color: white;
+  background-color: black;
+  padding-left: 5%;
+  padding-right: 40%;
+  opacity: 80%;
+  font-family: "poppins";
+}
+
+.slickgradient {
+  text-align: right;
+  background-color: lightskyblue;
+  color: white;
+  padding-right: 5%;
+  font-family: "poppins";
+}
+
+.img {
+  width: 20%;
+  height: auto;
+}
+
+.siximg {
+  display: flex;
+  text-align: center;
+}
+
+.column1 .column2 {
+  display: block;
+  flex: 1;
+}
+
+.email {
+  display: block;
+  width: 20%;
+  height: 20px;
+  margin: auto;
+  border-radius: 0.2rem;
+}
+
+.send {
+  background-color: grey;
+  padding: 2px;
+}
+
+.register {
+  border-bottom: black;
+  text-align: center;
+  font-family: "poppins";
+}
+
 .footermenu {
   margin: auto;
   text-align: left;
+  font-family: "poppins";
 }
