@@ -1,1 +1,573 @@
-/* CSS here :) */
+:root{
+    --bg-color:#3a3633;
+    font-size:15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+}
+/* Nav bar and menus .........................*/
+header{
+    position: sticky;
+    top:0;
+    z-index:15;
+    background-color: var(--bg-color);
+    display:flex;
+    padding:0px 10px;
+    justify-content:space-between;
+    align-items:center;
+    height:40px;
+}
+
+.computer-nav-display{
+    display:none;
+}
+
+.computer-nav > li > a{
+    display:inline-block;
+    margin-right:25px;
+    border-bottom:2px var(--bg-color) solid;
+    transition:0.3s;
+    text-decoration:none;
+    color:white;
+}
+
+.computer-nav > li > a:hover{
+    border-bottom:2px white solid;
+}
+
+.computer-nav > li:nth-child(3) > a{
+    margin-right:0px;
+}
+.logo{
+    width:25px;
+    height:25px;
+    margin-top:10px;
+}
+.nav-dropdown-mobile:hover > .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:35px;
+    right:0px;
+    left:0;
+    padding:0;
+    margin:0;
+    text-align:center;   
+    display:none;
+    background-color: var(--bg-color);
+}
+.menu-list{
+    color:white;
+    list-style-type:none;
+    background-color: var(--bg-color);
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+.menu-list > li{
+    list-style-type:none;
+    display:block;
+    width:100%;
+    padding:10px 0;
+}
+
+.menu-list > li > a {
+    text-decoration:none;
+    color:white;
+}
+
+.menu-list > li:hover{
+    background-color:grey;
+}
+
+.computer-nav-dropdown{
+    position:relative;
+    color:white;
+    display:inline-block;
+    padding:0 25px;    
+}
+
+.computer-drop-menu{
+    position:absolute;
+    right:0;
+    left:0;
+    top:100%;
+    display:none;
+    background-color: var(--bg-color);
+    margin:0;
+    padding:0;
+}
+
+.computer-menu-list{
+    margin:0px;
+    padding:0px;
+    text-align: left;
+}
+
+.computer-menu-list > li{
+    list-style-type:none;
+    padding:15px 25px;
+    color:white;
+    transition:0.3s;
+
+}
+
+.computer-menu-list > li > a{
+    text-decoration:none;
+    color:white;
+}
+
+.computer-nav-dropdown:hover > .computer-drop-menu{
+    display:block;
+}
+
+.computer-menu-list > li:hover{
+    background-color:grey;
+}
+/* Main content with the Rocket..................... */
+.main{
+    background-image: url(imgs/bg.jpg);
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.title{
+    padding-left:15px;
+}
+
+.title > h1{
+    font-size:2rem;
+    font-weight:normal;
+    margin-bottom:30px
+}
+
+.subtitle{
+    background-color:rgba(58, 54, 51, 0.6);
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:20px;
+}
+
+.subtitle > h2{
+    font-size: 2rem;
+    font-weight:normal;
+}
+
+/* Part with the boxes..................... */
+.wrapper{
+    display:flex;
+    justify-content:center;
+}
+
+.box-Section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:15px 0px;
+    max-width:1140px;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow:0px 2px 2px 2px lightgray ;
+    border-radius:14px;
+    padding:30px 20px;
+    margin:20px 10px;
+    max-width:350px;
+    box-sizing: border-box;
+}
+
+.box > img{
+    width:40px;
+}
+
+.box > p{
+    text-align:center;
+    height:140px;
+}
+
+.box > button{
+    width:100%;
+    border:none;
+    background-color: var(--bg-color);
+    border-radius:4px;
+    color: White;
+    font-size:1rem;
+    padding:15px;
+}
+
+.box > button:hover{
+    cursor: pointer;
+}
+
+/* Cool text section...............................*/
+.cool-section{
+    background-color: var(--bg-color);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:40px;
+    padding-bottom: 125px;
+    position:relative;
+}
+
+.spin-box{
+    position:absolute;
+    border:4px white solid;
+    background-color: var(--bg-color);
+    text-align: center;
+    padding:10px;
+    width:250px;
+    top:80%;
+    left:50%;
+    margin-left:-125px;
+}
+.spin-box > h3 {
+    color:red;
+}
+
+.spin-box:hover{
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Gradiant section............................ */
+.gradiant-container{
+    padding-top:100px;
+    padding-right:35px;
+    padding-bottom:100px;
+    text-align:right;
+    color:white;
+    background-image: linear-gradient(to right, #fff, rgb(90, 90, 248));
+}
+
+/* Cat grid section.................................. */
+
+.grid-parent{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:300px;
+}
+
+.grid-child{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+    color:white;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+.opacity{
+    width:100%;
+    height:100%;
+    background-color:var(--bg-color);
+    position:absolute;
+    opacity:0;
+    transition:0.7s;
+    z-index:0;
+
+
+}
+.grid-child > img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    display:block;
+    z-index:-1;
+    object-fit:cover;
+    transition:0.7s;
+}
+
+.grid-child > p{
+    visibility:hidden;
+    opacity:0;
+    z-index:1;
+    transition: 0.7s
+}
+
+.grid-child:hover > img {
+    transform: scale(1.2)
+}
+
+.grid-child:hover > .opacity{
+    opacity:45%;
+}
+.grid-child:hover > p{
+    visibility:visible;
+    opacity:100%;
+}
+
+/* Checkbox email section........................ */
+.checkbox-section{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align:center;
+}
+.label-container{
+    width:236px;
+    margin:15px auto;
+    text-align:left;
+}
+
+.email{
+    display:flex;
+    justify-content:center;
+}
+
+.email > input{
+    border:1px solid #857d7a;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    width:200px;
+    box-sizing: border-box;
+    padding:3px;
+}
+
+.email > button{
+    border:none;
+    background-color:#857d7a;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    transition:0.3s;
+    cursor: pointer;
+    outline:none;
+}
+
+
+input:focus ~ button{
+    background-color: var(--bg-color);
+}
+
+input:focus{
+    border:1px solid var(--bg-color);
+    outline:none;
+}
+
+/* .checkbox-label{
+    -webkit-user-select: none;
+}
+.checkbox{
+    -webkit-appearance: none;
+    height:15px;
+    width:15px;
+    background-color:white;
+    border:1px #857d7a solid;
+    border-radius:4px;
+}
+
+input:checked ~ .checkbox {
+    background-color: #2196F3;
+} */
+
+.footer-parent{
+    background-color: #f5f3f1;
+    border-top:1px solid rgb(231, 225, 215);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-child{
+    display:flex;
+    justify-content: center;
+}
+
+.footer-child > ul{
+    list-style-type:none;
+}
+
+.footer-child > ul > li > a{
+    text-decoration:none;
+    color: black;
+    line-height:30px;
+}
+
+@media (min-width:768px){
+    .nav-mobile{
+        display:none;
+    }
+
+    .computer-nav-display{
+        display:flex;
+        align-items:baseline;
+    }
+
+    .computer-nav{
+        display:block;
+        list-style-type:none;
+        color:white;
+        display:flex;
+    }
+
+   /* Main rocket section............... */
+    .tablet-border{
+        border:4px white solid;
+    }
+    
+    .main{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .title > h1{
+        font-size:2.5rem;
+        font-weight:normal;
+    }
+
+    .subtitle > h2{
+        font-size: 2.5rem;
+        font-weight:normal;
+    }
+
+    .discription{
+        display:flex;
+        border-top:1px white dotted;
+    }
+
+    .discription > p:nth-child(1){
+        margin-right:10px;
+    }
+
+    /* Section with box............................... */
+    .box-Section{
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items:stretch;
+        justify-content: center;
+        max-width:765px;
+    }
+    /* questions:
+    The box change from 2 rows to 1 row
+    happens before 1200px ?? */
+
+    .box{
+        justify-content: space-between;
+    }
+
+    /* Cool text section...............................*/
+    .cool-section > h2{
+        font-size:2rem;
+    }
+    .spin-box{
+        left:0%;
+        margin-left:15px;
+    }
+    .spin-box:hover{
+        animation:none;
+    }
+    .spin-box:hover{
+        animation:translation 2s ease-in-out
+    }
+
+    @keyframes translation {
+        from{
+            transform: translateX(0px) rotate(0deg);
+            opacity:100%
+        }
+        60%{
+            transform: translateX(250px) rotate(180deg) scale(1);
+            opacity:100%
+        }
+        90%{
+            transform:  translateX(250px) rotate(180deg) scale(0.001);
+            opacity:0%;
+        }
+        100%{
+            transform: translateX(0px) rotate(0deg) scale(1);
+            opacity:100%;
+        }
+    } 
+
+    /* gradiant section .................. */
+    .gradiant-container > h2{
+        font-size:2rem;
+    }
+/* 
+    Cat grid section.......................... */
+
+    .grid-parent{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* footer section..................... */
+    .footer-parent{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    }
+
+
+@media (min-width:1200px){
+    /* Main rocket part */
+    .main{
+        padding-left:120px;
+        padding-right:120px;
+    }
+    .tablet-border{
+        display:flex;
+        
+    }
+    .title{
+        flex:2;
+        padding-right:15px;
+    }
+    .subtitle{
+        margin-top:0px;
+        flex:3;
+    }
+
+    .title > h1{
+        font-size:5rem;
+        font-weight:normal;
+    }
+
+    /* Section with box.........................*/
+    .wrapper > .box-Section{
+        flex-wrap: nowrap;
+        max-width:100%;
+        
+    }
+/* 
+    Cool section.......................... */
+    .cool-section > h2{
+        font-size:3rem;
+    }
+/* 
+    Gradiant section........................ */
+    .gradiant-container > h2{
+        font-size:3rem;
+    }
+
+    /* cat grid section.......................  */
+    .grid-parent{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
