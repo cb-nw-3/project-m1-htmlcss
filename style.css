@@ -436,7 +436,6 @@ body {
   .frame {
     width: 50vw;
     height: 33vh;
-    overflow: hidden;
   }
   .cool_anim {
     display: inline-block;
@@ -462,7 +461,7 @@ body {
       opacity: 1;
     }
 
-    75% {
+    70% {
       transform: translate(100%) rotate(180deg) scale(0.8);
       opacity: 1;
     }
@@ -516,7 +515,7 @@ body {
       transform: translate(35vw) rotate(180deg) scale(0.8);
       opacity: 1;
     }
-    75% {
+    70% {
       transform: translate(35vw) rotate(180deg) scale(0.8);
       opacity: 1;
     }
@@ -532,6 +531,5 @@ body {
   .frame {
     width: 33.33vw;
     height: 33vh;
-    overflow: hidden;
   }
 }
