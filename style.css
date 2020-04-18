@@ -259,7 +259,7 @@ body {
   display: block;
   position: relative;
   text-align: center;
-  top: -160px;
+  top: -20vh;
   color: white;
   font-size: 1.3rem;
   z-index: 1;
