@@ -79,10 +79,12 @@ h3
 
 }
 
-.links-col:last-child
+.links-col > .Products-drop-down
 {
     margin-right: 25px;
 }
+
+
 
 
 
@@ -108,6 +110,55 @@ h3
     visibility: visible;
     width: 100%;
   }
+
+
+  .links-col > a:hover
+{
+    transition: all 0.2s;
+    color: gray;
+}
+
+.revealed_menu
+{
+display: none;
+position: absolute;
+top: 100%;
+right: 0;
+background-color: #03a9f4;
+
+}
+
+
+
+.links-col:hover .revealed_menu
+{
+    display: block;
+}
+
+
+
+  .individual_list
+{
+    padding-inline-start: 0px;
+    margin-block-start: unset;
+    margin-block-end: unset;
+
+}
+
+.individual_list > li
+{
+
+    color: white;
+    padding: 15px;
+    list-style-type: none;
+
+
+}
+
+.individual_list > li:hover
+{
+    background-color: blue;
+}
   
 
 /* .links-col > a:hover
@@ -201,6 +252,8 @@ padding-bottom: .25em;
     display: flex;
     margin: 50px;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
+
 
 }
 
@@ -214,12 +267,10 @@ padding-bottom: .25em;
     flex: 1;
     text-align: center;
     padding: 20px;
+    /* code review question - should I have made this display box instead? */
+    height: 200px;
     max-width: 250px;
-
-}
-
-.card> img
-{
+    min-width: 250px;
 }
 
 .card> p
@@ -245,14 +296,75 @@ padding-bottom: .25em;
     
 }
 
-.middle-text-box
+
+
+/* @media all and (min-width: 750px) 
+{
+
+.card
+{
+     background-color: red; 
+
+}    
+} 
+*/
+
+@media all and (max-width: 950px) and (min-width: 730px)
+{
+
+.cards-row
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.card
+{
+    margin-right: 0px;
+
+    margin: 10px;
+    max-width: 250px;
+    min-width: 250px;
+    /* background-color: red; */
+
+}
+
+
+}
+
+
+@media all and (max-width: 729px)
+{
+
+    .cards-row
+    {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+    }
+    
+    .card
+    {
+        margin-top: 20px;
+        /* background-color: blue; */
+    }
+        
+}
+
+
+
+
+
+#middle-text-box
 {
     display: block;
     background-color:  #3a3633;
     padding: 30px 30px 100px 30px;
     z-index: 0;
-    
-
 }
 
 .middle-text
@@ -445,7 +557,7 @@ opacity: 1;
     color: rgb(107, 107, 107);
 }
 
-.Register-flex:
+.Register-flex
 {
     padding-top:20px;
 }
