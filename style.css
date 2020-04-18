@@ -6,12 +6,13 @@ body {
   object-fit: cover;
 }
 
-nav {
+.desktop-nav {
   background-color: black;
   opacity: 80%;
   text-align: center;
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .nav-products {
@@ -22,18 +23,18 @@ nav {
   display: none;
 }
 
-ul {
+.dropdown-list {
   margin: 0;
   padding: 0;
 }
 
-ul > li:hover {
+.dropdown-list > li:hover {
   background-color: black;
 }
 
-ul > li {
+.dropdown-list > li {
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 .nav-products:hover > .dropdown {
@@ -52,10 +53,41 @@ ul > li {
   padding: 10px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.mobile-nav-button img {
+  width: 18px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+@media (min-width: 800px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.mobile-nav-button {
+  color: white;
+  background-color: black;
+}
+
 a {
   color: white;
   text-decoration: none;
-  margin: 10px;
 }
 
 .logo {
@@ -69,6 +101,11 @@ a {
   border-style: solid;
   border-width: medium;
   font-family: "poppins";
+  display: flex;
+}
+
+.introduction h1 {
+  flex: 2;
 }
 
 .introtext {
@@ -76,6 +113,13 @@ a {
   opacity: 50%;
   margin-left: 50%;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 3;
+}
+
+.introcolumn {
+  display: flex;
 }
 
 h2 {
@@ -93,10 +137,10 @@ h2 {
   width: 20%;
   padding: 5%;
   margin: 15px;
-  text-align: center;
   border-radius: 3px;
   margin-top: 20%;
   margin-bottom: 20%;
+  text-align: center;
 }
 
 .button {
@@ -105,7 +149,6 @@ h2 {
   opacity: 80%;
   font-family: "poppins";
   width: 100%;
-
   padding: 10px 10px;
 }
 
@@ -130,19 +173,19 @@ h2 {
   font-family: "poppins";
 }
 
-.img {
-  width: 20%;
-  height: auto;
-}
-
-.siximg {
+.columnimg {
   display: flex;
-  text-align: center;
 }
 
-.column1 .column2 {
-  display: block;
+.columnimg a {
   flex: 1;
+}
+
+.columnimg img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
 }
 
 .email {
@@ -164,8 +207,11 @@ h2 {
   font-family: "poppins";
 }
 
-.footermenu {
-  margin: auto;
+.list {
   text-align: left;
   font-family: "poppins";
+}
+
+footer {
+  display: flex;
 }

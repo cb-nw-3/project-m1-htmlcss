@@ -10,34 +10,47 @@
   </head>
 
   <body>
-    <nav>
-      <a href="#"><img src="imgs/logo.svg" class="logo" /></a>
-      <a href="#">Features</a>
-      <a href="#">Advantages</a>
-      <a href="#">Gallery</a>
+    <header class="desktop-nav">
+      
+        <a href="#"><img src="imgs/logo.svg" class="logo" /></a>
+        <div class="nav-container">
+        <a href="#">Features</a>
+        <a href="#">Advantages</a>
+        <a href="#">Gallery</a>
 
-      <div>
-        <span class="nav-products">
-          <a href="#">Products</a>
-          <div class="dropdown">
-            <ul>
-              <li>Falcon 9</li>
-              <li>Model S</li>
-              <li>iPhone</li>
-            </ul>
-          </div>
-        </span>
-      </div>
-    </nav>
+        <div>
+          <nav class="nav-products">
+            <a href="#">Products</a>
+            <div class="dropdown">
+              <ul class="dropdown-list">
+                <li>Falcon 9</li>
+                <li>Model S</li>
+                <li>iPhone</li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="mobile-nav"></nav>
+          <button class="mobile-nav-button" aria-label="Show menu">
+            <img src="imgs/menu.svg" />
+      
+          </button>
+        </div>
+          </nav>
+        </div>
+    
+    </header>
 
     <div class="introduction">
-      <span>
+    
         <h1>Introducing Falcon 9</h1>
-      </span>
+      
 
-      <span>
+  
         <div class="introtext">
           <h2>We make dreams come true</h2>
+
+          <div class="introcolumn">
           <p>
             Temporibus autem quibusdam et aut officiis debitis aut rerum
             necessitatibus saepe eveniet ut et voluptates repudiandae sint et
@@ -49,7 +62,8 @@
             molestiae non recusandae.
           </p>
         </div>
-      </span>
+        </div>
+    
     </div>
 
     <div class="Amazingfeature">
@@ -106,13 +120,13 @@
     </div>
 
     <div class="siximg">
-      <div class="column1">
+      <div class="columnimg">
         <a href="#"><img src="imgs/sneakycat.jpg" class="img" /></a>
         <a href="#"><img src="imgs/tesla.jpg" class="img" /></a>
         <a href="#"><img src="imgs/bfr.jpeg" class="img" /></a>
       </div>
 
-      <div class="column2">
+      <div class="columnimg">
         <a href="#"><img src="imgs/hyperloop.jpg" class="img" /></a>
         <a href="#"><img src="imgs/funnycat.jpg" class="img" /></a>
         <a href="#"><img src="imgs/procat.jpg" class="img" /></a>
@@ -131,33 +145,42 @@
       </div>
     </div>
 
-    <table class="footermenu">
       <footer>
-        <tr>
-          <th>About us</th>
-          <th>About us</th>
-          <th>About us</th>
-          <th>About us</th>
-        </tr>
-        <tr>
-          <th>Privacy Policy</th>
-          <th>Privacy Policy</th>
-          <th>Privacy Policy</th>
-          <th>Privacy Policy</th>
-        </tr>
-        <tr>
-          <th>Legal notes</th>
-          <th>Legal notes</th>
-          <th>Legal notes</th>
-          <th>Legal notes</th>
-        </tr>
-        <tr>
-          <th>Copyright</th>
-          <th>Copyright</th>
-          <th>Copyright</th>
-          <th>Copyright</th>
-        </tr>
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
       </footer>
-    </table>
   </body>
 </html>
