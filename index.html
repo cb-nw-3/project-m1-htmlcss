@@ -8,31 +8,240 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <img  class="logo" src="imgs/logo.svg" alt="infinity-logo"/>
-            <img src="imgs/menu.svg" alt="Hamburger-menu"/>
-        </header>
-    </div>
+    <!-- Nav bar -->
+    <header>
+        <img  class="logo" src="imgs/logo.svg" alt="infinity-logo"/>
+        <div class="nav-dropdown-mobile">
+            <img class="nav-mobile" src="imgs/menu.svg" alt="hamburger-menu" />
+            <div class="dropdown-menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#advantages">Avantages</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="computer-nav-display">
+            <ul class="computer-nav">
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#advantages">Advantages</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+            </ul>
+            <span class="computer-nav-dropdown">Products
+                <div class="computer-drop-menu">
+                    <ul class="computer-menu-list">
+                        <li><a href="https://www.cnn.com/2019/09/28/tech/tesla-elon-musk-labor-judge/index.html">Worker exploitation</a></li>
+                        <li><a href="https://thehill.com/policy/technology/493386-california-hospitals-say-elon-musk-sent-them-bipap-cpap-machines-not">Musk Smugness</a></li>
+                        <li><a href="https://unsplash.com/s/photos/kitties">Kitties</a></li>
+                    </ul>
+                </div>  
+            </span>
+        </div>
+    </header>
 
 
     <!-- Part with the Rocket background -->
     <div class="main">
-        
+        <div class="tablet-border">
             <div class="title" >
                 <h1>Introducing Falcon 9</h1>
             </div>
             <div class="subtitle">
                 <h2>We make dreams come true</h2>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam erat, posuere sed nisi ut, ultrices ultrices eros. Duis a velit magna.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam erat, posuere sed nisi ut, ultrices ultrices eros. Duis a velit magna.</p>
+                <div class="discription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
-        
+        </div>
     </div>
 
+    <!-- Part with the boxes -->
+    <div class="wrapper" id="features">
+        <div class="box-Section">
+            
+            <div class="box">
+                <img src="imgs/icon1.svg" alt="checkbox"/>
+                <h3>Amazing Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.</p>
+                <button>Get It</button>
+            </div>
 
+            <div class="box">
+                <img src="imgs/icon2.svg" alt="recycle"/>
+                <h3>Amazing Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>Sell it</button>
+            </div>
+
+            <div class="box">
+                <img src="imgs/icon3.svg" alt="fingerprint"/>
+                <h3>Amazing Feature 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <button>Do It</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Some cool text section and spinning box -->
+    <div class="cool-section" id="advantages">
+        <h2>Some Cool Text</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet</p>
+        <div class="spin-box">
+            <h3>This looks cool</h3>
+            <p>Hover me if you like random animations</p>
+        </div>
+    </div>
+
+    <!-- Gradiant section -->
+    <div class="gradiant-container">
+        <h2>Slick Gradiant</h2>
+        <p>Lorem Ipsum ?</p>
+    </div>
+
+    <!-- Picture gallery section -->
+    <div class="grid-parent" id="gallery">
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/tesla.jpg" alt="tesla-car"/>
+            <p>Our Flagship Car: Capitalism Nightmare</p>
+        </div>
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/procat.jpg" alt="angry orange cat"/>
+            <p>Cool Cat</p>
+        </div>
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/hyperloop.jpg" alt="Hyperloop"/>
+            <p>Introducing: Technocrats</p>
+        </div>
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/sneakycat.jpg" alt="Cute cat"/>
+            <p>Sneaky Boi</p>
+        </div>
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/bfr.jpeg" alt="Rocket"/>
+            <p>Fly the rich into the sun</p>
+        </div>
+
+        <div class="grid-child">
+            <div class="opacity"></div>
+            <img src="imgs/funnycat.jpg" alt="Screaming Cat"/>
+            <p>So much fun !</p>
+        </div>
+    </div>
+<!-- button section........................................ -->
+    <div class="checkbox-section">
+        <div class="label-container">
+            <label>Register to our mailing list:</label>
+        </div>
+        <div class="email">
+            <input type="email" required class="email-input"/>
+            <button>
+                <img src="imgs/send.svg"/>
+            </button>
+        </div>
+        <div class="label-container">
+            <label class="checkbox-label">
+                <input class="checkbox" type="checkbox" />Send me daily cat images
+                </span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Footer section ............................. -->
+    <footer class="footer-parent">
+
+        <div class="footer-child">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Legal Notes</a>
+                </li>
+                <li>
+                    <a href="#">Copyright</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-child">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Legal Notes</a>
+                </li>
+                <li>
+                    <a href="#">Copyright</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-child">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Legal Notes</a>
+                </li>
+                <li>
+                    <a href="#">Copyright</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-child">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Legal Notes</a>
+                </li>
+                <li>
+                    <a href="#">Copyright</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
 </body>
 
 </html>
