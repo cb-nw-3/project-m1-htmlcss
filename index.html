@@ -15,17 +15,24 @@
   <body>
     <div class="sticky">
       <nav class="top-nav">
-        <img src="imgs/logo.svg" alt="Infinity icon" class="logo" />
+        <a href="#top"
+          ><img src="imgs/logo.svg" alt="Infinity icon" class="logo"
+        /></a>
         <ul>
-          <li>Features</li>
-          <li>Advantages</li>
-          <li>Gallery</li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li>Products</li>
+          <ul role="menubar">
+            <li><a href="#">F</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">I</a></li>
+          </ul>
         </ul>
         <img src="imgs/menu.svg" alt="menu icon" class="logo menu" />
       </nav>
     </div>
-    <div class="wrapper">
+    <div id="top" class="wrapper">
       <div class="content">
         <div class="halfTitle">
           <h1>Introducing Falcon 9</h1>
@@ -49,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-card">
+    <div id="features" class="panel panel-card">
       <div class="card">
         <div class="icon-1"></div>
         <h6>Amazing feature 1</h6>
@@ -88,12 +95,16 @@
         facilisi. Etiam sit amet massa ac sapien eleifend laoreet et non velit.
       </p>
     </div>
-    <div class="panel panel3">
+    <div id="advantages" class="panel panel3">
       <h6>Slick gradient</h6>
       <p>Interdum ellus cursu</p>
     </div>
-    <div class="panel panel4">
-      <div class="image-wrapper"><div class="image image1"></div></div>
+    <div id="gallery" class="panel panel4">
+      <div class="image-wrapper">
+        <div class="image image1"></div>
+        <p>Our flagship car: The model S</p>
+      </div>
+      <!-- <div class="shade"></div> -->
       <div class="image-wrapper"><div class="image image2"></div></div>
       <div class="image-wrapper"><div class="image image3"></div></div>
       <div class="image-wrapper"><div class="image image4"></div></div>
