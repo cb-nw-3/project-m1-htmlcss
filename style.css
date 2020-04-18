@@ -59,7 +59,7 @@ nav > img {
     padding: 10px 0;
 }
 
-#noproducts {
+.menuItems > a:last-of-type {
     display: none;
 }
 
@@ -235,6 +235,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 #submitbutton > input[type=email] {
@@ -280,4 +281,121 @@ h1 {
     padding: 10px 70px;
     width: 40%;
     font-size: 0.8em;
+}
+
+@media (min-width: 800px) {
+    
+    #centerblock {
+        display: none;
+    }
+
+    #hamburgerTime {
+        display: flex;
+    }
+
+    .menuItems {
+        position: relative;
+        display: inline;
+        top: 0;
+        left: 0;
+    }
+
+    .menuItems > a {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .menuItems > a:last-of-type {
+        display: inline;
+    }
+
+    #hero {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    #herobox {
+        display: flex;
+        width: 80%;
+        border: 6px white solid;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        border-bottom: 1px white dotted;
+    }
+
+    #herosubbox > p {
+        max-height: 100px;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    #spinner {
+        right: 0;
+        left: 50px;
+        width: 300px;
+        padding: 0 5px;
+    }
+
+    #spinner:hover {
+        animation: steptotheright 3s linear;
+    }
+
+    #spinner > h4, p {
+        margin: 10px;
+    }
+
+    @keyframes steptotheright {
+        0% {
+            transform: translate(0,0) rotateZ(0);
+        }
+        70% {
+            transform: translate(300px,0) rotateZ(180deg);
+        }
+        80% {
+            transform: scale(0.5) translate(300px,0) rotateZ(180deg);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1) translate(300px,0) rotateZ(180deg);
+            opacity: 0;
+        }
+    }
+
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gallerycontainer {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
+
+
+
+@media (max-width: 799px) {
+    #centerblock {
+        display: flex;
+        }
 }
