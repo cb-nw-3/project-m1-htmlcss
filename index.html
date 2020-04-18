@@ -25,7 +25,15 @@
         <li class="nav-link">
           <a href="#photo-gallery" class="nav-link">Gallery</a>
         </li>
-        <li class="nav-link"><a href="#" class="nav-link">Products</a></li>
+        <li class="nav-link products">
+          <a href="#" class="nav-link">Products</a>
+          <!-- PRODUCTS DROPDOWN MENU -->
+          <ul class="products-dropdown-menu">
+            <li><a href="https://www.spacex.com/falcon9">Falcon 9</a></li>
+            <li><a href="https://www.tesla.com/en_ca/models">Model S</a></li>
+            <li><a href="https://www.apple.com/ca/iphone/">iPhone</a></li>
+          </ul>
+        </li>
 
         <!-- HAMBURGER MENU -->
         <li class="hamburger-container">
@@ -157,10 +165,10 @@
     <!-- EMAIL SUBSCRIPTION SECTION -->
 
     <form id="email-subscription" action="submit">
-      <label class="email-label" for="email">
-        Register to our mailing list:
-      </label>
       <div>
+        <label class="email-label" for="email">
+          Register to our mailing list:
+        </label>
         <input id="email" type="email" />
 
         <button id="submit-email" type="submit">
@@ -168,7 +176,7 @@
         </button>
       </div>
 
-      <div>
+      <div class="checkbox-div">
         <input id="cats" type="checkbox" />
         <label class="cats-label" for="cats">
           Send me daily cat images
