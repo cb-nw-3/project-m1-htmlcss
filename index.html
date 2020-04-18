@@ -1,14 +1,219 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
-</head>
+    <link href="main.css" rel="stylesheet" />
+    <link href="feature.css" rel="stylesheet" />
+    <link href="animation.css" rel="stylesheet" />
+    <link href="gallery.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <!-- write some HTML! -->
-</body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div>
+        <img src="imgs/logo.svg" alt="logo" />
+      </div>
+      <div class="nav-menu-desktop">
+        <div class="nav-item-desktop">Features</div>
+        <div class="nav-item-desktop">Advantages</div>
+        <div class="nav-item-desktop">Gallery</div>
+        <div class="nav-item-desktop prod">
+          Products
+          <div class="sub-menu">
+            <div class="sub-item">
+              <a class="anchor" href="https://www.spacex.com/falcon9"
+                >Falcon 9</a
+              >
+            </div>
+            <div class="sub-item">Model S</div>
+            <div class="sub-item">iPhone</div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-menu-btn">
+        <div class="btn-wrapper"><img src="imgs/menu.svg" alt="logo" /></div>
+        <div class="nav-menu-mobile">
+          <div class="nav-item-mobile">Features</div>
+          <div class="nav-item-mobile">Advantages</div>
+          <div class="nav-item-mobile">Gallery</div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
 
+    <!-- Main Section -->
+    <main class="main-section">
+      <div class="main-wrapper">
+        <h1 class="header-main">Introducing Falcon 9</h1>
+        <section class="sub-section">
+          <h2 class="header-secondary">We make dreams come true</h2>
+          <hr />
+          <div class="p-wrapper">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque tellus odio, porttitor nec lacus vel, ullamcorper
+              fermentum lorem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque tellus odio, porttitor nec lacus vel, ullamcorper
+              fermentum lorem.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Main Section End-->
+
+    <!-- Feature Section -->
+    <section class="feature-section">
+      <div class="feature-card">
+        <div class="card-image">
+          <img src="imgs/icon1.svg" alt="check icon" />
+        </div>
+        <h2 class="card-title">Amazing Feature 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          tellus odio, porttitor nec lacus vel, ullamcorper fermentum lorem.
+        </p>
+        <div class="feature-button">
+          <button type="button">Get it</button>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="card-image">
+          <img src="imgs/icon2.svg" alt="check icon" />
+        </div>
+        <h2 class="card-title">Amazing Feature 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          tellus odio, porttitor nec lacus vel, ullamcorper fermentum lorem.
+        </p>
+        <div class="feature-button">
+          <button type="button">Sell it</button>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="break-left"></div>
+      <div class="feature-card third-card">
+        <div class="card-image">
+          <img src="imgs/icon3.svg" alt="check icon" />
+        </div>
+        <h2 class="card-title">Amazing Feature 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          tellus odio, porttitor nec lacus vel, ullamcorper fermentum lorem.
+        </p>
+        <div class="feature-button">
+          <button type="button">Do it</button>
+        </div>
+      </div>
+      <div class="break-right"></div>
+    </section>
+    <!-- Feature Section End-->
+
+    <!-- Animation Section -->
+    <section class="animation-section">
+      <div class="cool-text">
+        <h2>Some cool text</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          tellus odio, porttitor nec lacus vel, ullamcorper fermentum lorem.
+        </p>
+      </div>
+      <div class="cool-animation">
+        <h2>This looks cool</h2>
+        <p>Hover me if you like random animations</p>
+      </div>
+      <div class="sick-gradient">
+        <h2>Sick gradient</h2>
+        <p>Lorem ipsum?</p>
+      </div>
+    </section>
+    <!-- Animation Section -->
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="image-wrapper">
+        <img class="image" src="imgs/tesla.jpg" alt="tesla car" />
+        <span class="image-text">Our flagship car: The Model S</span>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="imgs/procat.jpg" alt="pro cat" />
+        <span class="image-text">Cool cat</span>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="imgs/hyperloop.jpg" alt="buulet train" />
+        <span class="image-text">Introducing: The Hyperloop</span>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="imgs/sneakycat.jpg" alt="sneaky cat" />
+        <span class="image-text">So sneaky</span>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="imgs/bfr.jpeg" alt="rocket" />
+        <span class="image-text">BFR - Big Falcon Rocket</span>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="imgs/funnycat.jpg" alt="funny cat" />
+        <span class="image-text">So much fun</span>
+      </div>
+    </section>
+    <!-- Gallery Section End-->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="footer-wrapper">
+        <div class="subscription">
+          <div>Register to our mailing list:</div>
+          <form class="email-input">
+            <input type="email" required />
+            <button type="submit">
+              <img src="imgs/send.svg" alt="send icon" />
+            </button>
+          </form>
+          <div>
+            <label><input type="checkbox" /> Send me daily cat images</label>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="info">
+          <div class="info-grid">
+            <ul class="info-list">
+              <li>About us</li>
+              <li>Privacy Policy</li>
+              <li>Legal notes</li>
+              <li>Copyright</li>
+            </ul>
+            <ul class="info-list">
+              <li>About us</li>
+              <li>Privacy Policy</li>
+              <li>Legal notes</li>
+              <li>Copyright</li>
+            </ul>
+            <ul class="info-list">
+              <li>About us</li>
+              <li>Privacy Policy</li>
+              <li>Legal notes</li>
+              <li>Copyright</li>
+            </ul>
+            <ul class="info-list">
+              <li>About us</li>
+              <li>Privacy Policy</li>
+              <li>Legal notes</li>
+              <li>Copyright</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
 </html>
