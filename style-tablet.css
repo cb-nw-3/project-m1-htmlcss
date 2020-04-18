@@ -1,0 +1,197 @@
+/* Inherits from style-mobile.css unless specified here */
+
+@media (min-width: 768px) {
+    
+    
+
+    /* Hides the mobile version of the nav bar */
+    .nav { 
+        display: none;
+    }
+    
+    .nav-large {
+    background: linear-gradient(90deg, rgba(107,107,107,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    }
+    
+    .nav-a-cont {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        padding-top: 15px;
+        padding-right: 15px;
+
+    }
+
+    .nav-a {
+        text-decoration: none;
+        color: ghostwhite;
+    }
+
+    .menu-list-large {
+        display: none;
+        z-index: 1;
+    }
+
+    li {
+        margin: 40px;
+        border-bottom: 2px solid ghostwhite;
+        
+    }
+
+    .nav-dropdown-large:hover > .dropdown-menu-large .menu-list-large {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: rgba(0,0,0,1);
+        color: ghostwhite;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .intro-text {
+        border: 5px solid ghostwhite;
+        margin: 15px;
+    }
+
+    .intro-text > h1 {
+        text-align: left;
+        margin: 25px;
+        font-size: 45px;
+    }
+
+    .intro-div > h2 {
+        font-size: 35px;
+        border-bottom: 2px dashed ghostwhite;
+        color: ghostwhite;
+    }
+
+    .row-intro {
+        display: flex;
+        width: 100%;
+    
+    }
+
+    .row-intro > p {
+        margin: 15px;
+    }
+
+    
+
+    .feat-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feat-section {
+        width: 350px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+
+    .cool-text {
+        font-size: 25px;
+    }
+
+    .looks-cool-cont {
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        width: 100%;
+    }
+
+    .looks-cool {
+        margin-left: 25px;
+    }
+
+    
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;    
+    }
+
+    .main-images {
+        background-size: cover;
+        /* height: 100%; */
+
+    }
+
+    .image-text {
+    }
+
+    .img-row {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .footer {
+        display: none;    
+    }
+
+    .footer-large {
+        display: flex;  
+        background-color: ghostwhite;
+    }
+
+    .features-desk {
+        display: none;
+    }
+    
+
+    
+
+    /* Animations below */
+
+    .looks-cool:hover {
+        /* animation-name: spin; */
+        animation-name: spin-translate-zoom;
+        animation-duration: 2000ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        
+    }
+
+    @keyframes spin-translate-zoom {
+    0% {
+        transform:rotate(0deg);
+    }
+    
+    20% {
+        transform: translate(100px, 0px) rotate(90deg);
+    }
+
+    40% {
+        transform: translate(150px, 0px) rotate(135deg);
+    }
+
+    60% {
+        transform: translate(200px, 0px) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(200px, 0px) rotate(180deg);
+    }
+
+    85% {
+        transform: translate(200px, 0px) rotate(180deg);
+    }
+
+    95% {
+        transform: translate(200px, 0px) rotate(180deg) scale(0);
+    }
+
+    100% {
+        transform: translate(200px, 0px) rotate(180deg);
+    }
+}
+}

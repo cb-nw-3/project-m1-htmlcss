@@ -1,0 +1,136 @@
+/* Inherits from style-tablet.css unless specified here */
+
+@media (min-width: 1200px) {
+
+
+    .intro {
+        display: none;
+    }
+
+    .intro-desk {
+        display: flex;
+        font-size: 1rem;
+        color: ghostwhite;
+        background-image: url(imgs/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 110px;
+        height: 80vh;
+    }
+
+    
+
+
+
+    .intro-row {
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+        
+    }
+
+    .intro-div {
+        background-color: black;
+        opacity: 0.5;
+        padding: 15px;
+        margin-top: 0px;
+    }
+
+    .intro-col > h1 {
+        color: ghostwhite;
+        padding-top: 100px;
+        padding-left: 25px;
+        font-size: 75px;
+    }
+
+    .intro-col > h2 {
+        padding-top: 75px;
+        padding-left: 25px;
+        font-size: 50px;
+        border-bottom: 2px dashed ghostwhite;
+    }
+
+    .intro-col > p {
+        padding-top: 25px;
+    }
+
+    .intro-div {
+        margin-left: 10%;
+    }
+
+    
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .img-row {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .featureContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+
+    .looks-cool:hover {
+        /* animation-name: spin; */
+        animation-name: spin-translate-zoom;
+        animation-duration: 2000ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        
+    }
+
+    @keyframes spin-translate-zoom {
+    0% {
+        transform:rotate(0deg);
+    }
+    
+    20% {
+        transform: translate(350px, 0px) rotate(90deg);
+    }
+
+    40% {
+        transform: translate(415px, 0px) rotate(135deg);
+    }
+
+    60% {
+        transform: translate(485px, 0px) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(575px, 0px) rotate(180deg);
+    }
+
+    85% {
+        transform: translate(575px, 0px) rotate(180deg);
+    }
+
+    95% {
+        transform: translate(575px, 0px) rotate(180deg) scale(0);
+    }
+
+    100% {
+        transform: translate(575px, 0px) rotate(180deg);
+    }
+}
+
+
+}
+

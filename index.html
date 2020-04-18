@@ -4,11 +4,263 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style-mobile.css" rel="stylesheet" />
+    <link href="style-tablet.css" rel="stylesheet" />
+    <link href="style-desktop.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- write some HTML! -->
+    <header>
+        <!-- Nav bar for mobile -->
+        <nav class="nav">
+            <a href="#top"> <img class="logo nav-img" src="imgs/logo.svg" alt="Infinity Icon" /></a>
+            <span class="nav-dropdown">
+            <img class="hamb-menu nav-img" src="imgs/menu.svg" alt="Hamburger Icon" />
+            <div class="dropdown-menu"> 
+                <ul class="menu-list"> 
+                    <a href="#features"><li>Features</li></a>
+                    <a href="#advantages"><li>Advantages</li></a>
+                    <a href="#images"><li>Gallery</li></a>
+                </ul>
+            </div>
+            </span>
+        </nav>
+        <!-- Nav bar for table + desktop -->
+        <nav class="nav-large">
+            <a href="#top1"><img class="logo nav-img" src="imgs/logo.svg" alt="Infinity Icon" /></a>
+            <div class="nav-a-cont">
+                <a class="nav-a" href="#features">Features</a>
+                <a class="nav-a" href="#advantages">Advantages</a>
+                <a class="nav-a" href="#images">Gallery</a>
+
+                <span class="nav-dropdown-large">
+            <a class="nav-a" href="#">Products</a> <!-- Make a dropdown menu that links to different tesla models -->
+                <div class="dropdown-menu-large"> 
+                    <ul class="menu-list-large"> 
+                        <a href="https://www.spacex.com/falcon9" target="_blank"><li>Falcon 9</li></a>
+                        <a href="https://www.tesla.com/en_ca/models" target="_blank"><li>Model S</li></a>
+                        <a href="https://www.apple.com/ca/iphone/" target="_blank"><li>iPhone</li></a>
+                    </ul>
+                </div>
+                </span>
+            </div>
+
+        </nav>
+    </header>
+    <div id="top" class="intro">
+        <div class="intro-text">
+            <h1>Introducing Falcon 9</h1>
+            <div class="intro-div">
+                <h2>We make dreams come true</h2>
+                <div class="row-intro">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et molestie neque. Donec facilisis nisi sit amet diam eleifend lacinia.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et molestie neque. Donec facilisis nisi sit amet diam eleifend lacinia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="top1" class="intro-desk">
+        <div class="testing">
+        <div class="intro-text intro-row">
+            <div class="intro-col">
+                <h1>Introducing Falcon 9</h1>
+            </div>
+            <div class="intro-div">
+                <div class="intro-col">
+                    <h2>We make dreams come true</h2>
+                    <div class="row-intro">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et molestie neque. Donec facilisis nisi sit amet diam eleifend lacinia.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et molestie neque. Donec facilisis nisi sit amet diam eleifend lacinia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="features" class="features">
+        <div class="featureContainer">
+        <div class="feat-row featureRow1">
+            <div class="feat-section">
+                <img src="imgs/icon1.svg" class="feat-icon" alt="checkmark icon" />
+                <h3>Amazing feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in lacinia lorem. Cras vestibulum lacus nibh, quis maximus odio pulvinar a. Pellentesque habitant morbi</p>
+                <button class="btn-1">Get it</button>
+            </div>
+
+            <div class="feat-section">
+                <img src="imgs/icon2.svg" class="feat-icon" alt="loading icon" />
+                <h3>Amazing feature 2</h3>
+                <p>tristique senectus et netus et malesuada fames ac turpis egestas. Duis eu consequat enim. Etiam consectetur orci ut iaculis ornare</p>
+                <button class="btn-1">Sell it</button>
+            </div>
+        </div>
+        <div class="feat-row feature3">
+            <div class="feat-section">
+                <img src="imgs/icon3.svg" class="feat-icon" alt="thumbprint icon" />
+                <h3>Amazing feature 3</h3>
+                <p>Aliquam dictum diam justo. Nullam dignissim, magna consectetur auctor feugiat, dui sapien hendrerit enim, vestibulum finibus.</p>
+                <button class="btn-1">Do it</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="advantages" class="container">
+
+        <div class="cool-text">
+            <h3>Some cool text</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et felis a lectus gravida scelerisque. Donec elit dui, dapibus sed sollicitudin sed, scelerisque sit.</p>
+        </div>
+        <div class="looks-cool-cont">
+            <div class="looks-cool">
+                <h3>This looks cool</h3>
+                <span>Hover me if you like random animations</span>
+            </div>
+        </div>
+        <div class="slick">
+            <h1>Slick Gradient</h1>
+            <br />
+            <p>Lorem ipsum?</p>
+        </div>
+    </div>
+<!-- Mobile Images -->
+    <div id="images" class="images">
+
+        <div class="img-row">
+<div class="imgCont">
+            <div class="image-1 main-images">
+                <p class="img-text">Our flagship car: The Model S</p>
+            </div>
+        </div>
+        <div class="imgCont">
+            <div class="image-2 main-images">
+                <p class="img-text">Cool cat</p>
+            </div>
+        </div>
+        <div class="imgCont">
+            
+
+            <div class="image-3 main-images">
+                <p class="img-text">Intoducing: The Hyperloop</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="img-row row-2">
+<div class="imgCont">
+            <div class="image-4 main-images">
+                <p class="img-text">So sneaky</p>
+            </div>
+        </div>
+        <div class="imgCont">
+            <div class="image-5 main-images">
+                <p class="img-text">BFR - Big Falcon Rocket</p>
+            </div>
+        </div>
+        <div class="imgCont">
+
+            <div class="image-6 main-images">
+                <p class="img-text">So much fun</p>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="email-wrap">
+        <div class="email">
+            <span>Register to our mailing list:</span>
+            <form>
+                <div>
+                <input class="email-ent" type="email" placeholder="Email Address" name="mail" required>
+                <button class="btn-2"><img class="send-icon" src="imgs/send.svg"></button>
+                <br />
+                    </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> Send me daily cat images
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <div class="foot-info">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href="#">About us</a></li>
+                    <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                    <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                    <li class="foot-list-item"><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="foot-info">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href="#">About us</a></li>
+                    <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                    <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                    <li class="foot-list-item"><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="foot-info">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href="#">About us</a></li>
+                    <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                    <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                    <li class="foot-list-item"><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="foot-info">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href="#">About us</a></li>
+                    <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                    <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                    <li class="foot-list-item"><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-large">
+        <div class="foot-info">
+            <ul class="foot-list">
+                <li class="foot-list-item"><a href="#">About us</a></li>
+                <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                <li class="foot-list-item"><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+        <div class="foot-info">
+            <ul class="foot-list">
+                <li class="foot-list-item"><a href="#">About us</a></li>
+                <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                <li class="foot-list-item"><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+        <div class="foot-info">
+            <ul class="foot-list">
+                <li class="foot-list-item"><a href="#">About us</a></li>
+                <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                <li class="foot-list-item"><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+        <div class="foot-info">
+            <ul class="foot-list">
+                <li class="foot-list-item"><a href="#">About us</a></li>
+                <li class="foot-list-item"><a href="#">Privacy Policy</a></li>
+                <li class="foot-list-item"><a href="#">Legal notes</a></li>
+                <li class="foot-list-item"><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+
+    </div>
 </body>
 
 </html>
