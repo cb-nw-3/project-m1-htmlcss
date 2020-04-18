@@ -52,16 +52,20 @@ body {
 
 .menuItems li:hover {
   background-color: rgb(104, 96, 96);
-  cursor: pointer;
 }
 
 .menuItems a,
 .menuItems li {
-  text-decoration: none;
   list-style-type: none;
   color: white;
-  text-align: center;
+  padding: 0px;
+}
+.menuItems a {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
   padding: 10px;
+  text-decoration: none;
 }
 
 .topbar img {
@@ -356,67 +360,67 @@ body {
 
 @media (min-width: 768px) {
   .nav-desktop {
-    display: inline-block;
     height: 45px;
-    margin: 0;
+    display: flex;
   }
   .nav-desktop > ul {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0;
+  }
+  .nav-element {
+    display: flex;
+    align-items: stretch;
+    list-style-type: none;
+    padding: 5px 20px;
+    border-bottom: 5px solid #3a3633;
+  }
+  .nav-element > a {
     display: flex;
     align-items: center;
-    line-height: 30px;
-    margin: 0;
-    padding-right: 20px;
-  }
-  .nav-desktop > ul > li {
-    list-style-type: none;
-    padding: 5px 30px;
-  }
-
-  .products-button:hover > .dropdown-products {
-    display: block;
-    font-size: 0.8rem;
-    position: absolute;
-    top: 113%;
-    right: 40px;
-    background-color: #3a3633;
-    z-index: 1;
-  }
-  .products-button {
-    position: relative;
-    font-size: 0.8rem;
-    color: white;
-  }
-
-  .nav-desktop > ul > li:hover {
-    border-bottom: 5px solid white;
-  }
-
-  .nav-desktop a {
-    font-size: 0.8rem;
     text-decoration: none;
     color: white;
   }
 
-  .dropdown-products {
+  .products-button {
+    position: relative;
+  }
+
+  .products-button:hover > .products-dropdown {
+    display: inline-block;
+    position: absolute;
+    top: 113%;
+    right: 0;
+    background-color: #3a3633;
+  }
+
+  .nav-element:hover {
+    border-bottom: 5px white solid;
+  }
+
+  .products-dropdown {
     display: none;
   }
 
   .products-list {
-    width: 77px;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    padding: 0px;
   }
 
-  .products-list li {
-    padding: 10px 20px;
-    color: white;
-    text-align: right;
+  .products-list li,
+  .products-list a {
     list-style-type: none;
-    background-color: #3a3633;
-    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 12px 9px 12px 0;
+    text-align: right;
   }
   .products-list li:hover {
-    background-color: #7e7b7a;
+    background-color: #918d8a;
   }
 
   .nav-dropdown {
