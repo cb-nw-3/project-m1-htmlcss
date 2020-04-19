@@ -38,12 +38,21 @@ a {
     color: white;
 }
 
+#Features:hover {
+    border-bottom: 2px solid white;
+}
+
+.Products:hover {
+    border-bottom: 2px solid white;
+}
+
+
+/*dropdown*/
 .Products {
     position: relative;
     display: inline-block;
     color: white;
     text-decoration: none;
-
 }
 
 .Products:hover .dropdown-menu {
@@ -60,8 +69,7 @@ a {
     margin-top: 17px;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .menu-list > li {
@@ -73,7 +81,11 @@ a {
 
 .menu-list > li:hover {
     background-color: grey;
+}
 
+/*burger*/
+#burgermenu {
+    display: none;
 }
 
 .section2 {
@@ -291,30 +303,32 @@ a {
     align-items: center;
 }
 
+.emailcontainer7 {
+    display: inline-block;
+    padding: 0;
+}
 .email7 {
     width: 210px;
     border-radius: 4px;
     height: 20px;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .sendsvg {
     background: grey;
-    padding: 3px;
-    position: absolute;
-    top: 35px;
-    left: 780px;
+    padding: 0;
+    margin: 0px;
+    width: 20px;
+    height:20px;
+    left: 0;
 }
 
-#checkbox7 {
-    position: absolute;
-    top: 81px;
-    left: 565px;
-}
 
-.checkbox7 {
-    padding: 5px;
-    margin-left: 50px;
+.label7 {
+    margin: 0;
+    padding: 0;
+    
 }
 
 .section8 {
@@ -328,13 +342,80 @@ a {
     padding: 5px;
 }
 
+/*mobile*/
+@media (max-width: 768px) {
+    #Features {
+        display: none;
+    }
+    .Products {
+        display: none;
+    }
 
-@media (min-width: 768px) {
-    #menu {
-    display: none;
+    /*burgermenu*/
+    .navigation-bar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation-container {
+        position: relative;
+        display: inline-block;
+        display: flex;
+    }
+    #burgermenu {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 4px;
+    }
+
+    .burgerdropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+    }
+
+    .burger-list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    .burger-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #burgermenu:hover .burger-list {
+        opacity: 1;
+    }
+    
+    .burger-list > li {
+        list-style-type: none;
+        padding: 20px;
+        width: 100%;
+        background-color: #3a3633;
+    }
+    
+    .burger-list > li:hover {
+        background-color: grey;
     }
 }
 
-@media (min-width: 1200px) {
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1200px) {
 
+}
+
+/*desktop*/
+@media (min-width: 1200px) {
+    /*#menu {
+        display: none;
+    }*/
 }

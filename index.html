@@ -11,10 +11,10 @@
     <section class="section1" id="section1">
         <div class="navigation-bar">
             <div class="navigation-container">
-                <ul>
+                <ul class="ul1">
                     <li><a class="logo" href="#"><img src="imgs\logo.svg" width="50" height="50" viewBox="0 0 50 50"></img></a></li>
                 </ul>
-                    <ul>
+                <ul class="ul2">
                     <li><a id="Features" href="#section3">Features</a></li>
                     <li><a id="Features" href="#section4">Advantages</a></li>
                     <li><a id="Features" href="#section6">Gallery</a></li>
@@ -28,9 +28,17 @@
                         </span>    
                     </li>    
                 </ul>
-                <div><a href="#"><img id="menu" src="imgs\menu.svg"></img></a></div>  
             </div>
-        </div>
+            <span id="burgermenu"><img id="burgermenu" src="imgs\menu.svg">
+                <div class="burgerdropdown">
+                    <ul class="burger-list">
+                        <li><a href="#section3">Features</a></li>
+                        <li><a href="#section4">Advantages</a></li>
+                        <li><a href="#section6">Gallery</a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>    
     </section>
 
     <section class="section2">
@@ -118,9 +126,14 @@
     <section class="section7">
         <form class="container7">
             <label class="Register7">Register to our mailing list:</label>
-            <div><input class="email7" type="email" id="email" name="email" required src="imgs\send.svg"></div>
-            <div><input class="sendsvg" type="image" src="imgs\send.svg" alt="Submit" width="20" height="20"></input></div>
-            <label class="checkbox7"><input type="checkbox" id="checkbox7" name="checkbox" value="checkbox">Send me daily cat images</input></label>
+            <div class="emailcontainer7">
+                <input class="email7" type="email" id="email" name="email" required src="imgs\send.svg">
+                <input class="sendsvg" type="image" src="imgs\send.svg" alt="Submit" width="20" height="20"></input>
+            </div>
+            <div class="checkboxcontainer">
+                <input class="checkboxdefault" type="checkbox" value="none">
+                <label class="label7">Send me daily cat images</label>
+            </div>
         </form>
     </section>
 
