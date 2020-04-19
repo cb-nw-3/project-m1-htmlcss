@@ -452,6 +452,43 @@ a {
         width: 100%;
     }
 
+    /*animation*/
+    .animation:hover {
+        animation: animation4 8s ease-in-out;
+    }
+    
+    @keyframes animation4 {
+        0% {
+            transform: scale(1) rotate(0deg);
+            opacity: 100%
+        }
+        25% {
+            transform: scale(1) rotate(360deg);
+            opacity: 100%
+        }
+        50% {
+            transform: scale(1) rotate(0deg);
+            opacity: 100%
+        }
+        100% {
+            transform: scale (1) rotate(360deg);
+            opacity: 100%
+        }
+    }
+
+    .section5 {
+        color: white;
+        height: 400px;
+        text-align: right;
+        background: linear-gradient(0.25turn,white, rgb(0, 81, 255));
+        padding-right: 10px;
+    }
+    
+    .Slick {
+        font-size: 3rem;
+        padding-top: 200px;
+    }
+
     /*Features*/
     .section3 {
         margin: 50px 50px;
@@ -464,6 +501,7 @@ a {
     .container6 {
         display: flex;
         flex-direction: column;
+        flex: 1;
     }
 
     .row {
@@ -474,6 +512,7 @@ a {
     .col {
         display: flex;
         flex-direction: column;
+        flex: 1;
     }
 
     /*About us*/
