@@ -601,8 +601,6 @@ a {
         display: grid;
         grid-template-columns: 450px 450px;
         grid-gap: 50px;
-        width: 450px;
-        align-self: center;
     }
 
     /*Gallery*/
