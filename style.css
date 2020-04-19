@@ -28,6 +28,7 @@ h2
     font-size: 30px;
     font-family: 'Poppins', normal;
     color: white;
+    
 }
 
 h3
@@ -46,6 +47,8 @@ h3
         position: fixed;
         width: 100%;
 }
+
+
 
 .nav > .img-col
 {
@@ -66,10 +69,10 @@ h3
 }
 
 
-.links-col > a
+.styled_link
 {
     padding: 10px;
-    margin-left: 30px;
+    margin-left:45px;
     text-decoration: none;
     color: white;
     font-family: 'Poppins', normal;
@@ -79,23 +82,25 @@ h3
 
 }
 
-.links-col > .Products-drop-down
+.Products-drop-down
 {
-    margin-right: 25px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', normal;
+    font-size: 10px;
+    justify-content: flex-end;
+    position: relative;
+
+
 }
 
 
 
 
+/* .links-col > a:before { */
+.styled_link:before {
 
-.links-col > a:hover
-{
-    transition: all 0.2s;
-    color: gray;
-}
-
-
-.links-col > a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -106,13 +111,16 @@ h3
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
-.links-col > a:hover:before {
+/* .links-col > a:hover:before { */
+.styled_link:hover:before {
+
     visibility: visible;
     width: 100%;
   }
 
 
-  .links-col > a:hover
+/* .links-col > a:hover */
+.styled_link:hover
 {
     transition: all 0.2s;
     color: gray;
@@ -122,15 +130,15 @@ h3
 {
 display: none;
 position: absolute;
-top: 100%;
+top: 35px;
 right: 0;
-background-color: #03a9f4;
-
+background-color:  #3a3633;
+border: none;
 }
 
 
 
-.links-col:hover .revealed_menu
+.Products-drop-down:hover  .revealed_menu
 {
     display: block;
 }
@@ -149,23 +157,149 @@ background-color: #03a9f4;
 {
 
     color: white;
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     list-style-type: none;
-
 
 }
 
 .individual_list > li:hover
 {
-    background-color: blue;
+    background-color: grey;
 }
   
 
-/* .links-col > a:hover
+
+.dropdpown_link
 {
-border-bottom: 4px solid white;
-padding-bottom: .25em;
-} */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', normal;
+    font-size: 12px;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.hamburger-revealed_menu
+{
+    display: none;
+}
+
+
+.hamburger_menu
+{
+    display: none;
+}
+
+
+
+.ham-individual_list > li
+{
+    display: block;
+    list-style-type: none;
+}
+
+.hamburger_menu >.first-row> .hamburger-image-link
+{
+    padding-top: 10px;
+}
+
+
+.hamburger-menu-infinity-logo
+{
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Section:////
+Hamburger Menu after resizing */
+
+@media all and (max-width: 600px)
+{
+    .nav > .hamburger_menu
+    {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+    }
+
+
+    .col1
+    {
+        flex: none; /* make this flex item inflexible, so width property controls its width entirely */
+        width: 50px;
+        flex: 0 0 50px;
+
+    }
+
+    .col2
+    {
+        flex: 1;
+        text-align: center;
+    
+        
+    }
+
+    .col3
+    {
+
+        /* flex-basis: 33.3333%; */
+
+        width: 50px;
+        flex: 0 0 50px;
+        text-align: center;
+        padding-top: 5px;
+
+    
+
+    }
+
+    .nav > .links-col
+    {
+        display: none;
+    }
+
+    .nav> .nav-outer-flex
+    {
+        display: none;
+    }
+    .hamburger-drop-down
+    {
+        display: none;
+    }
+
+
+    .col3:hover .hamburger-revealed_menu
+    {
+        margin-left: calc(-100vw + 50px);
+        margin-right: 100vw;
+    
+
+        display: block;
+        flex-direction: column;
+        width: calc(100vw);
+        background-color: blue;
+    }
+
+    .ham-rev-item
+    {
+        font-size: 12px;
+        font-family: 'Poppins', normal;
+        color: white;
+        background-color:  #3a3633;
+        padding: 10px;
+
+        display: block;
+        text-align: center;
+    }
+
+    .ham-rev-item:hover
+    {
+        background-color: grey;
+    }
+}
 
 
 
@@ -196,19 +330,76 @@ padding-bottom: .25em;
     
 }
 
+/* Section:////
+reflowing for media size for top title card "introducting falcon 9 */
+@media all and (max-width: 900px) and (min-width:600px)
+{
+    .outer-flex
+    {
+        flex-direction: column;
+    }
+    
+    .title-col > h1 
+    {
+        font-size: 30px;
+    } 
+        
+}
+
+@media all and (max-width: 599px) 
+{
+    .outer-flex
+    {
+        flex-direction: column;
+        border: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
+    
+    .title-col > h1 
+    {
+        font-size: 30px;
+    } 
+
+    .title-col2 > .detail-row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+        
+}
+
+@media all and (min-width: 600px) 
+{
+
+    .subtitle-row> h2
+    {
+        margin-bottom: 5px;
+    }
+    
+    .subtitle-row::after
+    {
+        content: " ";
+        display: block;
+        border: 0.8px dotted whitesmoke;
+        opacity: 0.5;
+        font-size: 5px;
+    }  
+    
+}
+
 
 .title-col
 {
     align-items: flex-start;
-}
-
-
-
-
-.title-col 
-{
     padding: 10px;
+
 }
+
+
 .title-col2
 {
     background-color: hsla(0, 0%, 37%, 0.4);
@@ -233,19 +424,6 @@ padding-bottom: .25em;
     
 }
 
-.subtitle-row> h2
-{
-    margin-bottom: 5px;
-}
-
-.subtitle-row::after
-{
-    content: " ";
-    display: block;
-    border: 0.8px dotted whitesmoke;
-    opacity: 0.5;
-    font-size: 5px;
-}  
 
 .cards-row
 {
@@ -298,16 +476,8 @@ padding-bottom: .25em;
 
 
 
-/* @media all and (min-width: 750px) 
-{
 
-.card
-{
-     background-color: red; 
 
-}    
-} 
-*/
 
 @media all and (max-width: 950px) and (min-width: 730px)
 {
@@ -356,9 +526,6 @@ padding-bottom: .25em;
 }
 
 
-
-
-
 #middle-text-box
 {
     display: block;
@@ -372,6 +539,27 @@ padding-bottom: .25em;
     color:white;
     font-size: 20px;
 }
+
+
+@media all and (max-width: 599px)
+{
+    #middle-text-box>h1
+    {
+        font-size: 30px;
+        display: block;
+        background-color:  #3a3633;
+        z-index: 0;
+    }
+    
+    .middle-text
+    {
+        font-size: 15px;
+        color:white;
+    }
+            
+}
+
+
 
 .floating-box
 {
@@ -401,6 +589,20 @@ padding-bottom: .25em;
     font-size: 10px;
 }
 
+/* Section: Floating box mobile resize */
+
+@media all and (max-width: 600px)
+{
+    .floating-box
+    {
+        margin: auto;
+        top: -250px;
+
+    }
+            
+}
+
+
 .gradient-box
 {
     background-image: linear-gradient(to right, white, dodgerblue);
@@ -416,6 +618,19 @@ padding-bottom: .25em;
     padding-right: 20px;
     
 }
+
+/* Section: gradient-box mobile resize */
+
+@media all and (max-width: 600px)
+{
+    .gradient-box>h1
+    {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+            
+}
+
 
   
   
@@ -434,8 +649,36 @@ padding-bottom: .25em;
 
 
     
+
+
   
 }
+
+
+@media all and (max-width: 600px)
+{
+    .image-row
+    {
+        display: block;
+        flex-direction: column;
+        
+      padding: 0px;
+      overflow: hidden;
+      z-index: 0;
+      
+    }.image-column
+    {
+        background-position: center;
+    
+        flex: 100%;
+        width: 100%;
+
+    }
+    
+                
+}
+
+
 .image-column
 {
     background-position: center;
