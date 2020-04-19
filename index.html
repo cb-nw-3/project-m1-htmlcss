@@ -13,25 +13,37 @@
   </head>
 
   <body>
-    <div class="sticky">
-      <nav class="top-nav">
+    <header class="sticky">
+      <div class="top-nav">
         <a href="#top"
           ><img src="imgs/logo.svg" alt="Infinity icon" class="logo"
         /></a>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#advantages">Advantages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li>Products</li>
-          <ul role="menubar">
-            <li><a href="#">F</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">I</a></li>
+        <nav class = "desktopMenu">
+          <ul class ="mainDropdown" >
+            <li class = "barAnimation"><a href="#features">Features</a></li>
+            <li class = "barAnimation"><a href="#advantages">Advantages</a></li>
+            <li class = "barAnimation"><a href="#gallery">Gallery</a></li>
+            <li class= "barAnimation dropdown">Products
+              <ul role="menubar">
+                <li><a href="#"><a href = "https://www.spacex.com/falcon9">Falcon 9</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Iphone</a></li>
+              </ul>
+            </li>
           </ul>
-        </ul>
-        <img src="imgs/menu.svg" alt="menu icon" class="logo menu" />
       </nav>
-    </div>
+        <div class="hamWrapper">
+          <img id = "menu"src="imgs/menu.svg" alt="menu icon" class="logo"/>
+          <div class = "dropdown-content">
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#advantages">Advantages</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+        </div>  
+      </div>
+    </header>
     <div id="top" class="wrapper">
       <div class="content">
         <div class="halfTitle">
@@ -66,7 +78,7 @@
           efficitur est quam, id scelerisque ex lobortis eu. Proin cursus ut
           tortor.
         </p>
-        <button type="button" class="btn-card">Get</button>
+        <button type="button" class="btn-card">Get it</button>
       </div>
       <div class="card">
         <div class="icon-2"></div>
@@ -75,7 +87,7 @@
           Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis
           in faucibus. Nam mattis maximus enim.
         </p>
-        <button type="button" class="btn-card">Get</button>
+        <button type="button" class="btn-card">Sell it</button>
       </div>
       <div class="card">
         <div class="icon-3"></div>
@@ -84,7 +96,7 @@
           Vestibulum non massa ex. Quisque vitae massa quam. Donec ornare dolor
           purus, a tincidunt elit aliquam in.
         </p>
-        <button type="button" class="btn-card">Get</button>
+        <button type="button" class="btn-card">Do it</button>
       </div>
     </div>
     <div class="panel panel2">
@@ -94,6 +106,10 @@
         amet eros bibendum, ullamcorper tortor id, condimentum leo. Nulla
         facilisi. Etiam sit amet massa ac sapien eleifend laoreet et non velit.
       </p>
+      <div class="buttonAnimation">
+        <p>This looks cool</p>
+        <p>Hover me if you like random animations.</p>
+      </div>
     </div>
     <div id="advantages" class="panel panel3">
       <h6>Slick gradient</h6>
@@ -102,28 +118,57 @@
     <div id="gallery" class="panel panel4">
       <div class="image-wrapper">
         <div class="image image1"></div>
-        <p>Our flagship car: The model S</p>
+        <div class="overlay">
+          <div class="text">Our flagship car: The model S</div>
+        </div>
       </div>
-      <!-- <div class="shade"></div> -->
-      <div class="image-wrapper"><div class="image image2"></div></div>
-      <div class="image-wrapper"><div class="image image3"></div></div>
-      <div class="image-wrapper"><div class="image image4"></div></div>
-      <div class="image-wrapper"><div class="image image5"></div></div>
-      <div class="image-wrapper"><div class="image image6"></div></div>
+      <div class="image-wrapper">
+        <div class="image image2"></div>
+        <div class="overlay">
+          <div class="text">Cool cat</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image3"></div>
+        <div class="overlay">
+          <div class="text">Introducing: The Hyperloop</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image4"></div>
+        <div class="overlay">
+          <div class="text">So sneaky</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image5"></div>
+        <div class="overlay">
+          <div class="text">BFR - Big Falcon Rocket</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image6"></div>
+        <div class="overlay">
+          <div class="text">So much fun</div>
+        </div>
+      </div>
     </div>
     <div class="panel panel5">
-      <div class="form">
+      <form class="form">
         <p>Register to our mailing list</p>
         <div class="email">
-          <input type="email" required class="text-field" />
-          <button><div class="sent"></div></button>
+          <input type="email" id="email" size="30" required />
+          <!-- <input class="text-field" type="email" required /> -->
+          <button type="submit">
+            <div class="sent"></div>
+          </button>
         </div>
         <div>
           <label class="checkbox-label">
             <input type="checkbox" /> Send me daily cat images
           </label>
         </div>
-      </div>
+      </form>
       <footer>
         <div>
           <p>About us</p>
