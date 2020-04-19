@@ -311,6 +311,8 @@ a {
 .emailcontainer7 {
     display: inline-block;
     margin-left: 30px;
+    margin-top: 10px;
+    
 }
 
 .email7 {
@@ -330,12 +332,37 @@ a {
     margin-bottom: -7px;
 }
 
+/*checkbox*/
 .checkboxcontainer {
     margin-left: 20px;
     margin-top: 5px;
+    position: relative;
 }
 
-/*Abous us*/
+.checkbox-default {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0px;
+}
+
+.checkbox-svg {
+    position: absolute;
+    border: 1px solid grey;
+    background: black;
+    left: 2px;
+    top: 1px;
+}
+
+.checkbox-default:checked {
+    -webkit-appearance: none;
+}
+
+.Send7 {
+    padding-left: 30px;
+}
+
+/*About us*/
 .section8 {
     border-top: 1px solid lightgrey;
     padding: 20px;
