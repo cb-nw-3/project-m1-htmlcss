@@ -311,30 +311,29 @@ a {
 
 .emailcontainer7 {
     display: inline-block;
-    padding: 0;
+    margin-left: 30px;
 }
+
 .email7 {
     width: 210px;
     border-radius: 4px;
-    height: 20px;
-    margin: 0;
+    height: 25px;
     padding: 0;
+    margin: 0;
+    top: 0;
 }
 
 .sendsvg {
-    background: grey;
-    padding: 0;
-    margin: 0px;
-    width: 20px;
-    height:20px;
-    left: 0;
+    background: lightgrey;
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+    margin-bottom: -7px;
 }
 
-
-.label7 {
-    margin: 0;
-    padding: 0;
-    
+.checkboxcontainer {
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 /*Abous us*/
@@ -351,6 +350,7 @@ a {
 
 /*mobile*/
 @media (max-width: 768px) {
+    /*navbar*/
     #Features {
         display: none;
     }
@@ -415,6 +415,52 @@ a {
     }
 }
 
+/*background cover*/
+.section2 {
+    background-image: url("imgs/bg.jpg");
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    color: white;
+    
+}
+
+.main2 {
+    border: 5px solid white;
+    height: 500px;
+    margin: 100px 100px;
+    display: flex;
+    
+}
+
+.element1 {
+    display: flex;
+    font-size: 5rem;
+    padding: 100px 15px 200px 15px;
+    
+}
+
+.element2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 10px;
+    overflow: hidden;
+    
+    
+}
+
+.dreams {
+    font-size: 3rem;
+    border-bottom: 1px dotted white;
+    padding-bottom: 15px;
+    }
+
+.lorem2{
+    word-break: break-all;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-top: 20px;
+}
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1200px) {
 
