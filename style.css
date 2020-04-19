@@ -46,6 +46,8 @@ h3
         align-items: center;
         position: fixed;
         width: 100%;
+        z-index: 2;
+
 }
 
 
@@ -470,6 +472,7 @@ reflowing for media size for top title card "introducting falcon 9 */
     background-color:  #3a3633;
     color: white;
     margin-top: auto;
+    cursor: pointer;
 
     
 }
@@ -560,6 +563,64 @@ reflowing for media size for top title card "introducting falcon 9 */
 }
 
 
+@media all and (max-width: 600px)
+{
+    .floating-box:hover
+    {
+    
+        animation: spin 2s ease-in-out;
+    
+    }
+    
+}
+
+@media all and (min-width: 601px)
+{
+    .floating-box:hover
+    {
+    
+        animation: spin_translate 6s ease-in-out;
+    
+    }
+        
+}
+
+
+@keyframes spin {
+
+
+    100% { transform: rotate(360deg) 
+    }
+
+  }
+
+
+
+@keyframes spin_translate {
+
+    30% { transform: rotate(180deg) scale(1.5);
+        margin-left: 400px;
+
+    }
+    50%
+    {
+        transform: rotate(180deg) scale(1);
+        margin-left: 400px;
+        opacity: 1;
+
+    }
+    70% {         transform: rotate(180deg) scale(0.1);
+        margin-left: 400px;
+        opacity: 0.5;
+    }
+
+    100% { transform: rotate(-180deg) scale(1.5);
+        margin-left: 0px;
+        opacity: 0.2;
+    }
+
+  }
+  
 
 .floating-box
 {
@@ -640,16 +701,10 @@ reflowing for media size for top title card "introducting falcon 9 */
 .image-row
 {
     display: flex;
+    flex-wrap: wrap;
   padding: 0px;
   overflow: hidden;
   z-index: 0;
-
-
-  /* for smaller version - flex-wrap?*/
-
-
-    
-
 
   
 }
@@ -657,37 +712,69 @@ reflowing for media size for top title card "introducting falcon 9 */
 
 @media all and (max-width: 600px)
 {
-    .image-row
+
+     .image-row
     {
-        display: block;
+        display: flex;
         flex-direction: column;
         
       padding: 0px;
       overflow: hidden;
       z-index: 0;
       
-    }.image-column
+    }
+    
+    .image-column
     {
         background-position: center;
+        flex: 33.33%;
+        flex-direction: column;
+        padding: 0 px;
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+        height: 280px;
+     }   
+}
+
+/* weirdly, because of how width and height are inheriting,
+for some strange reason I have to add the  width and height of 
+image column back in at the larger size, instead of overriding
+it in the smaller size*/
+
+@media all and (min-width: 801px)
+{
+    .image-column
+    {
+        height: 180px;
     
-        flex: 100%;
-        width: 100%;
+        flex: 33%;
 
     }
     
-                
 }
+
+@media all and (min-width: 601px) and (max-width: 800px)
+{
+    .image-column
+    {
+        height: 180px;
+    
+        flex: 50%;
+
+    }
+    
+}
+
+
 
 
 .image-column
 {
     background-position: center;
-
-    flex: 33.33%;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 0 px;
-    width: 200px;
-    height: 180px;
     overflow: hidden;
     z-index: 0;
     position: relative;
@@ -871,5 +958,25 @@ opacity: 1;
 {
     display: flex;
     justify-content: space-evenly;
+    
+    flex-wrap: no-wrap;
+    margin-left: 20px;
+
 }
 
+.bottom-col
+{
+    width: 200px;
+}
+
+@media all and (max-width: 600px)
+{
+    .bottom-row
+{
+
+    flex-wrap: wrap;
+}
+
+
+
+}
