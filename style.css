@@ -91,7 +91,7 @@ a {
 /*background cover*/
 .section2 {
     background-image: url("imgs/bg.jpg");
-    background-size: cover;
+    background-size: contain;
     height: 900px;
     width: 100%;
     color: white;
@@ -103,7 +103,6 @@ a {
     height: 500px;
     margin: 100px 100px;
     display: flex;
-    
 }
 
 .element1 {
@@ -419,54 +418,44 @@ a {
 .section2 {
     background-image: url("imgs/bg.jpg");
     background-size: cover;
-    height: 900px;
+    height: 100%;
     width: 100%;
     color: white;
     
 }
 
 .main2 {
-    border: 5px solid white;
     height: 500px;
-    margin: 100px 100px;
-    display: flex;
-    
+    margin-top: 150px;
+    border: none;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
 }
 
 .element1 {
-    display: flex;
-    font-size: 5rem;
-    padding: 100px 15px 200px 15px;
-    
+    font-size: 2rem;
+    padding-bottom: 30px;
+
 }
 
 .element2 {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px 10px;
-    overflow: hidden;
-    
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .dreams {
-    font-size: 3rem;
-    border-bottom: 1px dotted white;
-    padding-bottom: 15px;
-    }
+    font-size: 2rem;
+    border-bottom: none;
+}
 
 .lorem2{
-    word-break: break-all;
-    float: left;
-    width: 48%;
-    margin: 1%;
-    padding-top: 20px;
+    width: 100%;
 }
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1200px) {
 
 }
 
-/*desktop*/
-@media (min-width: 1200px) {
-
-}
