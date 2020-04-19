@@ -414,80 +414,112 @@ a {
     }
 
 /*background cover*/
-.section2 {
-    background-image: url("imgs/bg.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    color: white;
+    .section2 {
+        background-image: url("imgs/bg.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+    }
+
+    .main2 {
+        height: 500px;
+        margin-top: 150px;
+        border: none;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .element1 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .element2 {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dreams {
+        font-size: 2rem;
+        border-bottom: none;
+    }
+
+    .lorem2{
+        width: 100%;
+    }
+
+    /*Features*/
+    .section3 {
+        margin: 50px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Gallery*/
+    .container6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*About us*/
+    .section8 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-gap: 50px;
+    }
 }
-
-.main2 {
-    height: 500px;
-    margin-top: 150px;
-    border: none;
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    margin-left: 0;
-}
-
-.element1 {
-    font-size: 2rem;
-    padding-bottom: 30px;
-}
-
-.element2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-}
-
-.dreams {
-    font-size: 2rem;
-    border-bottom: none;
-}
-
-.lorem2{
-    width: 100%;
-}
-
-/*Features*/
-.section3 {
-    margin: 50px 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*Gallery*/
-.container6 {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-/*About us*/
-.section8 {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-gap: 50px;
-}
-
-
-
-
 
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1200px) {
-
+    .section2 {
+        background-image: url("imgs/bg.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+        padding-bottom: 50px;
+    }
+    
+    .main2 {
+        height: 500px;
+        margin: 100px;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .element1 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+    
+    .element2 {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dreams {
+        font-size: 2rem;
+        border-bottom: none;
+        border-bottom: 1px dotted white;
+    }
+    
+    .lorem2{
+        width: 100%;
+    }
 }
 
