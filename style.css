@@ -146,13 +146,19 @@ li > a {
   list-style-type: none;
   padding-bottom: 12px;
 }
-@media (min-width: 800px) {
+
+@media (min-width: 480px) {
+  /* .mobile-nav {
+    display: none;
+  } */
+}
+@media (min-width: 768px) {
   .mobile-nav {
     display: none;
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 767px) {
   .navlist {
     display: none;
   }
