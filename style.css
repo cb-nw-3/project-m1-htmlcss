@@ -6,15 +6,69 @@ body {
   object-fit: cover;
 }
 
-.desktop-nav {
+.nav {
   background-color: black;
   opacity: 80%;
-  text-align: center;
   align-items: center;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+  padding-left: 20px;
 }
 
+.desktop-nav {
+  float: right;
+  display: flex;
+}
+
+.desktop-nav > ul {
+  display: flex;
+  margin-right: 40px;
+}
+
+.desktop-nav > li {
+  list-style-type: none;
+}
+
+.nav-dropdown {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown:hover > .menu {
+  top: 100%;
+  position: absolute;
+  display: block;
+  right: 0;
+  background-color: black;
+  opacity: 80%;
+}
+
+.menu > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+}
+
+.menu > ul > li:hover {
+  background-color: grey;
+}
+
+.menu {
+  display: none;
+}
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
 .nav-products {
   text-align: right;
 }
@@ -51,13 +105,7 @@ body {
   display: inline-block;
   position: relative;
   padding: 10px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-}
+} */
 
 .mobile-nav-button img {
   width: 18px;
@@ -68,21 +116,10 @@ li {
   margin-left: 50px;
 }
 
-@media (min-width: 800px) {
-  .mobile-nav {
-    display: none;
-  }
-}
-
-@media (max-width: 799px) {
-  .desktop-nav {
-    display: none;
-  }
-}
-
 .mobile-nav-button {
   color: white;
   background-color: black;
+  margin-right: 40px;
 }
 
 a {
@@ -94,8 +131,15 @@ a {
   width: 30px;
 }
 
+.introtitle {
+  font-size: 4rem;
+  margin: 2%;
+}
+
 .introduction {
   margin: 10%;
+  width: 75%;
+  height: 65%;
   border: white;
   color: white;
   border-style: solid;
@@ -118,8 +162,13 @@ a {
   flex: 3;
 }
 
+.introtextmargin {
+  margin: 2%;
+}
+
 .introcolumn {
   display: flex;
+  border-top: 1px solid white;
 }
 
 h2 {
@@ -214,4 +263,33 @@ h2 {
 
 footer {
   display: flex;
+}
+
+/* web */
+@media (min-width: 800px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+}
+
+/* mobile */
+@media (max-width: 799px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .desktop-mobile {
+    display: flex;
+  }
+
+  .Amazingfeature {
+    display: inline-block;
+  }
+  .feature {
+    width: 70%;
+  }
 }
