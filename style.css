@@ -457,6 +457,7 @@ a {
         margin: 50px 50px;
         display: flex;
         flex-direction: column;
+        width: 450px;
     }
 
     /*Gallery*/
@@ -485,6 +486,7 @@ a {
 
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1200px) {
+    /*background cover*/
     .section2 {
         background-image: url("imgs/bg.jpg");
         background-size: cover;
@@ -520,6 +522,25 @@ a {
     
     .lorem2{
         width: 100%;
+    }
+
+    /*Features*/
+    .section3 {
+        margin: 50px 50px;
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-gap: 50px;
+        width: 450px;
+        align-self: center;
+    }
+
+    /*Gallery*/
+    .section6 {
+        display: flex;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
     }
 }
 
