@@ -1,14 +1,245 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
-</head>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------- Navigator -------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------- Spaceship -------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
 
-<body>
-    <!-- write some HTML! -->
-</body>
+  </head>
+
+  <nav class="nav">
+    <div class="image">
+      <a href="#">
+        <img src="./imgs/logo.svg" class="logo" alt="Inf" />
+      </a>
+    </div>
+
+    <div class="navlist">
+      <ul class="navlistlink">
+        <li><a href="#Features" class=prod>Features</a></li>
+        <li><a href="#coolbox">Advantages</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li class=product><a href="#">Products</a>
+          <div class=dropdown-menu>
+            <ul class="menu-list">
+              <li><a href="#">Falcon-9</a></li>
+              <li><a href="#">Model-S</a></li>
+              <li><a href="#">IPhone</a></li>
+            </ul>
+          </div>  
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <button class="mobile-nav-button" aria-label="Show menu">
+        <img src="./imgs/menu.svg" />
+        <div class="menu-list mob">
+          <ul class="mobi liste">
+            <li><a href="#Features" class=prod>Features</a></li>
+            <li><a href="#coolbox">Advantages</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href=#>Product</a></li>
+          </ul>
+        </div>
+      </button>
+    </div>
+  </header>
+  </nav>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------Start -------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------- Navigator -------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <div>
+    <div class="sec1 center-content">
+      <div class="bigbox">
+        <div class="title">
+          <h1 class="title1">Introducing Falcon 9</h1>
+        </div>
+        <div class="block-container">
+          <div class="block1">
+            <h2>We make dreams come true</h2>
+          </div>
+          <div class="block2">
+            <p class="para">
+              Lorem ipsum dolor
+            </p>
+            <p class="para">
+              Lorem ipsom dolor
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------- Spaceship -------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------- Features ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <div id=Features class="features-container">
+    <div class="features">
+      <div class="features-item">
+        <img src="./imgs/icon1.svg" class="feat-img" alt="icon" />
+        <h3>Amazing feature 1</h3>
+        <p class="features-p">Lorem ipsum dolor sir amet consectetur</p>
+        <button class="gotit">Got it</button>
+      </div>
+    </div>
+    <div class="features">
+      <div class="features-item">
+        <img src="./imgs/icon2.svg" class="feat-img" alt="icon" />
+        <h3>Amazing feature 2</h3>
+        <p class="features-p">Lorem ipsum dolor sir amet consectetur</p>
+        <button class="gotit">Got it</button>
+      </div>
+    </div>
+    <div class="features">
+      <div class="features-item">
+        <img src="./imgs/icon3.svg" class="feat-img" alt="icon" />
+        <h3>Amazing feature 3</h3>
+        <p class="features-p">Lorem ipsum dolor sir amet consectetur</p>
+        <button class="gotit">Got it</button>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Features ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Coolbox ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <div id=coolbox class="cool">
+    <div class="cool-section-1">
+      <h4 class="cool-title black">Some cool text</h4>
+      <p class="cool-para black">Lorem ipsum dolor sit amet</p>
+      <div class="cool-child">
+        <h5>This looks cool</h5>
+        <p class="p-child">Hover me if you like random animation</p>
+      </div>
+    </div>
+    <div class="cool-section-2">
+      <h4 class="cool-title grad">Slick gradient</h4>
+      <p class="cool-para grad">Lorem ipsum?</p>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Coolbox ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Gridline ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <div id=Gallery class="gallery">
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery_item-1">
+        <img src="./imgs/tesla.jpg" class="gallery_img" alt="Image 1" />
+      </figure>
+      <p class=overlay-text>The future of driving</p>
+    </div>  
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery_item-2">
+        <img src="./imgs/funnycat.jpg" class="gallery_img" alt="Image 2" />
+      </figure>
+      <p class=overlay-text>
+        Meow!
+      </p>
+    </div>
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery_item-3">
+        <img src="./imgs/bfr.jpeg" class="gallery_img" alt="Image 3" />
+      </figure>
+      <p class=overlay-text>
+        See you on Mars!
+      </p>
+    </div>
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery__item-4">
+        <img src="./imgs/procat.jpg" class="gallery_img" alt="Image 4" />
+      </figure>
+      <p class=overlay-text> 
+        Cat!
+      </p>
+    </div>
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery__item-5">
+        <img src="./imgs/hyperloop.jpg" class="gallery_img" alt="Image 5" />
+      </figure>
+      <p class=overlay-text>
+        In 2025!
+      </p>
+    </div>
+    <div class=image-wrapper>
+      <figure class="gallery_item gallery__item-6">
+        <img src="./imgs/sneakycat.jpg" class="gallery_img" alt="Image 6" />
+      </figure>
+      <p class=overlay-text>
+        !
+      </p>
+    </div>
+
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Gridline ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!------------------------------------------------Register-------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <form class="registration-form">
+    <label>Register to our mailing list:</label>
+    <div class="email">
+      <input type="text" required class="text-field" />
+      <button class="form-button">
+        <img src="./imgs/send.svg" class="feat-img" alt="icon" />
+      </button>
+    </div>
+    <label class="radio-label">
+      <input type="checkbox" name="e-mail" required /> Send me dayly cat images
+    </label>
+  </form>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------- Register ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!------------------------------------------------Copyright-------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <table class="copyright">
+    <tbody>
+        <tr>
+          <td><a href="#">About Us</a></td>
+          <td><a href="#">About Us</td>
+          <td><a href="#">About Us</td>
+          <td><a href="#">About Us</td>
+        </tr>
+          <td><a href="#">Privacy Policy</td>
+          <td><a href="#">Privacy Policy</td>
+          <td><a href="#">Privacy Policy</td>
+          <td><a href="#">Privacy Policy</td>
+        </tr>
+          <td><a href="#">Legal Notes</td>
+          <td><a href="#">Legal Notes</td>
+          <td><a href="#">Legal Notes</td>
+          <td><a href="#">Legal Notes</td>
+        </tr>
+          <td><a href="#">Copyrights</td>
+          <td><a href="#">Copyrights</td>
+          <td><a href="#">Copyrights</td>
+          <td><a href="#">Copyrights</td>
+        </tr>
+    </tbody>
+</table>
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!-----------------------------------------------Copyright ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------End ---------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------->
+
+  <!--
+    2) Gridline animation</span>
+    3) Hamberger dropdown 
+  -->
 
 </html>
