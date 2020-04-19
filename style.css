@@ -394,7 +394,7 @@ li.barAnimation:hover::after {
   margin: 0;
   padding-bottom: 75.5%;
 }
-
+/* 
 .container {
   display: block;
   position: relative;
@@ -406,6 +406,52 @@ li.barAnimation:hover::after {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+} */
+
+.form {
+  display: block;
+  margin: 30px 0;
+  color: gray;
+}
+
+.email {
+  display: flex;
+  width: 40vw;
+  height: 2.5rem;
+  margin-bottom: 15px;
+}
+.email input {
+  margin: 0;
+  padding: 0 12px;
+  flex: 1;
+  border: 1.5px solid var(--backgroundColor);
+  border-radius: 4px 0 0 4px;
+  font-size: medium;
+  margin-right: 0;
+}
+
+.email button {
+  display: flex;
+  width: 36px;
+  height: auto;
+  border-style: none;
+  background-color: var(--backgroundColor);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 6px 6px 0;
+}
+
+.email button:hover {
+  cursor: pointer;
+}
+.sent {
+  height: 0;
+  width: 75.5%;
+  background-image: url("imgs/send.svg");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 75.5%;
 }
 
 .checkbox-label {
@@ -1044,6 +1090,21 @@ footer {
     font-size: 1.1rem;
     padding: 0;
   }
+
+  .email {
+    display: flex;
+    width: 60vw;
+    height: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .checkmark {
+    position: absolute;
+    left: 18.5vw;
+    height: 25px;
+    width: 25px;
+    background-color: whitesmoke;
+  }
 }
 
 /*FOUR*/
@@ -1361,9 +1422,16 @@ footer {
     min-height: 610px;
   }
 
+  .email {
+    display: flex;
+    width: 60vw;
+    height: 2.5rem;
+    margin-bottom: 15px;
+  }
+
   .checkmark {
     position: absolute;
-    left: 28vw;
+    left: 18.5vw;
     height: 25px;
     width: 25px;
     background-color: whitesmoke;
