@@ -1,1 +1,617 @@
-/* CSS here :) */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    background-color: #3a3633;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex: 1;
+}
+
+li {
+    display: flex;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#Features:hover {
+    border-bottom: 2px solid white;
+}
+
+.Products:hover {
+    border-bottom: 2px solid white;
+}
+
+
+/*dropdown*/
+.Products {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.Products:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    width: 200px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.menu-list {
+    margin-top: 17px;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.menu-list > li {
+    list-style-type: none;
+    padding: 20px;
+    width: 80%;
+    background-color: #3a3633;
+}
+
+.menu-list > li:hover {
+    background-color: grey;
+}
+
+/*burger*/
+#burgermenu {
+    display: none;
+}
+
+/*background cover*/
+.section2 {
+    background-image: url("imgs/bg.jpg");
+    background-size: contain;
+    height: 900px;
+    width: 100%;
+    color: white;
+    
+}
+
+.main2 {
+    border: 5px solid white;
+    height: 500px;
+    margin: 100px 100px;
+    display: flex;
+}
+
+.element1 {
+    display: flex;
+    font-size: 5rem;
+    padding: 100px 15px 200px 15px;
+    
+}
+
+.element2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 10px;
+    overflow: hidden;
+    
+    
+}
+
+.dreams {
+    font-size: 3rem;
+    border-bottom: 1px dotted white;
+    padding-bottom: 15px;
+    }
+
+.lorem2{
+    word-break: break-all;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-top: 20px;
+}
+
+/*Features*/
+.section3 {
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.section3 div {
+    text-align: center;
+}
+
+.Feature1, .Feature2, .Feature3{
+    border: 1px solid lightgrey;
+    margin: 15px;
+    padding: 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 3px 3px rgb(100,100,100);
+}
+
+.title3 {
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.section3 button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*animation*/
+.section4 {
+    background-color: #3a3633;
+    color: white;
+    padding: 50px 20px 50px 20px;
+    position: relative;
+    height: 200px;
+}
+
+.animation {
+    position: absolute;
+    margin-top: 50px;
+    border: 5px solid white;
+    text-align: center;
+    width: 230px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    background-color: #3a3633;
+    overflow: hidden;
+    transition: transform 3s ease-in-out;
+}
+
+.animation:hover {
+    animation: animation4 8s ease-in-out;
+}
+
+@keyframes animation4 {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 100%
+    }
+    25% {
+        transform-origin: right;
+        transform: scale(1) rotate(180deg);
+        opacity: 100%
+    }
+    50% {
+        transform: scale(0.1) rotate(180deg);
+        opacity: 100%
+    }
+    75% {
+        transform: scale (0);
+        opacity: 100%
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.cool4 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.cool5 {
+    color: red;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.section5 {
+    color: white;
+    height: 300px;
+    text-align: right;
+    background: linear-gradient(0.25turn,white, rgb(0, 81, 255));
+    padding-right: 10px;
+}
+
+.Slick {
+    font-size: 3rem;
+    padding: 40px 10px;
+}
+
+.lorem5 {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+/*Gallery*/
+.container6 {
+    position: relative;
+} 
+
+.row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.row .col div img {
+    width: 100%;
+    transition: transform .4s;
+}
+
+.col div {
+    display: flex;
+    flex: 1;  
+    overflow: hidden;
+}
+
+.text6 {
+    position: absolute;
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.col div img:hover {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+.container6:hover .text6 {
+    opacity: 1;
+}
+
+/*Register*/
+.section7 {
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailcontainer7 {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+.email7 {
+    width: 210px;
+    border-radius: 4px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+.sendsvg {
+    background: lightgrey;
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+    margin-bottom: -7px;
+}
+
+/*checkbox*/
+.checkboxcontainer {
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.checkbox-default {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0px;
+}
+
+.checkbox-svg {
+    position: absolute;
+    border: 1px solid grey;
+    background: black;
+    left: 2px;
+    top: 1px;
+}
+
+.checkbox-default:checked {
+    -webkit-appearance: none;
+}
+
+.Send7 {
+    padding-left: 30px;
+}
+
+/*About us*/
+.section8 {
+    border-top: 1px solid lightgrey;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col8 div {
+    padding: 5px;
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+    /*navbar*/
+    #Features {
+        display: none;
+    }
+    .Products {
+        display: none;
+    }
+
+    /*burgermenu*/
+    .navigation-bar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation-container {
+        position: relative;
+        display: inline-block;
+        display: flex;
+    }
+    #burgermenu {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 4px;
+    }
+
+    .burgerdropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+    }
+
+    .burger-list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    .burger-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #burgermenu:hover .burger-list {
+        opacity: 1;
+    }
+    
+    .burger-list > li {
+        list-style-type: none;
+        padding: 20px;
+        width: 100%;
+        background-color: #3a3633;
+    }
+    
+    .burger-list > li:hover {
+        background-color: grey;
+    }
+
+/*background cover*/
+    .section2 {
+        background-image: url("imgs/bg.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+    }
+
+    .main2 {
+        height: 500px;
+        margin-top: 150px;
+        border: none;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .element1 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .element2 {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dreams {
+        font-size: 2rem;
+        border-bottom: none;
+    }
+
+    .lorem2{
+        width: 100%;
+    }
+
+    /*animation*/
+    .animation:hover {
+        animation: animation4 8s ease-in-out;
+    }
+    
+    @keyframes animation4 {
+        0% {
+            transform: scale(1) rotate(0deg);
+            opacity: 100%
+        }
+        25% {
+            transform: scale(1) rotate(360deg);
+            opacity: 100%
+        }
+        50% {
+            transform: scale(1) rotate(0deg);
+            opacity: 100%
+        }
+        100% {
+            transform: scale (1) rotate(360deg);
+            opacity: 100%
+        }
+    }
+
+    .section5 {
+        color: white;
+        height: 400px;
+        text-align: right;
+        background: linear-gradient(0.25turn,white, rgb(0, 81, 255));
+        padding-right: 10px;
+    }
+    
+    .Slick {
+        font-size: 3rem;
+        padding-top: 200px;
+    }
+
+    /*Features*/
+    .section3 {
+        margin: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+
+    /*Gallery*/
+    .container6 {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    /*About us*/
+    .section8 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-gap: 50px;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    /*navbar*/
+    .ul2 li {
+        padding-left: 15px;
+    }
+
+    /*background cover*/
+    .section2 {
+        background-image: url("imgs/bg.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+        padding-bottom: 50px;
+    }
+    
+    .main2 {
+        height: 500px;
+        margin: 100px;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .element1 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+    
+    .element2 {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dreams {
+        font-size: 2rem;
+        border-bottom: none;
+        border-bottom: 1px dotted white;
+    }
+    
+    .lorem2{
+        width: 100%;
+    }
+
+    /*Features*/
+    .section3 {
+        margin: 50px 50px;
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-gap: 50px;
+    }
+
+    /*Gallery*/
+    .section6 {
+        display: flex;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
