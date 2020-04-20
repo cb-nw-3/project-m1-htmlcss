@@ -1,14 +1,185 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- write some HTML! -->
+  <header class="sticky-nav-bar">
+    <div class="logo">
+      <a href="#Features"><img src="./imgs/logo.svg" class="logo" /></a>
+    </div>
+    <nav class="desktop-nav">
+      <span class="nav-link">
+        <a href="#Features">Features</a>
+      </span>
+      <span class="nav-link">
+        <a href="#Advantages">Advantages</a>
+      </span>
+      <span class="nav-link">
+        <a href="#Gallery">Gallery</a>
+      </span>
+      <span class="nav-dropdown">
+        Products
+        <div class="dropdown-menu">
+          <ul class="menu-list">
+            <li>Falcon 9</li>
+            <li>Model S</li>
+            <li>iPhone</li>
+          </ul>
+        </div>
+      </span>
+    </nav>
+    <nav class="mobile-nav-dropdown">
+      <button class="mobile-nav-button" aria-label="Show menu">
+        <img src="./imgs/menu.svg" />
+      </button>
+      <div class="mobile-dropdown-menu">
+        <ul class="mobile-menu-list">
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Advantages">Advantages</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="Features">
+    <div class="center-content falcon-9 ">
+      <div class="cover-dream-section">
+        <div class="falcon-box-1"> 
+          <h1>Introducing <br/> Falcon 9</h1>
+        </div>
+        <div class="falcon-box-2">
+          <h2>We make dreams come true</h2>
+          <div class="bottom-border"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis illum nesciunt alias eligendi, laborum repellat nobis ea temporibus. Natus optio laborum dolores voluptatum delectus non ex eveniet nesciunt assumenda.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis illum nesciunt alias eligendi, laborum repellat nobis ea temporibus. Natus optio laborum dolores voluptatum delectus non ex eveniet nesciunt assumenda.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature-section">
+      <div class="feature-box links">
+        <img class="icon-resize" src="./imgs/icon1.svg" alt="icon-1" />
+        <h3>Amazing feature 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium non tempore quisquam odit amet magnam ex consequuntur.</p>
+        <button>Get it</button>
+      </div>
+      <div class="feature-box">
+        <img class="icon-resize" src="./imgs/icon2.svg" alt="icon-2" />
+        <h3>Amazing feature 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium non tempore quisquam odit amet magnam ex consequuntur.</p>
+        <button>Sell it</button>
+      </div>
+      <div class="feature-box">
+        <img class="icon-resize" src="./imgs/icon3.svg" alt="icon-3" />
+        <h3>Amazing feature 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium non tempore quisquam odit amet magnam ex consequuntur.</p>
+        <button>Do it</button>
+      </div>
+    </div>
+  </section>
+  <section id="Advantages">
+    <div class="cool-text-section">
+      <div class="cool-text">
+        <h2>Some cool text</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores, soluta eum magni molestiae iure ea fugiat perspiciatis tempora quibusdam debitis optio ipsa vitae commodi quidem odit nobis sit.</p>
+      </div>
+      <div class="overlap-box">
+        <p class="overlap-box-title">This looks cool</p>
+        <p>Hover me if you like random animations.</p>
+      </div>
+    </div>
+    <div class="gradient-text-section">
+      <div class="gradient-text">
+        <h2>Slick gradient</h2>
+        <p>Lorem ipsum?</p>
+      </div>
+    </div>    
+  </section>
+  <section id="Gallery">
+    <div class="gallery">
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/tesla.jpg" alt="tesla" />
+        <div class="middle">
+          <div class="image-overlap-text">Our flagship car: The Model S</div>
+        </div>
+      </div>
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/procat.jpg" alt="procat" />
+        <div class="middle">
+          <div class="image-overlap-text">Cool cat</div>
+        </div>
+      </div>
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/hyperloop.jpg" alt="hyperloop" />
+        <div class="middle">
+          <div class="image-overlap-text">Introducing: The Hyperloop</div>
+        </div>
+      </div>
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/sneakycat.jpg" alt="sneakycat" />
+        <div class="middle">
+          <div class="image-overlap-text">So sneaky</div>
+        </div>
+      </div>
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/bfr.jpeg" alt="bfr" />
+        <div class="middle">
+          <div class="image-overlap-text">BFR - Big Falcon Rocket</div>
+        </div>
+      </div>
+      <div class="img-hover-zoom">
+        <img class="img-box image" src="./imgs/funnycat.jpg" alt="funnycat" />
+        <div class="middle">
+          <div class="image-overlap-text">So much fun</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <form class="registration-form">
+    <div>
+      <p class="form-items">Register to our mailing list:</p>
+      <div class="send-email-address">
+        <input type="email" required class="email-input-field">
+        <button class="send-button">
+          <img src="./imgs/send.svg" />
+        </button>
+      </div>
+      <label class="form-items checkbox-label">
+        <input  class="checkbox" type="checkbox" /> Send me daily cat images
+      </label>
+    </div>
+  </form>
+  <footer>
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal notes</a></li>
+      <li><a href="#">Copyright</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal notes</a></li>
+      <li><a href="#">Copyright</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal notes</a></li>
+      <li><a href="#">Copyright</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal notes</a></li>
+      <li><a href="#">Copyright</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
