@@ -12,27 +12,55 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <nav class="navBar sticky">
+    <nav class="desktop-navBar sticky">
       <div class="logo">
-        <img src="imgs/logo.svg" alt="" />
+        <a href="#main"><img src="imgs/logo.svg" alt="" /></a>
       </div>
       <ul class="main-list-item">
-        <li>Features</li>
-        <li>Advantages</li>
-        <li>Gallary</li>
-        <li>
-          Products
-          <ul class="dropDown">
-            <li>Falcon 9</li>
-            <li>Model S</li>
-            <li>Iphone</li>
-          </ul>
+        <li><a href="#amazing">Features</a></li>
+        <li><a href="#cool-text">Advantages</a></li>
+        <li><a href="#gallary">Gallary</a></li>
+        <div class="dropdown">
+          <li>
+            Products
+            <div class="dropdown-content">
+              <a href="#">Falcon 9</a>
+              <a href="#">Model S</a>
+              <a href="#">Iphone</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <nav class="mobile-navBar sticky">
+      <div class="mobile-logo">
+        <a href="#main"><img src="imgs/logo.svg" alt="" /></a>
+      </div>
+      <ul class="mobile-main-list-item">
+        <li class="hamburger-item">
+          <img src="imgs/menu.svg" alt="toggle-menu" />
+          <div class="mobile-hamburger">
+            <ul class="mobile-drop">
+              <li><a href="#amazing">Features</a></li>
+              <li><a href="#cool-text">Advantages</a></li>
+              <li><a href="#gallary">Gallary</a></li>
+              <li>
+                <div class="mobile-dropdown">
+                  Products
+                  <div class="mobile-dropdown-content">
+                    <a href="#">Falcon 9</a>
+                    <a href="#">Model S</a>
+                    <a href="#">Iphone</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
-    <div class="main-Image">
+    <div class="main-Image" id="main">
       <div class="main-box">
         <div class="main-box-left">
           <h1>Introducing Falcon 9</h1>
@@ -59,7 +87,7 @@
       </div>
     </div>
     <div class="amazing-feature">
-      <div class="feature">
+      <div class="feature" id="amazing">
         <img src="imgs/icon1.svg" alt="" />
         <h3>Amazing Feature 1</h3>
         <p>
@@ -100,7 +128,7 @@
       </div>
     </div>
     <div class="under-amazing-feature">
-      <div class="cool-text-section">
+      <div class="cool-text-section" id="cool-text">
         <div class="some-cool-text">
           <p>Some Cool text</p>
         </div>
@@ -126,9 +154,8 @@
         </div>
       </div>
     </div>
-    <div class="animal-Gallary">
+    <div class="animal-Gallary" id="gallary">
       <div class="row-1">
-        <div></div>
         <img src="imgs/tesla.jpg" alt="no photo" />
       </div>
 
@@ -174,29 +201,33 @@
       </div>
     </div>
     <div class="bottom-row">
-      <div class="bottom-row-1">
-        <div class="bottom-row-1a"><p>About Us</p></div>
-        <div class="bottom-row-1a"><p>About Us</p></div>
-        <div class="bottom-row-1a"><p>About Us</p></div>
-        <div class="bottom-row-1a"><p>About Us</p></div>
+      <div class="bottom-row-top">
+        <div class="bottom-row-1">
+          <div class="bottom-row-1a"><p>About Us</p></div>
+          <div class="bottom-row-1a"><p>Private Policy</p></div>
+          <div class="bottom-row-1a"><p>Legal Notes</p></div>
+          <div class="bottom-row-1a"><p>CopyWrite</p></div>
+        </div>
+        <div class="bottom-row-1">
+          <div class="bottom-row-1a"><p>About Us</p></div>
+          <div class="bottom-row-1a"><p>Private Policy</p></div>
+          <div class="bottom-row-1a"><p>Legal Notes</p></div>
+          <div class="bottom-row-1a"><p>CopyWrite</p></div>
+        </div>
       </div>
-      <div class="bottom-row-1">
-        <div class="bottom-row-1a"><p>Private Policy</p></div>
-        <div class="bottom-row-1a"><p>Private Policy</p></div>
-        <div class="bottom-row-1a"><p>Private Policy</p></div>
-        <div class="bottom-row-1a"><p>Private Policy</p></div>
-      </div>
-      <div class="bottom-row-1">
-        <div class="bottom-row-1a"><p>Legal Notes</p></div>
-        <div class="bottom-row-1a"><p>Legal Notes</p></div>
-        <div class="bottom-row-1a"><p>Legal Notes</p></div>
-        <div class="bottom-row-1a"><p>Legal Notes</p></div>
-      </div>
-      <div class="bottom-row-1">
-        <div class="bottom-row-1a"><p>CopyWrite</p></div>
-        <div class="bottom-row-1a"><p>CopyWrite</p></div>
-        <div class="bottom-row-1a"><p>CopyWrite</p></div>
-        <div class="bottom-row-1a"><p>CopyWrite</p></div>
+      <div class="bottom-row-bottom">
+        <div class="bottom-row-1">
+          <div class="bottom-row-1a"><p>About Us</p></div>
+          <div class="bottom-row-1a"><p>Private Policy</p></div>
+          <div class="bottom-row-1a"><p>Legal Notes</p></div>
+          <div class="bottom-row-1a"><p>CopyWrite</p></div>
+        </div>
+        <div class="bottom-row-1">
+          <div class="bottom-row-1a"><p>About Us</p></div>
+          <div class="bottom-row-1a"><p>Private Policy</p></div>
+          <div class="bottom-row-1a"><p>Legal Notes</p></div>
+          <div class="bottom-row-1a"><p>CopyWrite</p></div>
+        </div>
       </div>
     </div>
   </body>
