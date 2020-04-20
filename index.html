@@ -1,14 +1,187 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html id="top">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
-    <!-- write some HTML! -->
-</body>
-
+  <body>
+    <section class="nav-bar">
+      <a href="#top"><img class="logo-image" src="imgs/logo.svg" /></a>
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+      <ul class="options">
+        <li><a href="#amazing-features">Features</a></li>
+        <li><a href="#advantages">Advantages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li class="products">
+          <a>Products</a>
+          <ul>
+            <li>
+              <a href="https://www.spacex.com/falcon9" target="_blank"
+                >Falcon 9</a
+              >
+            </li>
+            <li>
+              <a href="https://www.tesla.com/en_ca/models" target="_blank"
+                >Model S</a
+              >
+            </li>
+            <li>
+              <a href="https://www.apple.com/ca/iphone/" target="_blank"
+                >iPhone</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="intro">
+      <div class="falcon">
+        <div class="falcon-heading"><h1>Introducing Falcon 9</h1></div>
+        <div class="falcon-exp">
+          <h2>We make dreams come true</h2>
+          <p>
+            Chocolate cake oat cake cookie gummi bears. Icing soufflé jelly
+            beans. Soufflé jelly beans donut chupa chups toffee cake gummi bears
+            jujubes chocolate cake. Gummies halvah pie sweet jelly beans
+            fruitcake cotton candy pie. Cake pastry topping croissant gummi
+            bears candy. Danish tiramisu halvah. Caramels pudding tootsie roll
+            toffee.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="amazing-features" class="amazing-features">
+      <div class="af-1">
+        <img src="imgs/icon1.svg" alt="checkmark" />
+        <h2>Amazing Feature 1</h2>
+        <p>
+          I'm baby seitan velit ut chartreuse fingerstache exercitation crucifix
+          photo booth. Poke crucifix try-hard truffaut franzen pabst. Humblebrag
+          tacos cardigan laboris. IPhone raclette biodiesel ut. Food truck
+          kombucha austin affogato vice skateboard proident mollit gentrify
+          tumblr leggings marfa selfies shoreditch.
+        </p>
+        <button>Get It</button>
+      </div>
+      <div class="af-2">
+        <img src="imgs/icon2.svg" alt="refresh" />
+        <h2>Amazing Feature 2</h2>
+        <p>
+          Timeframe going forward enough to wash your face for blue money quick
+          win quick win feature creep. Face time we need this overall to be
+          busier and more active dogpile that. We don't want to boil the ocean
+          dog and pony show, but groom the backlog so on-brand but completeley
+          fresh drink the Kool-aid strategic fit, UX.
+        </p>
+        <button>Sell It</button>
+      </div>
+      <div class="af-3">
+        <img src="imgs/icon3.svg" alt="fingerprint" />
+        <h2>Amazing Feature 3</h2>
+        <p>
+          Can you please send me the design specs again?. Can you make it look
+          more designed what you've given us is texty, we want sexy, start on it
+          today and we will talk about what i want next time , so anyway, you
+          are the designer, you know what to do could you move it a tad to the
+          left i think this should be fairly easy.
+        </p>
+        <button>Do It</button>
+      </div>
+    </section>
+    <section id="advantages" class="text-boxes">
+      <div class="text-box">
+        <h1>Some cool text</h1>
+        <p>
+          Can you make the logo bigger yes bigger bigger still the logo is too
+          big I know somebody who can do this for a reasonable cost can you make
+          the blue bluer?
+        </p>
+      </div>
+      <div class="animation-box">
+        <h3>This looks cool</h3>
+        <p>Hover over me if you like random animations</p>
+      </div>
+      <div class="gradient-box">
+        <h1>Slick Gradient</h1>
+        <p>
+          Typewriter green juice dolor, cred helvetica single-origin coffee et
+          gluten-free. Asymmetrical gentrify shabby chic, messenger bag coloring
+          book put a bird on it vape shoreditch flexitarian poutine four dollar
+          toast fanny pack man bun crucifix hashtag. Elit commodo gastropub la
+          croix.
+        </p>
+      </div>
+    </section>
+    <section id="gallery" class="image-box">
+      <div class="tesla flex-col">
+        <p>Our flagship car: The Model S</p>
+      </div>
+      <div class="pro-cat flex-col">
+        <p>Cool cat</p>
+      </div>
+      <div class="hyperloop flex-col">
+        <p>Introducing: The Hyperloop</p>
+      </div>
+      <div class="sneaky-cat flex-col">
+        <p>So sneaky</p>
+      </div>
+      <div class="bfr flex-col">
+        <p>BFR - Big Falcon Rocket</p>
+      </div>
+      <div class="funny-cat flex-col">
+        <p>So much fun</p>
+      </div>
+    </section>
+    <section class="mailing-list">
+      <p>Register to our mailing list</p>
+      <div>
+        <input type="email" id="email" />
+        <button class="submit"></button>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox" />
+        <span>Send me daily cat images</span>
+      </div>
+    </section>
+    <footer>
+      <div class="column">
+        <div class="row">
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyright</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="row">
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyright</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="row">
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyright</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="row">
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyright</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

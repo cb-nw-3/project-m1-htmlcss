@@ -1,1 +1,836 @@
-/* CSS here :) */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 620px) {
+  /* Top navigation bar */
+  .nav-bar {
+    position: sticky; /* for the navigation bar to remain on top visible on screen while the user scrolls down the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    top: 0;
+    height: 5 px;
+    width: 100%;
+    background-color: #3a3633;
+    margin-bottom: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    z-index: 1;
+  }
+
+  .options {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* links in the navigation bar */
+  .nav-bar a {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    padding-left: 40px;
+  }
+
+  /* options in the product submenu - hidden when not hovered on */
+  .products ul {
+    list-style-type: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  /* options ins the product submenu visible on hover */
+  .options li:hover > ul,
+  .options .products ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #3a3633;
+    color: white;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: left;
+    align-items: center;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  .logo-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* hamburger menu only visible when screen width is at 620px or less */
+  #hamburger {
+    display: none;
+  }
+
+  label {
+    display: none;
+  }
+
+  .logo-image:hover {
+    cursor: pointer;
+  }
+
+  .intro {
+    background-image: url("imgs/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+  }
+
+  .intro .falcon {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    border: 5px solid white;
+    width: 80%;
+    top: 40%;
+    color: white;
+  }
+
+  /* divide the divs by 2 in the introduction box*/
+  .intro .falcon div {
+    width: 50%;
+  }
+
+  .falcon-heading {
+    padding: 10px;
+    font-size: 2em;
+  }
+
+  .falcon-exp {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+  }
+
+  .falcon-exp p {
+    padding: 2px;
+    border-top: 2px dotted white;
+  }
+
+  .amazing-features {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    left: 10%;
+  }
+
+  .af-1,
+  .af-2,
+  .af-3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .amazing-features > div > img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .amazing-features button {
+    width: 90%;
+    background-color: #3a3633;
+    color: white;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .text-boxes {
+    display: flex;
+    flex: 1;
+    position: sticky;
+    flex-direction: column;
+  }
+
+  .text-box h1,
+  .gradient-box h1 {
+    font-size: 5em;
+  }
+
+  .text-box p,
+  .gradient-box p {
+    font-size: 1.5em;
+  }
+
+  .text-box {
+    position: relative;
+    background-color: #3a3633;
+    color: white;
+    padding: 20px;
+    z-index: -1;
+    height: 50vh;
+  }
+
+  .gradient-box {
+    position: relative;
+    background-color: dodgerblue;
+    background-image: linear-gradient(to right, white, dodgerblue);
+    color: white;
+    padding: 20px;
+    text-align: right;
+    z-index: -1;
+    height: 50vh;
+  }
+
+  .animation-box {
+    position: absolute;
+    background-color: #3a3633;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    z-index: 1;
+    border: 5px solid white;
+    top: 40%;
+    font-size: 10px;
+    left: 5%;
+    padding: 8px;
+  }
+
+  .animation-box h3 {
+    color: red;
+    font-size: 2.5em;
+  }
+
+  .animation-box p {
+    font-size: 20px;
+  }
+
+  /* animation of box on hover*/
+  @keyframes spin {
+    from {
+      transform: translateX(0) rotate(0) scale(1);
+    }
+    to {
+      transform: translateX(60%) rotate(180deg) scale(0);
+    }
+  }
+
+  .animation-box:hover {
+    animation: spin 3s ease-in-out;
+  }
+
+  /* image grid */
+  .image-box {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 55vh;
+  }
+
+  /* divide the number of columns in a row by 3 to give 2 rows for 6 images*/
+  .flex-col {
+    flex-basis: calc(33.3%);
+  }
+
+  .tesla {
+    position: relative;
+    background-image: url("imgs/tesla.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .tesla p {
+    visibility: hidden;
+  }
+
+  .tesla:hover p {
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .pro-cat {
+    background-image: url("imgs/procat.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .pro-cat p {
+    visibility: hidden;
+  }
+
+  .pro-cat:hover p {
+    visibility: visible;
+  }
+
+  .hyperloop {
+    background-image: url("imgs/hyperloop.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .hyperloop p {
+    visibility: hidden;
+  }
+
+  .hyperloop:hover p {
+    visibility: visible;
+  }
+
+  .sneaky-cat {
+    background-image: url("imgs/sneakycat.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .sneaky-cat p {
+    visibility: hidden;
+  }
+
+  .sneaky-cat:hover p {
+    visibility: visible;
+  }
+
+  .bfr {
+    background-image: url("imgs/bfr.jpeg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .bfr p {
+    visibility: hidden;
+  }
+
+  .bfr:hover p {
+    visibility: visible;
+  }
+
+  .funny-cat {
+    background-image: url("imgs/funnycat.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .funny-cat p {
+    visibility: hidden;
+  }
+
+  .funny-cat:hover p {
+    visibility: visible;
+  }
+
+  .mailing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    margin: auto;
+  }
+
+  .mailing-list div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #email {
+    height: 100%;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submit {
+    height: 28px;
+    width: 2%;
+    background-color: #3a3633;
+    background-image: url("imgs/send.svg");
+    object-fit: contain;
+    background-position: center center;
+    vertical-align: bottom;
+    float: right;
+  }
+
+  footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /* display the 4 footer columns in a single row*/
+  footer .column {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .nav-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #3a3633;
+  }
+
+  /* clicking on hamburger menu checkbox displays the options */
+  input:checked ~ .options {
+    display: flex;
+    flex-direction: column;
+    background-color: #3a3633;
+    height: 100px;
+    margin: 0 0;
+    width: 100%;
+    padding-inline-start: 0;
+  }
+
+  label {
+    display: block;
+    float: right;
+    clear: left;
+    color: #fff;
+    font-style: normal;
+    font-size: 1em;
+    padding-right: 5px;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .options a {
+    text-decoration: none;
+    background-color: #3a3633;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .options {
+    display: none;
+    border-spacing: 0;
+    top: 0;
+    padding: 0;
+    z-index: 999;
+  }
+
+  .options li {
+    list-style-type: none;
+  }
+
+  .options a:hover {
+    background-color: grey;
+  }
+
+  /* hide products and submenu in this mode*/
+  .products {
+    display: none;
+  }
+
+  .logo-image {
+    height: 25px;
+    width: 25px;
+  }
+
+  .intro {
+    background-image: url("imgs/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+  }
+
+  .intro .falcon {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    top: 20%;
+    color: white;
+  }
+
+  .falcon-heading {
+    padding: 10px;
+    font-size: 2em;
+  }
+
+  .falcon-exp {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 1px dotted white;
+    padding: 10px;
+  }
+
+  .amazing-features {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    left: 10%;
+  }
+
+  .af-1,
+  .af-2,
+  .af-3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .amazing-features > div > img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .amazing-features button {
+    width: 90%;
+    background-color: #3a3633;
+    color: white;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .text-boxes {
+    display: flex;
+    flex: 1;
+    position: sticky;
+    flex-direction: column;
+  }
+
+  .text-box h1,
+  .gradient-box h1 {
+    font-size: 2em;
+  }
+
+  .text-box {
+    position: relative;
+    background-color: #3a3633;
+    color: white;
+    padding: 20px;
+    z-index: -1;
+  }
+
+  .gradient-box {
+    position: relative;
+    background-color: dodgerblue;
+    background-image: linear-gradient(to right, white, dodgerblue);
+    color: white;
+    padding: 20px;
+    text-align: right;
+    z-index: -1;
+  }
+
+  .animation-box {
+    position: absolute;
+    background-color: #3a3633;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 70px;
+    z-index: 1;
+    border: 5px solid white;
+    top: 35%;
+    font-size: 10px;
+    left: 30%;
+    padding: 8px;
+  }
+
+  .animation-box h3 {
+    color: red;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animation-box:hover {
+    animation: spin 2s ease-in-out;
+  }
+
+  .image-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .tesla {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url("imgs/tesla.jpg");
+    object-fit: contain;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+  .tesla p {
+    visibility: hidden;
+  }
+
+  .tesla:hover p {
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .pro-cat {
+    display: flex;
+    background-image: url("imgs/procat.jpg");
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .pro-cat p {
+    visibility: hidden;
+  }
+
+  .pro-cat:hover p {
+    visibility: visible;
+  }
+
+  .hyperloop {
+    display: flex;
+    background-image: url("imgs/hyperloop.jpg");
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .hyperloop p {
+    visibility: hidden;
+  }
+
+  .hyperloop:hover p {
+    visibility: visible;
+  }
+
+  .sneaky-cat {
+    display: flex;
+    background-image: url("imgs/sneakycat.jpg");
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .sneaky-cat p {
+    visibility: hidden;
+  }
+
+  .sneaky-cat:hover p {
+    visibility: visible;
+  }
+
+  .bfr {
+    display: flex;
+    background-image: url("imgs/bfr.jpeg");
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .bfr p {
+    visibility: hidden;
+  }
+
+  .bfr:hover p {
+    visibility: visible;
+  }
+
+  .funny-cat {
+    display: flex;
+    background-image: url("imgs/funnycat.jpg");
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .funny-cat p {
+    visibility: hidden;
+  }
+
+  .funny-cat:hover p {
+    visibility: visible;
+  }
+
+  .mailing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    margin: auto;
+  }
+
+  .mailing-list div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #email {
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submit {
+    height: 28px;
+    width: 10%;
+    background-color: #3a3633;
+    background-image: url("imgs/send.svg");
+    object-fit: contain;
+    background-position: center center;
+    vertical-align: bottom;
+    float: right;
+  }
+
+  footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  footer .column {
+    width: 45%;
+    text-align: left;
+    position: relative;
+    left: 5%;
+  }
+}
