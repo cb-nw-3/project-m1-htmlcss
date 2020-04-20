@@ -1,1 +1,410 @@
-/* CSS here :) */
+body {
+  margin: 0;
+  font-family: "poppins";
+}
+
+.nav {
+  background-color: black;
+  opacity: 80%;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.desktop-nav {
+  float: right;
+  display: flex;
+}
+
+.desktop-nav > ul {
+  display: flex;
+  margin-right: 40px;
+}
+
+.desktop-nav > li {
+  list-style-type: none;
+}
+
+.nav-dropdown {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown:hover > .menu {
+  top: 100%;
+  position: absolute;
+  align-items: center;
+  display: block;
+  background-color: black;
+  opacity: 80%;
+}
+
+.menu > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.menu > ul > li:hover {
+  background-color: grey;
+}
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile-nav-links {
+  display: none;
+  width: 100%;
+}
+
+.mobile-nav:hover > .mobile-nav-links {
+  display: block;
+  align-items: center;
+  position: absolute;
+  right: 0%;
+  background-color: black;
+  text-align: center;
+}
+
+.mobile-nav-links > li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile-nav-links > ul > li:hover {
+  background-color: gray;
+  opacity: 80%;
+}
+
+.mobile-nav-links > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav-button img {
+  width: 18px;
+}
+
+.mobile-nav-button {
+  color: white;
+  background-color: black;
+  margin-right: 40px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 30px;
+}
+
+.introtitle {
+  font-size: 4rem;
+  margin: 2%;
+}
+
+.introcontent {
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.introduction {
+  margin: 10%;
+  width: 92%;
+  height: 65%;
+  border: 4px solid white;
+  color: white;
+  display: flex;
+}
+
+.introduction h1 {
+  flex: 2;
+}
+
+.introtext {
+  background-color: black;
+  opacity: 50%;
+  margin-left: 50%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 3;
+}
+
+.introtextmargin {
+  margin: 2%;
+}
+
+.introcolumn {
+  display: flex;
+  border-top: 1px solid white;
+}
+
+h2 {
+  border-bottom: white;
+}
+
+.Amazingfeature {
+  display: flex;
+  margin: 10%;
+}
+
+.feature {
+  box-shadow: 1px 1px 1px 1px black;
+  width: 20%;
+  padding: 5%;
+  margin: 15px;
+  border-radius: 3px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  text-align: center;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  opacity: 80%;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.cooltext {
+  color: white;
+  background-color: black;
+  padding-left: 5%;
+  padding-right: 40%;
+  height: 400px;
+  opacity: 80%;
+}
+
+.cooltext h1 {
+  padding-top: 5%;
+}
+
+.animation {
+  position: relative;
+  left: 20%;
+  height: 60%;
+  top: -40%;
+  border: 1px solid white;
+  text-align: center;
+  background-color: black;
+  opacity: 80%;
+  color: white;
+  padding: 20px;
+}
+
+.animation h2 {
+  color: red;
+}
+
+.animation:hover {
+  animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translate(20vw) scale(1.2) rotate(180deg);
+  }
+  80% {
+    transform: translate(20vw) scale(1.2) rotate(180deg);
+  }
+  90% {
+    transform: translate(20vw) scale(0.8) rotate(180deg);
+  }
+  to {
+    transform: translate(20vw) scale(0) rotate(180deg);
+  }
+}
+
+.slickgradient {
+  height: 200px;
+  display: flex;
+  text-align: right;
+  background-image: linear-gradient(to right, white 1%, lightblue 100%);
+  color: white;
+}
+
+.slickgradient-text {
+  padding-left: 50%;
+}
+
+.columnimg {
+  display: flex;
+}
+
+.columnimg .container-image {
+  flex: 1;
+}
+
+.columnimg img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.columnimg img:hover {
+  width: 120%;
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.image-text-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0%;
+  font-size: 60px;
+}
+
+.image-text-hover:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 100%;
+}
+
+.form-email {
+  display: block;
+  align-items: center;
+}
+
+.email {
+  float: 1;
+  width: 20%;
+  height: 20px;
+  margin: auto;
+  border-radius: 0.2rem;
+}
+
+.send {
+  flex: 2;
+  background-color: grey;
+  padding: 2px;
+}
+
+.register {
+  border-bottom: black;
+  text-align: center;
+}
+
+.list {
+  text-align: left;
+}
+
+.footer-display {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+
+/* web */
+
+@media (min-width: 850px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 849px) {
+  .desktop-nav {
+    display: none;
+  }
+  .desktop-mobile {
+    display: flex;
+  }
+  .Amazingfeature {
+    display: inline-block;
+  }
+  .feature {
+    width: 70%;
+  }
+  .introduction {
+    display: block;
+  }
+  .animation {
+    left: 30%;
+    height: 120%;
+    padding: 1px;
+    width: 40%;
+  }
+  .slickgradient-text {
+    padding-left: 35%;
+  }
+  .animation:hover {
+    animation: bounce 4s ease-in-out;
+  }
+  @keyframes bounce {
+    from {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .columnimg {
+    display: inline;
+  }
+
+  .footer-display {
+    display: block;
+  }
+}
