@@ -1,9 +1,6 @@
 body {
   margin: 0;
-  background-image: url("imgs/bg.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
+  font-family: "poppins";
 }
 
 .nav {
@@ -17,6 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
+  z-index: 1;
 }
 
 .desktop-nav {
@@ -43,8 +41,8 @@ body {
 .nav-dropdown:hover > .menu {
   top: 100%;
   position: absolute;
+  align-items: center;
   display: block;
-  right: 0;
   background-color: black;
   opacity: 80%;
 }
@@ -52,15 +50,11 @@ body {
 .menu > ul > li {
   list-style-type: none;
   margin: 0;
-  padding: 25px;
+  padding: 10px 20px;
 }
 
 .menu > ul > li:hover {
   background-color: grey;
-}
-
-.menu {
-  display: none;
 }
 
 .menu > ul {
@@ -68,58 +62,55 @@ body {
   padding: 0;
 }
 
-/* 
-.nav-products {
-  text-align: right;
-}
-
-.dropdown {
+.menu {
   display: none;
 }
 
-.dropdown-list {
+.mobile-nav-links {
+  display: none;
+  width: 100%;
+}
+
+.mobile-nav:hover > .mobile-nav-links {
+  display: block;
+  align-items: center;
+  position: absolute;
+  right: 0%;
+  background-color: black;
+  text-align: center;
+}
+
+.mobile-nav-links > li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile-nav-links > ul > li:hover {
+  background-color: gray;
+  opacity: 80%;
+}
+
+.mobile-nav-links > ul {
   margin: 0;
   padding: 0;
 }
 
-.dropdown-list > li:hover {
-  background-color: black;
-}
-
-.dropdown-list > li {
-  list-style-type: none;
-  padding: 10px;
-}
-
-.nav-products:hover > .dropdown {
-  top: 100%;
-  position: absolute;
-  display: block;
-  left: 0;
-  background-color: grey;
-}
-
-.nav-products {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  padding: 10px;
-} */
-
 .mobile-nav-button img {
   width: 18px;
-}
-
-li {
-  list-style-type: none;
-  margin-left: 50px;
 }
 
 .mobile-nav-button {
   color: white;
   background-color: black;
   margin-right: 40px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 50px;
 }
 
 a {
@@ -136,15 +127,22 @@ a {
   margin: 2%;
 }
 
+.introcontent {
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .introduction {
   margin: 10%;
-  width: 75%;
+  width: 92%;
   height: 65%;
-  border: white;
+  border: 4px solid white;
   color: white;
-  border-style: solid;
-  border-width: medium;
-  font-family: "poppins";
   display: flex;
 }
 
@@ -178,7 +176,6 @@ h2 {
 .Amazingfeature {
   display: flex;
   margin: 10%;
-  font-family: "poppins";
 }
 
 .feature {
@@ -187,8 +184,8 @@ h2 {
   padding: 5%;
   margin: 15px;
   border-radius: 3px;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 15%;
   text-align: center;
 }
 
@@ -196,7 +193,6 @@ h2 {
   background-color: black;
   color: white;
   opacity: 80%;
-  font-family: "poppins";
   width: 100%;
   padding: 10px 10px;
 }
@@ -210,23 +206,70 @@ h2 {
   background-color: black;
   padding-left: 5%;
   padding-right: 40%;
+  height: 400px;
   opacity: 80%;
-  font-family: "poppins";
+}
+
+.cooltext h1 {
+  padding-top: 5%;
+}
+
+.animation {
+  position: relative;
+  left: 20%;
+  height: 60%;
+  top: -40%;
+  border: 1px solid white;
+  text-align: center;
+  background-color: black;
+  opacity: 80%;
+  color: white;
+  padding: 20px;
+}
+
+.animation h2 {
+  color: red;
+}
+
+.animation:hover {
+  animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translate(20vw) scale(1.2) rotate(180deg);
+  }
+  80% {
+    transform: translate(20vw) scale(1.2) rotate(180deg);
+  }
+  90% {
+    transform: translate(20vw) scale(0.8) rotate(180deg);
+  }
+  to {
+    transform: translate(20vw) scale(0) rotate(180deg);
+  }
 }
 
 .slickgradient {
+  height: 200px;
+  display: flex;
   text-align: right;
-  background-color: lightskyblue;
+  background-image: linear-gradient(to right, white 1%, lightblue 100%);
   color: white;
-  padding-right: 5%;
-  font-family: "poppins";
+}
+
+.slickgradient-text {
+  padding-left: 50%;
 }
 
 .columnimg {
   display: flex;
 }
 
-.columnimg a {
+.columnimg .container-image {
   flex: 1;
 }
 
@@ -237,8 +280,41 @@ h2 {
   object-fit: cover;
 }
 
-.email {
+.columnimg img:hover {
+  width: 120%;
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.image-text-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0%;
+  font-size: 60px;
+}
+
+.image-text-hover:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 100%;
+}
+
+.form-email {
   display: block;
+  align-items: center;
+}
+
+.email {
+  float: 1;
   width: 20%;
   height: 20px;
   margin: auto;
@@ -246,6 +322,7 @@ h2 {
 }
 
 .send {
+  flex: 2;
   background-color: grey;
   padding: 2px;
 }
@@ -253,43 +330,81 @@ h2 {
 .register {
   border-bottom: black;
   text-align: center;
-  font-family: "poppins";
 }
 
 .list {
   text-align: left;
-  font-family: "poppins";
 }
 
-footer {
+.footer-display {
   display: flex;
+  align-items: center;
+  margin-left: 25%;
 }
 
 /* web */
-@media (min-width: 800px) {
+
+@media (min-width: 850px) {
   .mobile-nav {
     display: none;
   }
-
   .desktop-nav {
     display: flex;
   }
 }
 
 /* mobile */
-@media (max-width: 799px) {
+
+@media (max-width: 849px) {
   .desktop-nav {
     display: none;
   }
-
   .desktop-mobile {
     display: flex;
   }
-
   .Amazingfeature {
     display: inline-block;
   }
   .feature {
     width: 70%;
+  }
+  .introduction {
+    display: block;
+  }
+  .animation {
+    left: 30%;
+    height: 120%;
+    padding: 1px;
+    width: 40%;
+  }
+  .slickgradient-text {
+    padding-left: 35%;
+  }
+  .animation:hover {
+    animation: bounce 4s ease-in-out;
+  }
+  @keyframes bounce {
+    from {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .columnimg {
+    display: inline;
+  }
+
+  .footer-display {
+    display: block;
   }
 }

@@ -15,13 +15,13 @@
       <nav class="desktop-nav">
         <ul>
           <li>
-            <a href="#">Features</a>
+            <a href="#redirect-features">Features</a>
           </li>
           <li>
-            <a href="#">Advantages</a>
+            <a href="#redirect-advantages">Advantages</a>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <a href="#redirect-gallery">Gallery</a>
           </li>
           <li>
             <span class="nav-dropdown" href="#">
@@ -29,64 +29,41 @@
               <div class="menu">
                 <ul>
                   <li>
-                    <a href="#">Falcon 9</a>
+                    <a href="https://www.spacex.com/falcon9">Falcon 9</a>
                   </li>
                   <li>
-                    <a href="#">Model 5</a>
+                    <a href="https://www.tesla.com/en_ca/models">Model 5</a>
                   </li>
                   <li>
-                    <a href="#">iPhone</a>
+                    <a href="https://www.apple.com/ca/iphone/">iPhone</a>
                   </li>
                 </ul>
               </div>
             </span>
           </li>
         </ul>
-
-        <!-- <a href="#">Features</a>
-        <a href="#">Advantages</a>
-        <a href="#">Gallery</a>
-        <a href="#">Products</a>
-        <div class="dropdown">
-          <ul class="dropdown-list">
-            <li>Falcon 9</li>
-            <li>Model S</li>
-            <li>iPhone</li>
-          </ul>
-        </div> -->
       </nav>
 
       <nav class="mobile-nav">
         <button class="mobile-nav-button" aria-label="Show menu">
-          <img src="imgs/menu.svg" />
+          <img src="imgs/menu.svg" class="mobile-nav-img" />
         </button>
+        <div class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="#redirect-features">Features</a>
+            </li>
+            <li>
+              <a href="#redirect-advantages">Advantages</a>
+            </li>
+            <li>
+              <a href="#redirect-gallery">Gallery</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
-      <!-- 
-      <a href="#"><img src="imgs/logo.svg" class="logo" /></a>
-      <a href="#">Features</a>
-      <a href="#">Advantages</a>
-      <a href="#">Gallery</a>
-
-      <div>
-        <nav class="nav-products">
-          <a href="#">Products</a>
-          <div class="dropdown">
-            <ul class="dropdown-list">
-              <li>Falcon 9</li>
-              <li>Model S</li>
-              <li>iPhone</li>
-            </ul>
-          </div>
-        </nav>
-
-        <nav class="mobile-nav">
-          <button class="mobile-nav-button" aria-label="Show menu">
-            <img src="imgs/menu.svg" />
-          </button>
-        </nav>
-      </div> -->
     </header>
+
     <div class="introcontent">
       <div class="introduction">
         <h1 class="introtitle">Introducing Falcon 9</h1>
@@ -110,7 +87,7 @@
       </div>
     </div>
 
-    <div class="Amazingfeature">
+    <div class="Amazingfeature" id="redirect-features">
       <div class="feature">
         <a href="#"><img src="imgs/icon1.svg" /></a>
         <h3>Amazing feature 1</h3>
@@ -148,7 +125,7 @@
       </div>
     </div>
 
-    <div class="cooltext">
+    <div class="cooltext" id="redirect-advantages">
       <h1>Some cool text</h1>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -159,30 +136,71 @@
     </div>
 
     <div class="slickgradient">
-      <h1>Slick Gradient</h1>
-      <p>Lorem ipsum?</p>
+      <div class="animation">
+        <h2>This looks cool</h2>
+        <p>Hover me if you like random animations</p>
+      </div>
+      <div class="slickgradient-text">
+        <h1>Slick Gradient</h1>
+        <p>Lorem ipsum?</p>
+      </div>
     </div>
 
-    <div class="siximg">
+    <div class="siximg" id="redirect-gallery">
       <div class="columnimg">
-        <a href="#"><img src="imgs/sneakycat.jpg" class="img" /></a>
-        <a href="#"><img src="imgs/tesla.jpg" class="img" /></a>
-        <a href="#"><img src="imgs/bfr.jpeg" class="img" /></a>
+        <div class="container-image">
+          <img src="imgs/sneakycat.jpg" class="img" />
+          <div class="image-text-hover">
+            Sneaky cat
+          </div>
+        </div>
+
+        <div class="container-image">
+          <img src="imgs/tesla.jpg" class="img" />
+          <div class="image-text-hover">
+            Tesla
+          </div>
+        </div>
+
+        <div class="container-image">
+          <img src="imgs/bfr.jpeg" class="img" />
+          <div class="image-text-hover">
+            BFR
+          </div>
+        </div>
       </div>
 
       <div class="columnimg">
-        <a href="#"><img src="imgs/hyperloop.jpg" class="img" /></a>
-        <a href="#"><img src="imgs/funnycat.jpg" class="img" /></a>
-        <a href="#"><img src="imgs/procat.jpg" class="img" /></a>
+        <div class="container-image">
+          <img src="imgs/hyperloop.jpg" class="img" />
+          <div class="image-text-hover">
+            Hyperloop
+          </div>
+        </div>
+
+        <div class="container-image">
+          <img src="imgs/funnycat.jpg" class="img" />
+          <div class="image-text-hover">
+            Funny cat
+          </div>
+        </div>
+
+        <div class="container-image">
+          <img src="imgs/procat.jpg" class="img" />
+          <div class="image-text-hover">
+            Procat
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="register">
       <p>Register to our mailling list:</p>
-      <div>
-        <label></label>
-        <input type="email" required class="email" />
-        <a href="#"><img src="imgs/send.svg" class="send" /></a>
+      <div class="form-email">
+        <form action="">
+          <input type="email" required class="email" />
+          <a href="#"><img src="imgs/send.svg" class="send" /></a>
+        </form>
       </div>
       <div>
         <label> <input type="checkbox" /> Send me daily cat images </label>
@@ -190,40 +208,42 @@
     </div>
 
     <footer>
-      <div class="list">
-        <ul>
-          <li>About us</li>
-          <li>Privacy Policy</li>
-          <li>Legal notes</li>
-          <li>Copyright</li>
-        </ul>
-      </div>
+      <div class="footer-display">
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
 
-      <div class="list">
-        <ul>
-          <li>About us</li>
-          <li>Privacy Policy</li>
-          <li>Legal notes</li>
-          <li>Copyright</li>
-        </ul>
-      </div>
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
 
-      <div class="list">
-        <ul>
-          <li>About us</li>
-          <li>Privacy Policy</li>
-          <li>Legal notes</li>
-          <li>Copyright</li>
-        </ul>
-      </div>
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
 
-      <div class="list">
-        <ul>
-          <li>About us</li>
-          <li>Privacy Policy</li>
-          <li>Legal notes</li>
-          <li>Copyright</li>
-        </ul>
+        <div class="list">
+          <ul>
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
