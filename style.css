@@ -208,6 +208,7 @@ button {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+
 .cool-text-section {
   flex: 1;
   display: flex;
@@ -289,39 +290,46 @@ button {
   align-items: center;
   flex-flow: wrap;
 }
+
 .row-1,
 .row-2 {
+  position: relative;
   flex: 1;
   flex-basis: 33%;
   display: inherit;
   position: relative;
 }
-.row-1 div,
-.row-2 div {
+.row-1 .overlay,
+.row-2 .overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.9);
+}
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.row-1:hover .overlay,
+.row-2:hover .overlay {
+  opacity: 0.8;
 }
 
 .row-1 img,
 .row-2 img {
-  overflow: hidden;
   width: 100%;
   height: 300px;
-}
-.row-1 img:hover {
-  animation: appear 1.5s ease-in-out;
-}
-.row-2 img:hover {
-  animation: appear 1.5s ease-in-out;
-}
-
-@keyframes appear {
-  100% {
-    transform: scale(1.3);
-  }
 }
 
 .animal-Gallary div {
