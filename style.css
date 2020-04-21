@@ -1,1 +1,279 @@
-/* CSS here :) */
+body {
+    margin: 0;
+    font-family: poppines;
+}
+.nav {
+    padding: 10px;
+    background-color: #3a3633;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 50px;
+}
+.nav a{
+    color:white;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.container{
+  position: relative; 
+  text-align: center;
+  color: white;
+  background-image: url("imgs/bg.jpg");
+  height: 95vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rocket-content{
+    display: flex;
+    border: 0.1em solid white;
+}
+h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 0px 10px;
+}
+div.content-right{
+    background-color: gray;
+    opacity: 0.5;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:50px 50px;
+    
+}
+h2{
+    font-size: 50px;
+}
+.content-bottom{
+    display: flex;
+}
+
+.content1{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    border-top-style: dotted;
+    margin: 0px 15px;
+    padding: 20px 20px;
+}
+.par{
+    margin:0px 15px;
+}
+.container nav{
+    
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;  
+}
+.all-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 2px 30px;
+}
+.card {
+   padding: 15px 15px;
+   box-shadow: 10px 10px 5px 5px gray;
+   color: grey;
+   text-align: center;
+   margin: 20px 40px;
+   border-radius: 0.5em;
+}
+.card-button {
+display: block;
+border: none;
+color: white;
+background-color:black;                  
+padding: 20px 0px; 
+border-radius: 5px;
+margin: 20px 20px;
+width: 90%;
+}
+.some-cool-text{
+    background-color: black;
+    color: white;
+}
+.bold {
+    font-size: 40px;
+    color: white;                                                                                                                                                               
+    padding: 40px 120px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+h6 {
+    font-size: 25px;
+    color: white;  
+    padding:30px 120px;
+    margin-bottom: 0em;
+}
+.gradient{
+    width: 100%;
+    background:rgb(255,255,255);
+    background-image: linear-gradient(to left, #fff, blue);
+    
+}
+.bold {
+    font-size: 40px;
+    color: white;                                                                                                                                                               
+    padding: 40px 120px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    
+}
+h6 {
+    font-size: 25px;
+    color: white;  
+    padding:30px 120px;
+    margin-bottom: 0em;
+}
+.picture{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding:0;
+}
+.picture2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .picture2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: fuchsia;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+form{
+    margin: 0;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+form div{
+    display: flex;
+}
+form.bottom{
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+  float: left;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  color: #000;
+  font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background: #FFF;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top-style: groove;
+    background-color: white;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    display: flex;
+    align-content: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+  }
+  .footer .col ul li {
+    color: black;
+    font-size: 14px;
+    font-family: inherit;
+    align-content: center;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {<-- open media query
+    .desktop-nav { <-- open selector
+      display: none;
+    }<--close selector  
+    }<-- close media query
+    .col footer {
+        width: 50%;
+        }
+    
+    
+/* DESKTOP */
+@media (min-width: 769px) { <-- open media query
+    .mobile-nav { <-- open selector
+      display: none;
+    } <--close selector
+  } <-- close media query
+.footer-menu a {
+    width: 25%;
+    }
+
+
+   
