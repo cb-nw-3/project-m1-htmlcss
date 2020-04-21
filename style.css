@@ -299,6 +299,17 @@ button {
   display: inherit;
   position: relative;
 }
+.image-container {
+  display: inherit;
+}
+.row-1:hover .image-container img {
+  transform: scale(1.5);
+  transition: 1s ease;
+}
+.row-2:hover .image-container img {
+  transform: scale(1.5);
+  transition: 1s ease;
+}
 .row-1 .overlay,
 .row-2 .overlay {
   position: absolute;
@@ -326,7 +337,11 @@ button {
   opacity: 0.8;
 }
 
-.row-1 img,
+.image-container {
+  overflow: hidden;
+}
+
+.row-1 div img,
 .row-2 img {
   width: 100%;
   height: 300px;
@@ -461,13 +476,14 @@ input {
   .mobile-drop-item:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
+  .hamburger-item:hover .mobile-hamburger .mobile-drop {
+    display: block;
+  }
   .mobile-main-list-item li a {
     text-decoration: none;
     color: white;
   }
-  .hamburger-item:hover .mobile-hamburger .mobile-drop {
-    display: block;
-  }
+
   .mobile-logo {
     display: inline;
     align-items: center;
