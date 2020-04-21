@@ -458,24 +458,16 @@ input {
     line-height: 30px;
     padding: 0;
   }
-  .mobile-main-list-item li:hover {
+  .mobile-drop-item:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
   .mobile-main-list-item li a {
     text-decoration: none;
     color: white;
   }
-  .hamburger-item img:hover .mobile-hamburger .mobile-drop {
+  .hamburger-item:hover .mobile-hamburger .mobile-drop {
     display: block;
-    right: 0;
-    position: absolute;
   }
-  .hamburger-item img {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-  }
-
   .mobile-logo {
     display: inline;
     align-items: center;
