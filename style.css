@@ -1,1 +1,373 @@
-/* CSS here :) */
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*               NAVBAR                */
+.navbar {
+    margin: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:50px;
+    background-color: #3d3d3d;
+    position: fixed;
+}
+
+.navbar img {
+    width: 40px;
+    margin: 20px;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: auto 20px;
+}
+
+
+
+/*                 HERO               */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero-container > h2 {
+    margin: 30px 10px;
+}
+
+.hero-container-child {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:20px 0px;
+}
+
+.hero-container-child > * {
+    margin: 10px;
+}
+
+/*            3 FEATURES BOXES               */
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feature-box {
+    border: none;
+    margin: 30px auto 0 auto;
+    width: 380px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px 2px lightgrey;
+}
+
+.feature-box > img {
+    height: 40px;
+    width: 40px;
+
+}
+
+.feature-box > p,h4 {
+    margin: 0 10px;
+    text-align: center;
+
+}
+
+.feature-box > button {
+    background-color: #3d3d3d;
+    border-radius: 5px;
+    color: white;
+    width: 90%;
+    height: 40px;
+
+}
+
+/*        Cool Text and Animation        */
+.cool-container {
+    background-color: #3d3d3d;
+    color: white;
+    height: 50vh;
+}
+
+.animation-box {
+    border: solid white 8px;
+    position: relative;
+    width: 250px;
+    top: -13vh;
+    margin: 0 auto;
+    background-color: #3d3d3d;
+    text-align: center;
+}
+
+.animation-box:hover {
+    animation: rotate;
+    animation-duration: 4s;
+}
+
+.cool-container > p {
+    height: 200px;
+    margin-left: 20px;
+}
+
+.cool-container > h2 {
+    margin-left: 20px;
+    padding-top: 30px
+}
+
+.animation-box > h4 {
+    color: red;
+    z-index: 1;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*               Gradient section         */
+.gradient-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: rgb(2,0,36);
+    background: linear-gradient(165deg, rgba(2,0,36,1) 0%, rgba(242,242,247,1) 0%, rgba(0,74,255,1) 80%);
+    height: 50vh;
+    color: white;
+}
+
+.gradient-container > * {
+    margin-right: 30px;
+}
+
+
+/*              Image Gallery          */
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+}
+
+.gallery-container > div:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#tesla {
+    background-image: url(imgs/tesla.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cool {
+    background-image: url(imgs/procat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hyper {
+    background-image: url(imgs/hyperloop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#sneaky {
+    background-image: url(imgs/sneakycat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#rocket {
+    background-image: url(imgs/bfr.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#funny {
+    background-image: url(imgs/funnycat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*             FORM                  */
+.little-form {
+    height: 30vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px #3d3d3d;
+}
+
+.little-form > span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.little-form > span > input {
+    height: 27px;
+}
+
+button > img {
+    background-color: #3d3d3d;
+}
+
+/*                FOOTER               */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer > .footer-container {
+    flex: 0 50%;
+    text-align: center;
+}
+
+
+/*                MOBILE               */
+/* @media (max-width: 767px) {
+} */
+
+/*                TABLET               */
+@media (min-width: 768px) {
+    .menu-mobile { 
+        display:none;
+    }
+
+    .menu-desktop {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero-container {
+        margin : 20px;
+        border: 5px solid white;
+    }
+
+    .hero-container-child > h2 {
+        padding-bottom: 20px;
+        border-bottom: dotted white 1px; 
+    }
+
+    .hero-container-child > span {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hero-container-child > span > p {
+        padding: 10px;
+    }
+
+    /*         3 FEATURES BOXES          */
+
+    .features-container {
+        display: flex;
+        margin: 40px auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+/*            Cool Text and Animation and Gradient              */
+
+    .cool-container > * {
+        font-size: 150%;
+    }
+
+    .gradient-container > * {
+        font-size: 150%;
+    }
+
+    .animation-box {
+        top: -110px;
+        left: -30%;
+    }
+
+    @keyframes rotate {
+        0% {transform:  translateX(0px) rotate(0deg);
+        opacity: 1;
+        }
+        50% {transform: scale(1) translateX(300px) rotate(180deg);
+        opacity: 1;
+        }
+        100% {transform: translateX(300px) scale(0.5) rotate(180deg);
+        opacity:0;
+        }
+    
+    }
+
+    /*                Footer         */
+
+    footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    footer > .footer-container {
+        flex: 1;
+        text-align: center;
+    }
+
+
+
+
+
+/*                Desktop               */
+@media (min-width: 1200px) {
+/* Hero */
+
+/*               3 FEATURES BOXES            */
+
+}
