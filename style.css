@@ -346,6 +346,18 @@ footer > .footer-container {
     
     }
 
+    /*           GALLERY               */
+
+    .gallery-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-container > div {
+        width: 33.333%;
+    }
+
     /*                Footer         */
 
     footer {
