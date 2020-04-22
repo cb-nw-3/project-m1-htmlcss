@@ -18,17 +18,48 @@
     </ul>
 
     <ul class="nav-links">
-        <li><a href="#About">About</a></li>
-        <li><a href="#Work">Work</a></li>
-        <li><a href="index2.html">Clients</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li class="headerlinks"><a href="#About">About</a></li>
+        <li class="headerlinks"><a href="#Contact">Contact</a>
+        <li class="headerlinks"><a href="index2.html">Clients</a></li>
+        <li class="headerlinks dropdownlink"><a href="#Work">Work</a>
+            <div class="dropdown-menu">
+                <ul class="menu-list">
+                    <li><a href="#Amazing">Beauty</a></li>
+                    <li><a href="#Amazing">Beauty</a></li>
+                    <li><a href="#Amazing">Art</a></li>
+                </ul>
+           </div>
+        
+        </li>
+      
+
+                
     </ul>
+                
+     <!-- a li menu list is also being targeted by a list nav links because its a parent -->
+
 </nav>
 
 <nav class="mobile-nav">
     <button class="mobile-nav-button" aria-label="Show menu">
       <img class="mobile-nav-icon" src="./imgs/menu.svg" />
     </button>
+
+    <ul class="mobile-nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a>
+        <li><a href="index2.html">Clients</a></li>
+        <li><a href="#Work">Work</a></li>
+      
+
+                <div class="mobile-dropdown-menu">
+                    <ul class="mobile-menu-list">
+                        <li><a href="#Amazing">Beauty</a></li>
+                        <li><a href="#Amazing">Beauty</a></li>
+                        <li><a href="#Amazing">Art</a></li>
+                    </ul>
+                </div>
+    </ul>
 </nav>
 
 
@@ -89,9 +120,13 @@
         <h6>Our specialty is in assembling Words and Images to create brands that are Bold & Beautiful but more importantly that have a Soul and a Story to tell so that they are infused with Meaning and Purpose. </h6>
     </div>
 
-    <div class="rotate">
+   <div class="scale transition">
+       <div class="translate transition">
+             <div class="rotate transition">
         <p>Turn your brand around.</p>
+            </div>
     </div>
+  </div>
 
    <div class="gradient">
       <h6 class="h62">Give your brand a soul. </h6>
@@ -108,7 +143,7 @@
         </div>
         <div>
             <img src="./imgs/2.jpg" alt="short description"/>
-            <span> class="whitetext">BEAUTY</span>
+            <a class="whitetext">BEAUTY</a>
         </div>
         <div>
             <img src="./imgs/3.jpg" alt="short description"/>
@@ -119,12 +154,15 @@
       <div class="row">
         <div>
            <img src="./imgs/4.jpg" alt="short description"/>
+           <a class="whitetext">FASHION</a>
         </div>
         <div>
            <img src="./imgs/5.jpg" alt="short description"/>
+           <a class="whitetext">FASHION</a>
         </div>
         <div>
            <img src="./imgs/6.jpg" alt="short description"/>
+           <a class="whitetext">FASHION</a>
         </div>
       </div>
 </div>
@@ -165,10 +203,13 @@
     <a>Jobs with us</a>
     <a>Jobs with us</a>
     <a>Jobs with us</a>
-</div>
+    </div>
 </footer>
 
 
 </body>
 
 </html>
+
+<!-- QUESTIONS
+HOW DO I GET BACK TO HOME PAGE -->
