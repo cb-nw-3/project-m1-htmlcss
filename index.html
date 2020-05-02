@@ -1,14 +1,201 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-</head>
+    <title>AR-Project #1</title>
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <!-- write some HTML! -->
-</body>
-
+  <body>
+    <header class="sticky">
+      <div class="top-nav">
+        <a href="#top"
+          ><img src="imgs/logo.svg" alt="Infinity icon" class="logo"
+        /></a>
+        <nav class = "desktopMenu">
+          <ul class ="mainDropdown" >
+            <li class = "barAnimation"><a href="#features">Features</a></li>
+            <li class = "barAnimation"><a href="#advantages">Advantages</a></li>
+            <li class = "barAnimation"><a href="#gallery">Gallery</a></li>
+            <li class= "barAnimation dropdown">Products
+              <ul role="menubar">
+                <li><a href="#"><a href = "https://www.spacex.com/falcon9">Falcon 9</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Iphone</a></li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+        <div class="hamWrapper">
+          <img id = "menu"src="imgs/menu.svg" alt="menu icon" class="logo"/>
+          <div class = "dropdown-content">
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#advantages">Advantages</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+        </div>  
+      </div>
+    </header>
+    <div id="top" class="wrapper">
+      <div class="content">
+        <div class="halfTitle">
+          <h1>Introducing Falcon 9</h1>
+        </div>
+        <div class="halfText">
+          <p class="text1">We make dreams come true</p>
+          <div class="text2">
+            <p>
+              Lorem ipsum dolor sit amet, ut eos audiam utamur, per adhuc
+              tincidunt ut, consetetur interesset ex vel. Mei alia copiosae
+              complectitur ea, at inani philosophia his. Posse noluisse
+              percipitur nam in. Meis simul ius ex.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, ut eos audiam utamur, per adhuc
+              tincidunt ut, consetetur interesset ex vel. Mei alia copiosae
+              complectitur ea, at inani philosophia his. Posse noluisse
+              percipitur nam in. Meis simul ius ex.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="features" class="panel panel-card">
+      <div class="card">
+        <div class="icon-1"></div>
+        <h6>Amazing feature 1</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          sagittis tristique quam, quis molestie leo dapibus vel. Donec
+          efficitur est quam, id scelerisque ex lobortis eu. Proin cursus ut
+          tortor.
+        </p>
+        <button type="button" class="btn-card">Get it</button>
+      </div>
+      <div class="card">
+        <div class="icon-2"></div>
+        <h6>Amazing feature 1</h6>
+        <p>
+          Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis
+          in faucibus. Nam mattis maximus enim.
+        </p>
+        <button type="button" class="btn-card">Sell it</button>
+      </div>
+      <div class="card">
+        <div class="icon-3"></div>
+        <h6>Amazing feature 1</h6>
+        <p>
+          Vestibulum non massa ex. Quisque vitae massa quam. Donec ornare dolor
+          purus, a tincidunt elit aliquam in.
+        </p>
+        <button type="button" class="btn-card">Do it</button>
+      </div>
+    </div>
+    <div class="panel panel2">
+      <h6>Some cool text</h6>
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam sit
+        amet eros bibendum, ullamcorper tortor id, condimentum leo. Nulla
+        facilisi. Etiam sit amet massa ac sapien eleifend laoreet et non velit.
+      </p>
+      <div class="buttonAnimation">
+        <p>This looks cool</p>
+        <p>Hover me if you like random animations.</p>
+      </div>
+    </div>
+    <div id="advantages" class="panel panel3">
+      <h6>Slick gradient</h6>
+      <p>Interdum ellus cursu</p>
+    </div>
+    <div id="gallery" class="panel panel4">
+      <div class="image-wrapper">
+        <div class="image image1"></div>
+        <div class="overlay">
+          <div class="text">Our flagship car: The model S</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image2"></div>
+        <div class="overlay">
+          <div class="text">Cool cat</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image3"></div>
+        <div class="overlay">
+          <div class="text">Introducing: The Hyperloop</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image4"></div>
+        <div class="overlay">
+          <div class="text">So sneaky</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image5"></div>
+        <div class="overlay">
+          <div class="text">BFR - Big Falcon Rocket</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image image6"></div>
+        <div class="overlay">
+          <div class="text">So much fun</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel5">
+      <form class="form">
+        <p>Register to our mailing list</p>
+        <div class="email">
+          <input type="email" id="email" required />
+          <!-- <input class="text-field" type="email" required /> -->
+          <button type="submit">
+            <div class="sent"></div>
+          </button>
+        </div>
+        <div>
+          <label class="checkbox-label"> Send me daily cat images
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </form>
+      <footer>
+        <div>
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyrights</p>
+        </div>
+        <div>
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyrights</p>
+        </div>
+        <div>
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyrights</p>
+        </div>
+        <div>
+          <p>About us</p>
+          <p>Privacy Policy</p>
+          <p>Legal Notes</p>
+          <p>Copyrights</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
