@@ -422,7 +422,7 @@ h1{
 
 @media (min-width:1200px){
     .gallery-images{
-        width: 33%;
+        width: 33.333%;
     }
 }
 
