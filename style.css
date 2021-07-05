@@ -1,1 +1,540 @@
-/* CSS here :) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.topbar {
+  background-color: #3a3633;
+  height: 45px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.nav-dropdown:hover > .dropdownMenu {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 100vw;
+  background-color: #3a3633;
+  z-index: 1;
+}
+
+.dropdownMenu {
+  display: none;
+}
+.menuItems {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.menuItems li:hover {
+  background-color: rgb(104, 96, 96);
+}
+
+.menuItems a,
+.menuItems li {
+  list-style-type: none;
+  color: white;
+  padding: 0px;
+}
+.menuItems a {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.topbar img {
+  height: 35px;
+  padding: 5px 5px;
+}
+
+.main {
+  margin-top: 45px;
+}
+.hero {
+  background-image: url(/imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBox {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: white;
+}
+
+.hero h1 {
+  display: block;
+  padding: 20px;
+  font-size: 2rem;
+}
+.section {
+  background-color: #3a36339a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section > h2 {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.subsection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.subsection > p {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.featureRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.featureBox {
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 6px #ddd;
+  margin: 30px;
+  width: 300px;
+}
+
+.featureBox > img {
+  padding-top: 20px;
+  height: 35px;
+}
+
+.featureBox .description {
+  font-size: 0.8rem;
+  color: rgb(156, 156, 156);
+  padding: 0 20px;
+}
+
+.btn-feature {
+  font-size: 0.8rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  color: white;
+  background-color: #3a3633;
+}
+
+.btn-feature:hover {
+  cursor: pointer;
+}
+
+.advantages {
+  margin: 0;
+  background-color: #3a3633;
+  padding: 20px;
+  color: white;
+}
+
+.advantages > h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.advantages > p {
+  padding-bottom: 0px;
+}
+
+.cool_anim {
+  width: 300px;
+  border: 8px solid white;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  background-color: #3a3633;
+}
+
+.cool_anim > h2 {
+  color: red;
+  margin-bottom: 0px;
+}
+
+.cool_anim > p {
+  color: white;
+  margin-bottom: 30px;
+}
+.cool_anim:hover {
+  animation: coolAnim 5s ease-in-out;
+}
+
+@keyframes coolAnim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slick_gradient {
+  padding: 100px 50px 200px;
+  text-align: right;
+  background-image: linear-gradient(to right, #fff, #4a95ec);
+
+  color: white;
+}
+
+.slick_gradient > h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.slick_gradient > p {
+  font-size: 1rem;
+}
+
+.gallery {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 100%;
+  height: 33vh;
+  overflow: hidden;
+}
+
+.picture {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  transition: 300ms ease-in-out;
+}
+
+.caption {
+  display: none;
+}
+
+.frame:hover > .caption {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: -20vh;
+  color: white;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+
+.frame:hover > .picture {
+  transform: scale(1.15);
+  opacity: 0.7;
+}
+
+.mailing-list {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 280px;
+}
+.mailing-list > div {
+  display: inline-block;
+  margin: 5px;
+}
+.newsletter {
+  display: inline-block;
+  width: 280px;
+}
+
+.text-field {
+  display: inline;
+  margin: 0 auto;
+  font-size: 1rem;
+  width: 200px;
+  border: 2px solid rgb(148, 147, 147);
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
+}
+
+.form-button {
+  width: 35px;
+  height: 38px;
+  position: relative;
+  right: 7px;
+  top: 2px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  background-image: url(imgs/send.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(148, 147, 147);
+  outline: none;
+}
+
+.text-field:focus {
+  border-color: black;
+}
+.text-field:focus + .form-button {
+  background-color: black;
+}
+
+.checkbox-label {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.custom-check {
+  -webkit-appearance: none;
+  border: 1px black solid;
+  border-radius: 4px;
+  padding: 8px;
+  position: relative;
+  top: 5px;
+  outline: none;
+}
+.custom-check:checked {
+  background-color: black;
+  background-image: url(/imgs/checkbox.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-top: 1px solid #ddd;
+}
+
+.block {
+  margin: 0;
+  list-style-type: none;
+  padding: 10px 30px 20px;
+}
+
+.block li {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    height: 45px;
+    display: flex;
+  }
+  .nav-desktop > ul {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0;
+  }
+  .nav-element {
+    display: flex;
+    align-items: stretch;
+    list-style-type: none;
+    padding: 5px 20px;
+    border-bottom: 5px solid #3a3633;
+  }
+  .nav-element > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .products-button {
+    position: relative;
+  }
+
+  .products-button:hover > .products-dropdown {
+    display: inline-block;
+    position: absolute;
+    top: 113%;
+    right: 0;
+    background-color: #3a3633;
+  }
+
+  .nav-element:hover {
+    border-bottom: 5px white solid;
+  }
+
+  .products-dropdown {
+    display: none;
+  }
+
+  .products-list {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    padding: 0px;
+  }
+
+  .products-list li,
+  .products-list a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 12px 9px 12px 0;
+    text-align: right;
+  }
+  .products-list li:hover {
+    background-color: #918d8a;
+  }
+
+  .nav-dropdown {
+    display: none;
+  }
+
+  .heroBox {
+    border: 4px white solid;
+  }
+
+  .subsection {
+    flex-direction: row;
+    flex: 3;
+    border-top: 3px dotted rgba(255, 255, 255, 0.589);
+  }
+
+  .frame {
+    width: 50%;
+    height: 33vh;
+  }
+  .cool_anim {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+  }
+
+  @keyframes coolAnim {
+    0% {
+      transform: translate(0) rotate(0deg);
+    }
+
+    40% {
+      transform: translate(100%) rotate(180deg);
+    }
+
+    50% {
+      transform: translate(100%) rotate(180deg) scale(1);
+      opacity: 1;
+    }
+
+    60% {
+      transform: translate(100%) rotate(180deg) scale(0.8);
+      opacity: 1;
+    }
+
+    70% {
+      transform: translate(100%) rotate(180deg) scale(0.8);
+      opacity: 1;
+    }
+
+    90% {
+      transform: translate(100%) rotate(180deg) scale(0.01);
+      opacity: 0;
+    }
+    100% {
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .heroBox {
+    flex-wrap: nowrap;
+  }
+  .heroBox h1 {
+    padding: 20px;
+    font-size: 4rem;
+    flex: 1;
+  }
+
+  .section {
+    flex: 2;
+  }
+
+  .section > h2 {
+    flex: 2;
+  }
+  .subsection {
+    flex-direction: row;
+    flex: 3;
+    border-top: 3px dotted rgba(255, 255, 255, 0.589);
+  }
+
+  @keyframes coolAnim {
+    0% {
+      transform: translate(0) rotate(0deg);
+    }
+
+    40% {
+      transform: translate(35vw) rotate(180deg);
+    }
+
+    50% {
+      transform: translate(35vw) rotate(180deg) scale(1);
+      opacity: 1;
+    }
+    60% {
+      transform: translate(35vw) rotate(180deg) scale(0.8);
+      opacity: 1;
+    }
+    70% {
+      transform: translate(35vw) rotate(180deg) scale(0.8);
+      opacity: 1;
+    }
+
+    90% {
+      transform: translate(35vw) rotate(180deg) scale(0.01);
+      opacity: 0;
+    }
+    100% {
+    }
+  }
+
+  .frame {
+    width: 33.33%;
+    height: 33vh;
+  }
+}
