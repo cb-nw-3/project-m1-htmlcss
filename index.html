@@ -1,14 +1,167 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <title>CB-NW-3 Project 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
-    <!-- write some HTML! -->
-</body>
+  <body>
+    <nav>
+      <div class="mobileMenu">
+        <a href="#header"><img class="logo" src="imgs/logo.svg" alt="infinity loop, logo"></a>
+        <img class="hamburger" src="imgs/menu.svg" alt="hamburger menu">
+      </div>
+      <ul class="links">
+        <li>
+          <a href="#houses" class="link">Houses</a>
+          <div class="house-links">
+            <a class="house-link" href="https://harrypotter.fandom.com/wiki/Gryffindor" target="_blank">Gryffindor</a>
+            <a class="house-link" href="https://harrypotter.fandom.com/wiki/Hufflepuff" target="_blank">Hufflepuff</a>
+            <a class="house-link" href="https://harrypotter.fandom.com/wiki/Ravenclaw" target="_blank">Ravenclaw</a>
+            <a class="house-link" href="https://harrypotter.fandom.com/wiki/Slytherin" target="_blank">Slytherin</a>
+          </div>
+        </li>
+        <li>
+          <a href="#product" class="link">Product</a>
+        </li>
+        <li>
+          <a href="#images" class="link">Gallery</a>
+        </li>
+        <li>
+          <a href="#mailing" class="link">Mailing</a>
+        </li>
+      </ul>
+    </nav>
 
+    <main>
+      <header id="header">          
+        <div class="header-container">
+          <h1 class="header-left">Hogwarts</h1>
+          <div class="header-right">
+            <p class="quote">"If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals." - Sirius Black</p>
+            <div class="header-description">
+              <p>Hippogriffs Headless Hunt giant squid petrified. Beuxbatons flying half-blood. Great Hall aurors Polyjuice Potion. Quidditch robes detention, chocolate frogs. Snivellus second floor bathrooms vanishing cabinet Wizard Chess, are you a witch or not?</p>
+              <p>Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="houses">
+        <div class="house">
+          <img class="house-icon" src="imgs/icon3.svg">
+          <h3 class="house-heading">Gryffindor</h3>
+          <p class="house-text">You might belong in Gryffindor, where dwell the brave at heart, their daring, nerve and chivalry set Gryffindors apart.</p>
+          <button class="house-button">Lion</button>
+        </div>
+        <div class="house">
+          <img class="house-icon" src="imgs/icon2.svg">
+          <h3 class="house-heading">HufflePuff</h3>
+          <p class="house-text">You might belong in Hufflepuff, Where they are just and loyal, those patient Hufflepuffs are true and unafraid of toil.</p>
+          <button class="house-button">Badger</button>
+        </div>
+        <div class="house">
+          <img class="house-icon" src="imgs/icon2.svg">
+          <h3 class="house-heading">Ravenclaw</h3>
+          <p class="house-text">Or yet in wise old Ravenclaw, if you've a ready mind, where those of wit and learning, will always find their kind.</p>
+          <button class="house-button">Eagle</button>
+        </div>
+        <div class="house">
+          <img class="house-icon" src="imgs/icon1.svg">
+          <h3 class="house-heading">Slytherin</h3>
+          <p class="house-text">Or perhaps in Slytherin you'll make your real friends, those cunning folk use any means to achieve their ends.</p>
+          <button class="house-button">Serpent</button>
+        </div>
+      </section>
+
+      <section id="product">
+        <h2 class="product-header">Quidditch</h2>
+        <p class="product-text">It is a dangerous but popular sport played by witches and wizards riding flying broomsticks. It is a dangerous but popular sport played by witches and wizards riding flying broomsticks.</p>
+      </section>
+
+      <section class="gradient">
+        <h2 class="gradient-header">Smooth gradient</h2>
+        <p class="gradient-text">Wingardium Leviosa.</p>
+        <section class="animation">
+          <h2 class="animation-header">Flying Ford Anglia</h2>
+          <p class="animation-text">Hover your magic wand over me and witness magic</p>
+        </section>
+      </section>
+
+      <section id="images">
+        <div class="images">
+          <div class="image1 image">
+            <p class="image-text">An important letter</p>
+          </div>
+        </div>
+        <div class="images">
+          <div class="image2 image">
+            <p class="image-text">A new vision</p>
+          </div>
+        </div>
+        <div class="images">
+          <div class="image3 image">
+            <p class="image-text">Spellbinding Journey</p>
+          </div>
+        </div>
+        <div class="images">
+          <div class="image4 image">
+            <p class="image-text">Faithful Messenger</p>
+          </div>
+        </div>
+        <div class="images">
+          <div class="image5 image">
+            <p class="image-text">Recipe to success</p>
+          </div>
+        </div>
+        <div class="images">
+          <div class="image6 image">
+            <p class="image-text">Dwelling</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mailing">
+        Enroll to receive astonishing knowledge:
+        <form>
+          <div class="input-container">
+            <input type="email" required>
+            <button class="mailing-button" type="submit"><svg class="mailing-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg></button>
+          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input">Check me for daily creatures
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-div">
+        <a href="#" class="footer-link">About us</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Legal notes</a>
+        <a href="#" class="footer-link">Copyright</a>
+      </div>
+      <div class="footer-div">
+        <a href="#" class="footer-link">About us</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Legal notes</a>
+        <a href="#" class="footer-link">Copyright</a>
+      </div>
+      <div class="footer-div">
+        <a href="#" class="footer-link">About us</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Legal notes</a>
+        <a href="#" class="footer-link">Copyright</a>
+      </div>
+      <div class="footer-div">
+        <a href="#" class="footer-link">About us</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Legal notes</a>
+        <a href="#" class="footer-link">Copyright</a>
+      </div>
+    </footer>
+  </body>
 </html>

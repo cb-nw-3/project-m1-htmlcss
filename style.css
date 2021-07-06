@@ -1,1 +1,484 @@
-/* CSS here :) */
+:root {
+  --main-color: #3a3633;
+  --border-radius: 4px;
+  --text-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+}
+/************************************************/
+/******************** NAVBAR ********************/
+/************************************************/
+nav {
+  background: var(--main-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.mobileMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.logo {
+  height: 100%;
+  padding-left: 12px;
+}
+.hamburger {
+  padding: 0 12px;
+}
+.links {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 36px;
+  max-height: 0;
+  overflow: hidden;
+}
+.links .link {
+  display: inline-block;
+  color: var(--text-color);
+  text-decoration: none;
+  width: 100%;
+}
+.house-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  max-height: 0;
+}
+.house-link {
+  color: var(--text-color);
+  text-decoration: none;
+  width: 100%;
+}
+.house-link:hover, .link:hover {
+  background: lightgray;
+  color: black;
+}
+.mobileMenu:hover ~ .links, .links:hover, .link:first-of-type:hover ~ .house-links, .house-links:hover {
+  max-height: 1000px;
+  transition: max-height 0.5s;
+}
+/************************************************/
+/******************** HEADER ********************/
+/************************************************/
+header {
+  height: 100vh;
+  color: var(--text-color);
+  background-image: url("https://images.unsplash.com/photo-1533591380348-14193f1de18f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-right {
+  background-color: rgba(158, 154, 151, 0.4);
+  padding: 20px;
+  font-size: 0.9rem;
+}
+.quote {
+  font-size: 1.8rem;
+}
+.header-left {
+  padding-left: 20px;
+  font-size: 3rem;
+  margin-top: 0;
+}
+/************************************************/
+/******************** HOUSES ********************/
+/************************************************/
+#houses {
+  margin: 30px;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.house {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  width: 325px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin: 20px auto;
+}
+.house-button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  padding: 10px 0;
+  border-radius: var(--border-radius);
+}
+.house-text {
+  opacity: 0.7;
+}
+/***************************************************/
+/******************** QUIDDITCH ********************/
+/***************************************************/
+#product {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 50px 50px 50px 30px;
+  height: 35vh;
+}
+.product-header {
+  font-size: 2rem;
+}
+.product-text {
+  font-size: 1rem;
+}
+/**************************************************/
+/******************** GRADIENT ********************/
+/**************************************************/
+.gradient {
+  background: rgb(126,5,5);
+  background: linear-gradient(45deg, rgba(126,5,5,1) 0%, rgba(221,169,57,1) 33%, rgba(64,170,15,1) 66%, rgba(9,66,194,1) 100%);
+  color: var(--text-color);
+  text-align: right;
+  height: 35vh;
+  padding: 80px 30px 0 0;
+  position: relative;
+}
+.gradient-header {
+  font-size: 2rem;
+}
+.gradient-text {
+  font-size: 1rem;
+}
+/***************************************************/
+/******************** ANIMATION ********************/
+/***************************************************/
+.animation {
+  text-align: center;
+  background-color: var(--main-color);
+  border: 7px solid var(--text-color);
+  width: 300px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -75px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.animation-header {
+  color: red;
+}
+.animation-text {
+  color: var(--text-color);
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
+.animation:hover {
+  animation: rotationMobile 3s;
+}
+/************************************************/
+/******************** IMAGES ********************/
+/************************************************/
+#images {
+  display: grid;
+}
+.images {
+  overflow: hidden;
+}
+.image {
+  min-width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 0.6s;
+  flex-flow: row wrap;
+}
+.image-text {
+  color: var(--text-color);
+  font-size: 2rem;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px #000;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.image:hover .image-text {
+  opacity: 1;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+.image1 {background-image: url("https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80");}
+.image2 {background-image: url("https://images.unsplash.com/photo-1476846764689-14e2b6b2f133?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");}
+.image3 {background-image: url("https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80")}
+.image4 {background-image: url("https://images.unsplash.com/photo-1500373994708-4d781bd7bd15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")}
+.image5 {background-image: url("https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")}
+.image6 {background-image: url("https://images.unsplash.com/photo-1583997052301-0042b33fc598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80")}
+/*************************************************/
+/******************** MAILING ********************/
+/*************************************************/
+#mailing {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 50px 0;
+  justify-content: center;
+  margin: 0 auto;
+}
+input {
+  border: 2px solid lightgray;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  padding: 7px 0;
+}
+.mailing-button {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border: none;
+  background: lightgray;
+}
+input[type="email"] {
+  width: 100%;
+  padding-left: 10px;
+}
+.mailing-send {
+  padding: 7px;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+  border-radius: var(--border-radius);
+  margin: 7px 0;
+}
+input:focus, input:hover {
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+input:focus + .mailing-button, input:hover + .mailing-button, .mailing-button:hover {
+  background: var(--main-color);
+}
+.input-container:hover input {
+  border: 2px solid var(--main-color);
+}
+/************************************************/
+/******************** FOOTER ********************/
+/************************************************/
+footer {
+  border-top: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+.footer-link {
+  margin: 15px 0;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  /************************************************/
+  /******************** NAVBAR ********************/
+  /************************************************/
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobileMenu .hamburger{
+    display: none;
+  }
+  .logo {
+    height: 100%;
+    padding-left: 12px;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 40px;
+    text-align: center;
+    max-height: 200px;
+    width: 450px;
+    overflow: visible;
+    position: relative;
+  }
+  .links li {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    line-height: 45px;
+    position: relative;
+  }
+  .links .link {
+    display: block;
+    padding: 0 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-size: 1rem;
+  }
+  .link:after {
+    content: "";
+    width: 100%;
+    height: var(--border-radius);
+    background-color: var(--text-color);
+    position: absolute;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: transform 0.3s;
+  }
+  .link:hover:after {
+    transform: scaleX(1);
+  }
+  .house-links {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: 15px;
+  }
+  .house-link {
+    display: block;
+    background: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    width: 87.95px;
+  }
+  .link:hover {
+    /* border-bottom: 4px solid var(--text-color); */
+    background: var(--main-color);
+    color: var(--text-color);
+  }
+  .links li:first-of-type:hover .house-links {
+    display: flex;
+    background: lightgray;
+    color: black;
+    justify-content: center;
+  }
+  /************************************************/
+  /******************** HEADER ********************/
+  /************************************************/
+  .header-container {
+    border: 8px solid var(--text-color);
+    margin: 50px;
+  }
+  .header-left {
+    padding: 50px 0 50px 20px;
+    margin: 0;
+  }
+  .header-description {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+  .header-description p {
+    margin: 0;
+    padding: 30px 0 10px 0;
+  }
+  .quote {
+    border-bottom: 2px dashed lightgray;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+  /***************************************************/
+  /******************** ANIMATION ********************/
+  /***************************************************/
+  .animation {
+    margin: 0 auto 0 30px;
+  }
+  .animation:hover {
+    animation: rotationDesktop 3s;
+  }
+  /***************************************************/
+  /******************** QUIDDITCH ********************/
+  /***************************************************/
+  .product-header {
+    font-size: 3rem;
+  }
+  .product-text {
+    font-size: 1.4rem;
+  }
+  /**************************************************/
+  /******************** GRADIENT ********************/
+  /**************************************************/
+  .gradient-header {
+    font-size: 3rem;
+  }
+  .gradient-text {
+    font-size: 1.4rem;
+  }
+  /************************************************/
+  /******************** IMAGES ********************/
+  /************************************************/
+  #images {
+    grid-template-columns: 50% 50%;
+  }
+  /************************************************/
+  /******************** FOOTER ********************/
+  /************************************************/
+  footer {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (min-width: 1200px) {
+  /************************************************/
+  /******************** HEADER ********************/
+  /************************************************/
+  .header-container {
+    display: flex;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-left {
+    padding: 50px 20px 50px 20px;
+    font-size: 4rem;
+  }
+  /************************************************/
+  /******************** IMAGES ********************/
+  /************************************************/
+  #images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@keyframes rotationDesktop {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(200px) rotate(180deg) scale(1);
+  }
+  100% {
+    transform: translateX(200px) rotate(180deg) scale(0.01);
+  }
+}
+@keyframes rotationMobile {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
