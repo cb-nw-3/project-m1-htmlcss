@@ -8,7 +8,209 @@
 </head>
 
 <body>
-    <!-- write some HTML! -->
+    <header>
+        <div class="nav">
+            <a href="">
+                <img class="logo" src="imgs/logo.svg"   alt="logo">
+            </a>
+            <nav class="mobile-nav">
+                <div class="mobile-nav-button">
+                    <img class="menu-icon" src="imgs/menu.svg" />
+                    <div class="menu-dropdown">
+                        <ul class="dropdown">
+                            <li class="menu-options">
+                                <a href="#features">
+                                Features
+                                </a>
+                            </li>
+                            <li class="menu-options">
+                                <a href="#advantages">
+                                    Advantages
+                                </a>
+                            </li>
+                            <li class="menu-options">
+                                <a href="#gallery">
+                                    Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="desktop-nav">
+                <ul class="desktop-menu">
+                    <li class="main-menu">
+                        <a href="#features">
+                            Features
+                        </a>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#advantages">
+                            Advantages
+                        </a>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#gallery">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="main-menu products">
+                        Products
+                        <div class="menu-dropdown">
+                            <ul class="dropdown">
+                                <li class="menu-options">
+                                    <a href="https://www.spacex.com/falcon9">
+                                        Falcon 9
+                                    </a>
+                                </li>
+                                <li class="menu-options">
+                                    <a href="https://www.tesla.com/en_ca/models">
+                                        Model S
+                                    </a>
+                                </li>
+                                <li class="menu-options">
+                                    <a href="https://www.apple.com/ca/iphone-11-pro/">
+                                        iPhone
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="intro">
+            <h1>Introducing Falcon 9</h1>
+            <div class="subtitle">
+                <h2>We make dreams come true</h2>
+                <div class="subtitle-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="features">
+            <div class="section-1">
+                <div class="feature">   
+                    <img class="icons" src="imgs/icon1.svg" alt="checkmark icon">
+                    <h4>Amazing feature 1</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and     typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s.</p>
+                    <button type="button" class="btn btn-secondary btn-block">Get   it</button>
+                </div>
+                <div class="feature">   
+                    <img class="icons" src="imgs/icon2.svg" alt="refresh icon">
+                    <h4>Amazing feature 2</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and     typesetting industry. </p>
+                    <button type="button" class="btn btn-secondary btn-block">Sell  it</button>
+                </div>
+                <div class="feature">   
+                    <img class="icons" src="imgs/icon3.svg" alt="finger print icon">
+                    <h4>Amazing feature 3</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and     typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <button type="button" class="btn btn-secondary btn-block">Do    it</button>
+                </div>
+            </div>
+        </section>
+        <section id="advantages">
+            <div class="section-2">
+                <div class="cool-text">
+                    <h2>Some cool text</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="cool-animation">
+                    <p class="animation-title">This looks cool</p>
+                    <p>Hover me if you like random animations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="gradient">
+                <h2>Slick gradient</h2>
+                <p>Lorem ipsum?</p>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="section-4">
+                <div class="gallery-images">
+                    <div class="gallery-animation img-gallery-1">
+                        <p>Our flagship car: The model S</p>
+                    </div>
+                </div><!--
+            --><div class="gallery-images">
+                    <div class="gallery-animation img-gallery-2">
+                        <p>Cool cat</p>
+                    </div>
+                </div><!--
+            --><div class="gallery-images">
+                    <div class="gallery-animation img-gallery-3">
+                        <p>Introducing: The Hyperloop</p>
+                    </div>
+                </div><!--
+            --><div class="gallery-images">
+                    <div class="gallery-animation img-gallery-4">
+                        <p>So sneaky</p>
+                    </div>
+                </div><!--
+            --><div class="gallery-images">
+                    <div class="gallery-animation img-gallery-5">
+                        <p>BFR - Big Falcon Rocket</p>
+                    </div>
+                </div><!--
+            --><div class="gallery-images">
+                    <div class="gallery-animation img-gallery-6">
+                        <p>So much fun</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="subscribe">
+                <p>
+                    Register to our mailing list:
+                </p>
+                <form>
+                    <div class="email-request">
+                        <input type="email" name="email" required>
+                        <input class="submit-button" type="image" src="imgs/send.svg">
+                    </div>
+                    <label>
+                        <input type="checkbox" id="subscribe" name="subscrition">
+                        Send me daily cat images
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="column-1">
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+        </ul>
+        <ul class="column-2">
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+        </ul>
+        <ul class="column-3">
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+        </ul>
+        <ul class="column-4">
+            <li>About us</li>
+            <li>Privacy Policy</li>
+            <li>Legal notes</li>
+            <li>Copyright</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
